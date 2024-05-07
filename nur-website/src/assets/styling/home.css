@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+
+/*-----BODY BACKGROUND ANIMATION------*/
+
+
+@keyframes northern {
+    0% {
+        transform: translate(10%, -2%);
+    }
+
+    25% {
+        transform: translate(20%, 7%);
+    }
+
+    40% {
+        transform: rotate(-20deg);
+    }
+
+    60% {
+        transform: translate(7%, -2%);
+    }
+
+    85% {
+        transform: translate(6%, 3%) rotate(15deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+
+.auroral-northern {
+    position: fixed;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    animation-name: northern;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background: linear-gradient(15deg, #C8FE06 5%, #E26EF5 5%, #3eb1a7 50%, #010513 70%);
+    z-index: -1;
+}
+
+
+
+canvas {
+    position: sticky;
+    display: block;
+    filter: blur(3px) drop-shadow(0 0 30px rgb(18, 65, 61)); 
+    transform-origin: 0 100%; 
+    transform: skewX(-20deg);
+    animation: fadein 6s 1;
+
+}
+
+
+
+ 
+  
+  @keyframes hueRotate {
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  @keyframes linearWave {
+    0% {
+      top: 0vh;
+    }
+    25% {
+      top: 50vh;
+    }
+    50% {
+      top: 100vh;
+    }
+    75% {
+      top: 50vh;
+    }
+    100% {
+      top: 0vh;
+    }
+  }
+  
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #01051377;
+    overflow-x: hidden;
+    max-width: 100%;
+    
+}
+
+/*---Hero Section---*/
+
+
+.selected-cases {
+  color: #D3E75B; /* Text color */
+  font-family: 'Nico Moji', sans-serif; /* Choose appropriate font */
+  font-size: 20px; /* Adjust font size */
+  position: absolute; /* Position it absolutely */
+  bottom: 20px; /* Adjust distance from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.arrow-down {
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #D3E75B; /* Color of the arrow */
+  animation: arrow-bounce 1s infinite alternate; /* Animation */
+}
+
+@keyframes arrow-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+

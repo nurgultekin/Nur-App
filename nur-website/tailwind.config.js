@@ -11,8 +11,12 @@ module.exports = {
       colors: {
         accentPrimary: '#D3E75B',
         accentPrimaryHover: '#eeffb2cc',
+        
 
       },
+      typography: {
+        heading: 'font-titan-one',
+      }
     },
   },
   variants: {},

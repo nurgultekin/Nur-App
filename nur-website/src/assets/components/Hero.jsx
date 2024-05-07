@@ -28,7 +28,7 @@ const HeroSection = () => {
     return (
         <div className="flex flex-col justify-center items-center p-0 w-90 mx-auto mb-0">
             <div>
-                <h1 className="text-yellow-400 font-bold text-5xl md:text-7xl font-titan-one text-center mb-20">
+                <h1 className="text-yellow-300 font-bold text-5xl md:text-7xl font-titan-one text-center mb-20">
                     Hello, <br />
                     <span className="text-9xl">World!</span></h1>
             </div>

@@ -1,61 +1,99 @@
-import React, { useState } from 'react';
+import React from "react";
+import Slider from "react-slick";
+import "../styling/slider.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import luxeBiteImage from "./luxeBite.png";
 
-const Slider = () => {
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  const nextSlide = () => {
-    setSlideIndex((prevIndex) => (prevIndex === 3 ? 0 : prevIndex + 1));
-  };
-
-  const prevSlide = () => {
-    setSlideIndex((prevIndex) => (prevIndex === 0 ? 3 : prevIndex - 1));
+const CaseStudySlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+    appendDots: (dots) => (
+      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+        <ul style={{ margin: "0" }}> {dots} </ul>
+      </div>
+    ),
   };
 
   return (
-    <div className="slideshow-container">
-      <div className="projects">
-        {/* Previous button */}
-        <div className="prev" onClick={prevSlide}>
-          &#10094;
-        </div>
-
-        {/* Case studies (Luxebite) */}
-        <div className="luxebite-container">
-          {/* Case study 1 */}
-          <div className={`mySlides fade ${slideIndex === 0 ? 'firstSlide' : ''}`}>
-            {/* Case study content */}
+    <Slider {...settings}>
+      {/* Slide 1 */}
+      <div className="luxebite-container">
+        <div className="firstSlide fade">
+          <div>
+            <img src={luxeBiteImage} alt="Project Image" style={{ width: "451px", height: "auto" }} />
           </div>
 
-          {/* Case study 2 */}
-          <div className={`mySlides fade ${slideIndex === 1 ? 'firstSlide' : ''}`}>
-            {/* Case study content */}
-          </div>
+          <div className="text-card">
+            <h2>LuxeBite</h2>
+            <div className="tags-container">
+              <div className="tags">
+                <div className="tag"><label className="tag-text">UX RESEARCH</label></div>
+              </div>
+              <div className="tags">
+                <div className="tag"><label className="tag-text">UI DESIGN</label></div>
+              </div>
+              <div className="tags">
+                <div className="tag"><label className="tag-text">BRANDING</label></div>
+              </div>
+            </div>
 
-          {/* Case study 3 */}
-          <div className={`mySlides fade ${slideIndex === 2 ? 'firstSlide' : ''}`}>
-            {/* Case study content */}
+            <p className="works-text">Collaboratively conducted extensive UX research, designed, and developed a website for a potential food delivery service.</p>
+            <div>
+              <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
+            </div>
           </div>
-
-          {/* Case study 4 */}
-          <div className={`mySlides fade ${slideIndex === 3 ? 'firstSlide' : ''}`}>
-            {/* Case study content */}
-          </div>
-        </div>
-
-        {/* Next button */}
-        <div className="next" onClick={nextSlide}>
-          &#10095;
         </div>
       </div>
 
-      {/* The dots/circles */}
-      <div style={{ textAlign: 'center' }}>
-        {[0, 1, 2, 3].map((index) => (
-          <span key={index} className={`dot ${slideIndex === index ? 'active' : ''}`} onClick={() => setSlideIndex(index)}></span>
-        ))}
+      {/* Slide 2 */}
+      <div className="luxebite-container">
+        <div className="mySlides fade">
+          {/* Your slide content goes here */}
+        </div>
       </div>
+
+      {/* Slide 3 */}
+      <div className="luxebite-container">
+        <div className="mySlides fade">
+          {/* Your slide content goes here */}
+        </div>
+      </div>
+
+      {/* Slide 4 */}
+      <div className="luxebite-container">
+        <div className="mySlides fade">
+          {/* Your slide content goes here */}
+        </div>
+      </div>
+    </Slider>
+  );
+};
+
+// Custom previous arrow component
+const CustomPrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div className="prev" onClick={onClick}>
+      &#10094;
     </div>
   );
 };
 
-export default Slider;
+// Custom next arrow component
+const CustomNextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div className="next" onClick={onClick}>
+      &#10095;
+    </div>
+  );
+};
+
+export default CaseStudySlider;

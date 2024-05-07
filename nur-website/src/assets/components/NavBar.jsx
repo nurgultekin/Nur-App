@@ -11,9 +11,9 @@ const NavigationBar = () => {
     return (
         <header>
             {/* Navigation Bar */}
-            <nav className="navbar relative z-50">
-                <div className="logo flex-1">
-                    <Link to="/" className="text-yellow-400 font-bold text-lg md:text-2xl font-titan-one">
+            <nav className="navbar">
+                <div className="logo">
+                    <Link to="/" className="text-yellow-400 font-bold text-lg font-titan-one">
                         NurG
                     </Link>
                 </div>
@@ -29,14 +29,12 @@ const NavigationBar = () => {
                     <span className="block w-5 h-0.5 bg-white mb-1"></span>
                     <span className="block w-5 h-0.5 bg-white"></span>
                 </label>
-                <div className={`nav-links ${isMenuOpen ? 'block' : 'hidden'} md:flex md:justify-between md:w-auto w-full`} id="myLinks">
-                    <div className="menu md:flex md:mr-4">
-                        <Link to="/about" className="text-white text-lg md:text-xl font-semibold mr-4 md:mr-8">About</Link>
-                        <Link to="/works" className="text-white text-lg md:text-xl font-semibold">Works</Link>
+                <div className={`nav-links ${isMenuOpen ? 'block' : 'hidden'}`}>
+                    <div className="menu">
+                        <Link to="/about" className="text-white">About</Link>
+                        <Link to="/works" className="text-white">Works</Link>
                     </div>
-                    <Link to="/contact" className="cta-button text-black bg-yellow-400 px-4 py-2 md:text-lg font-semibold rounded-full mt-4 md:mt-0">
-                        Say Hi!
-                    </Link>
+                    <Link to="/contact" className="cta-button">Say Hi!</Link>
                 </div>
             </nav>
         </header>

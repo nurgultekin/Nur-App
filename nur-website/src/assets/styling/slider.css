@@ -1,0 +1,277 @@
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    background-color: var(--Color-palette-primary-accent, #D3E75B);
+    z-index: 997;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust spacing between projects and dots */
+    position: relative;
+    width: 100%; /* Ensure full width */
+}
+
+.prev,
+.next {
+    flex-basis: 15%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    width: auto;
+    padding: 20px; /* Adjust padding as needed */
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1000;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.firstSlide {
+  display: block;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #eeffb2cc;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+  margin-bottom: 200px;
+}
+
+.active, .dot:hover {
+  background-color: #9f5da5;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.luxebite {
+    padding: 99px 34px;
+    display: flex; /* Change from display: flex to display: block */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto; /* Center the projects section horizontally */
+    margin-top: 100px;;
+    background-color: var(--Color-palette-primary-accent, #D3E75B);
+    z-index: 998;
+    gap: 80px;
+    flex-shrink: 1;
+    max-width: 90%;
+    height: auto;
+    justify-content: center;
+    position:relative;
+}
+
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+
+h2 {
+    color: var(--Color-palette-neutral-black, #000);
+
+/* H1-black-desktop */
+font-family: "Titan One";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 62.4px */
+width: 100%;
+text-align: left;
+}
+
+h3 {
+color: #FFF;
+font-family: Roboto;
+font-size: 29px;
+font-style: italic;
+font-weight: 600;
+line-height: normal;
+}
+
+.body-large-white {
+color: var(--Text-White, #FEFEFE);
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+}
+
+.works-text {
+
+color: var(--Color-palette-neutral-black, #000);
+
+/* body-desktop-S */
+font-family: "Roboto Condensed";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 20.8px */
+text-align: left;
+padding-bottom: 20px;
+}
+
+.button-text-secondary {
+    color: var(--Color-palette-neutral-black, #000);
+
+/* label-desktop-XL */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 26px */
+}
+
+.button-text-primary {
+  color: var(--Color-palette-neutral-black, #000);
+
+/* label-desktop-XL */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 26px */
+}
+
+.secondary-button {
+display: flex;
+padding: 14px 23px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 20px;
+border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
+background: #FAFFE6;
+text-decoration: none;
+max-width: 132px;
+max-height: 54px
+
+
+}
+
+
+.secondary-button:hover {
+  background-color: var(--Color-palette-primary-accent, #D3E75B);
+  cursor:pointer;
+}
+.button-text-secondary:hover {
+  background-color: #0b0c05 3px;
+  cursor:pointer;
+
+}
+
+.primary-button {
+  display: flex;
+  padding: 14px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
+  background: #C8FE06;
+  text-decoration: none;
+  max-width: 132px;
+  max-height: 54px
+  
+  
+  }
+
+  .primary-button:hover {
+    background-color: #879e34;
+    cursor:pointer;
+  }
+  .button-text-primary:hover {
+    background-color: #0b0c05 3px;
+    cursor:pointer;
+  
+  }
+
+
+
+.tags-container {
+  display: flex;
+  gap: 13px;
+  max-width: 100%;
+}
+
+.tags {
+display: flex;
+flex-direction: row;
+align-items: center;
+height: 25px;
+padding: 7px 6px;
+justify-content: space-between;
+gap: 13px;
+border: 1px solid var(--Color-palette-secondary-accent, #B066E3);
+background: rgba(255, 255, 255, 0.00);
+color: var(--Color-palette-neutral-black, #000);
+max-width: 140px;
+max-height: 25px;
+
+}
+
+.tag-text{
+    /* body-desktop-S */
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    justify-content: center;
+    }

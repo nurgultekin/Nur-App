@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+module.exports = {
+  mode: 'jit', 
+    purge: [ 
+        './src/**/*.{js,ts,jsx,tsx}', 
+        './components/**/*.{js,ts,jsx,tsx}', 
+    ], 
+  content: ["./src/**/*.{js, jsx, ts, tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        accentPrimary: '#D3E75B',
+        accentPrimaryHover: '#eeffb2cc',
+
+      },
+    },
   },
+  variants: {},
   plugins: [],
 }
-

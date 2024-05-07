@@ -4,6 +4,7 @@ import "../styling/slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import luxeBiteImage from "./luxeBite.png";
+import onspotImage from "../media/images/onspot.png";
 
 const CaseStudySlider = () => {
   const settings = {
@@ -24,7 +25,7 @@ const CaseStudySlider = () => {
   return (
     <Slider {...settings}>
       {/* Slide 1 */}
-      <div className="luxebite-container">
+      <div className="slideshow-container">
         <div className="firstSlide fade">
           <div>
             <img src={luxeBiteImage} alt="Project Image" style={{ width: "451px", height: "auto" }} />
@@ -53,9 +54,34 @@ const CaseStudySlider = () => {
       </div>
 
       {/* Slide 2 */}
-      <div className="luxebite-container">
+      <div className="slideshow-container">
         <div className="mySlides fade">
-          {/* Your slide content goes here */}
+        <div>
+        <img src={onspotImage} alt="Project Image" style={{ width: "451px", height: "auto" }} />
+      </div>
+
+      <div className="text-card">
+        <h2>ArtVenture</h2>
+        <div className="tags-container">
+          <div className="tags">
+            <div className="tag"><label className="tag-text">UX RESEARCH</label></div>
+          </div>
+          <div className="tags">
+            <div className="tag"><label className="tag-text">UI DESIGN</label></div>
+          </div>
+          <div className="tags">
+            <div className="tag"><label className="tag-text">ACADEMIC RESEARCH</label></div>
+          </div>
+          <div className="tags">
+            <div className="tag"><label className="tag-text">UX WRITING</label></div>
+          </div>
+        </div>
+
+        <p className="works-text">Crafted an innovative application prototype for personalized museum visits, blending UX research, testing, and collaborative paper authorship.</p>
+        <div>
+          <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
+        </div>
+      </div>
         </div>
       </div>
 

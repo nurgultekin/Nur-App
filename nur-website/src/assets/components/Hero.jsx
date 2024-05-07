@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import '../styling/home.css';
 
 const HeroSection = () => {
     useEffect(() => {
@@ -26,7 +27,7 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="flex flex-col justify-center items-center p-0 w-90 mx-auto mb-0">
+        <div className="hero-container">
             <div>
                 <h1 className="text-yellow-300 font-bold text-5xl md:text-7xl font-titan-one text-center mb-20">
                     Hello, <br />

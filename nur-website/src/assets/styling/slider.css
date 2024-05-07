@@ -97,13 +97,13 @@
 
 .luxebite {
     padding: 99px 34px;
-    display: flex; /* Change from display: flex to display: block */
+    display: block; /* Change from display: flex to display: block */
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: auto; /* Center the projects section horizontally */
     margin-top: 100px;;
-    background-color: var(--Color-palette-primary-accent, #D3E75B);
+    background-color:  #D3E75B;
     z-index: 998;
     gap: 80px;
     flex-shrink: 1;

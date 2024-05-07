@@ -27,11 +27,15 @@ const App = () => {
 
 const Home = () => { 
   return(
-  <div>
-    <Animation />
-    <HeroSection />
-    <CaseStudySlider />
-  </div>
+    <div>
+      <Animation />
+      <div>
+        <HeroSection />
+      </div>
+      <div>
+        <CaseStudySlider />
+      </div>
+    </div>
   )
 };
 

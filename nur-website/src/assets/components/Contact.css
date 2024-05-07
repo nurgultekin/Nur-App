@@ -1,0 +1,49 @@
+.contact-container {
+    text-align: center;
+    width: 50vw; /* Adjust the width as needed */
+}
+
+.contact-form {
+    display: inline-block;
+    width: 100%; 
+}
+
+.name-surname {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.name-surname input {
+    width: 35%; /* Each name and surname input takes up 45% of the container width */
+
+}
+
+.input-group {
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%; 
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 18px; 
+    font-family: "Roboto", sans-serif; 
+}
+
+.input-group input {
+    width: 100%; /* Each input field takes up 100% of the container width */
+    height: 40px; /* Adjust the height as needed */
+}
+
+.input-group textarea {
+    width: 100%; /* The textarea takes up 100% of the container width */
+    height: 120px; /* Adjust the height as needed */
+}
+
+h1 {
+    color:white;
+}

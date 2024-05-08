@@ -16,13 +16,14 @@ const CaseStudySlider = () => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
     appendDots: (dots) => (
-      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+      <div style={{ textAlign: "center", marginBottom: "100px" }}>
         <ul style={{ margin: "0" }}> {dots} </ul>
       </div>
     ),
   };
 
   return (
+    <section>
     <Slider {...settings}>
       {/* Slide 1 */}
       <div className="slideshow-container">
@@ -86,19 +87,64 @@ const CaseStudySlider = () => {
       </div>
 
       {/* Slide 3 */}
-      <div className="luxebite-container">
+      <div className="slideshow-container">
         <div className="mySlides fade">
-          {/* Your slide content goes here */}
+        <div>
+        <img src={onspotImage} alt="Project Image" style={{ width: "451px", height: "auto" }} />
+      </div>
+
+      <div className="text-card">
+        <h2>My Portfolio Project</h2>
+        <div className="tags-container">
+          <div className="tags">
+            <div className="tag"><label className="tag-text">UX RESEARCH</label></div>
+          </div>
+          <div className="tags">
+            <div className="tag"><label className="tag-text">UI DESIGN</label></div>
+          </div>
+          <div className="tags">
+            <div className="tag"><label className="tag-text">WEB DEVELOPMENT</label></div>
+          </div>
+
+        <p className="works-text">Created my website through the stages of UX research, UI/UX design, user testing, and front-end web development.</p>
+        <div>
+          <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
         </div>
+      </div>
+        </div>
+      </div>
       </div>
 
       {/* Slide 4 */}
-      <div className="luxebite-container">
+      <div className="slideshow-container">
         <div className="mySlides fade">
-          {/* Your slide content goes here */}
+        <div>
+        <img src={onspotImage} alt="Project Image" style={{ maxwidth: "451px", height: "auto" }} />
+      </div>
+
+      <div className="text-card">
+        <h2>Kalmar Library</h2>
+        <div className="tags-container">
+          <div className="tags">
+            <div className="tag"><label className="tag-text">UX RESEARCH</label></div>
+          </div>
+          <div className="tags">
+            <div className="tag"><label className="tag-text">REQUIREMENT ANALYSIS</label></div>
+          </div>
+          <div className="tags">
+            <div className="tag"><label className="tag-text">ACCESSIBILITY ANALYSIS</label></div>
+          </div>
+
+        <p className="works-text">Collaboratively conducted extensive UX research, designed, and developed a website for a potential food delivery service.</p>
+        <div>
+          <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
         </div>
       </div>
+        </div>
+      </div>
+      </div>
     </Slider>
+    </section>
   );
 };
 

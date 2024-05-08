@@ -1,8 +1,13 @@
 
 /* Slideshow container */
+section {
+    height: 100dvh;
+    width:100%;
+}
+
 .slideshow-container {
     position: relative;
-    margin: auto;
+    margin: 20 0;
     background-color: var(--Color-palette-primary-accent, #D3E75B);
     z-index: 997;
     height: 100vh;
@@ -52,10 +57,10 @@
 
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
   display: none;
 }
-
+ */
 .firstSlide {
   display: block;
   

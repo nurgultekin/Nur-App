@@ -6,6 +6,7 @@ section {
 }
 
 .slideshow-container {
+    
     position: relative;
     margin: 20 0;
     background-color: var(--Color-palette-primary-accent, #D3E75B);
@@ -18,15 +19,6 @@ section {
 
 }
 
-.projects {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Adjust spacing between projects and dots */
-    position: relative;
-    width: 100%; /* Ensure full width */
-}
 
 .prev,
 .next {
@@ -61,9 +53,13 @@ section {
   display: none;
 }
  */
-.firstSlide {
-  display: block;
-  
+.mySlides {
+  display: flex;
+  flex-direction: row;
+  margin: 300px 300px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -100,31 +96,8 @@ section {
   to {opacity: 1}
 }
 
-.luxebite {
-    padding: 99px 34px;
-    display: block; /* Change from display: flex to display: block */
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto; /* Center the projects section horizontally */
-    margin-top: 100px;;
-    background-color:  #D3E75B;
-    z-index: 998;
-    gap: 80px;
-    flex-shrink: 1;
-    max-width: 90%;
-    height: auto;
-    justify-content: center;
-    position:relative;
-}
 
 
-.text-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-}
 
 
 h2 {
@@ -255,28 +228,32 @@ max-height: 54px
   max-width: 100%;
 }
 
-.tags {
-display: flex;
-flex-direction: row;
-align-items: center;
-height: 25px;
-padding: 7px 6px;
-justify-content: space-between;
-gap: 13px;
-border: 1px solid var(--Color-palette-secondary-accent, #B066E3);
-background: rgba(255, 255, 255, 0.00);
-color: var(--Color-palette-neutral-black, #000);
-max-width: 140px;
-max-height: 25px;
+.text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 30px;
 
 }
 
-.tag-text{
-    /* body-desktop-S */
-    font-family: "Roboto Condensed";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 20.8px */
-    justify-content: center;
-    }
+
+.tags {
+  display: flex;
+ 
+  align-items: center;
+  height: auto; /* Change height to auto */
+  padding: 7px 6px;
+  justify-content: space-between;
+  gap: 13px;
+  border: 2px solid #B066E3;
+  /* Remove or adjust max-width */
+}
+
+.tag-text {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  justify-content: center;
+}

@@ -18,11 +18,10 @@ const HeroSection = () => {
             slideshowContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
         };
 
-        arrowDown.addEventListener("click", handleArrowClick);
 
         return () => {
             selectedCases.removeEventListener("click", handleClick);
-            arrowDown.removeEventListener("click", handleArrowClick);
+            
         };
     }, []);
 

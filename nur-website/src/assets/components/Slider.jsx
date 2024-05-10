@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import luxeBiteImage from "./luxeBite.png";
 import onspotImage from "../media/images/onspot.png";
+import Kalmar from "../media/images/kalmar.jpg";
+import Portfolio from "../media/images/portfolio.jpg";
 
 const CaseStudySlider = () => {
   const settings = {
@@ -16,7 +18,7 @@ const CaseStudySlider = () => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
     appendDots: (dots) => (
-      <div style={{ textAlign: "center", marginBottom: "100px", }}>
+      <div style={{ textAlign: "center", marginBottom: "120px", }}>
         <ul style={{ margin: "0" }}> {dots} </ul>
       </div>
     ),
@@ -90,7 +92,7 @@ const CaseStudySlider = () => {
       <div className="slideshow-container">
         <div className="mySlides fade">
         <div>
-        <img src={onspotImage} alt="Project Image" style={{ width: "451px", height: "auto" }} />
+        <img src={Portfolio} alt="Project Image" style={{ width: "451px", height: "auto" }} />
       </div>
 
           <div className="text-card">
@@ -112,25 +114,25 @@ const CaseStudySlider = () => {
 
       {/* Slide 4 */}
       <div className="slideshow-container">
-        <div className="mySlides fade">
-          <div>
-            <img src={onspotImage} alt="Project Image" style={{ maxwidth: "451px", height: "auto" }} />
-          </div>
+  <div className="mySlides fade">
+    <div>
+      <img src={Kalmar} alt="Project Image" style={{ maxWidth: "451px", height: "auto" }} />
+    </div>
 
-          <div className="text-card">
-            <h2>Kalmar Library</h2>
-            <div className="tags-container">
-              <div className="tags"><label className="tag-text">UX RESEARCH</label></div>
-              <div className="tags"><label className="tag-text">REQUIREMENT ANALYSIS</label></div>
-              <div className="tags"><label className="tag-text">ACCESSIBILITY ANALYSIS</label></div>
-            </div>
-            <div>
-              <p className="works-text">Collaboratively conducted extensive UX research, designed, and developed a website for a potential food delivery service.</p>
-              <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
-            </div>
-          </div> {/* text card closing tag */}
-        </div> {/* mySlides fade closing tag */}
-      </div> {/* slideshow container closing tag */}
+    <div className="text-card">
+      <h2>Kalmar Library</h2>
+      <div className="tags-container">
+        <div className="tags"><label className="tag-text">UX RESEARCH</label></div>
+        <div className="tags"><label className="tag-text">REQUIREMENT ANALYSIS</label></div>
+        <div className="tags"><label className="tag-text">ACCESSIBILITY ANALYSIS</label></div>
+      </div>
+      <div>
+        <p className="works-text">Collaboratively conducted extensive UX research, designed, and developed a website for a potential food delivery service.</p>
+        <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
+      </div>
+    </div> {/* text card closing tag */}
+  </div> {/* mySlides fade closing tag */}
+</div> {/* slideshow container closing tag */}
     </Slider>
     </section>
   );

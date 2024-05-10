@@ -9,7 +9,7 @@ section {
     
     position: relative;
     margin: 20 0;
-    background-color: var(--Color-palette-primary-accent, #D3E75B);
+    background-color:  #D3E75B;
     z-index: 997;
     height: 100vh;
     width: auto;
@@ -95,8 +95,6 @@ section {
   from {opacity: .4}
   to {opacity: 1}
 }
-
-
 
 
 

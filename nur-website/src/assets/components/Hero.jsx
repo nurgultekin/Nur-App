@@ -28,14 +28,14 @@ const HeroSection = () => {
     return (
         <div className="hero-container">
             <div>
-                <h1 className="text-yellow-300 font-bold text-5xl md:text-7xl font-titan-one text-center mb-20">
+                <h1 className="hero-title">
                     Hello, <br />
                     <span className="text-9xl">World!</span></h1>
             </div>
 
             <div>
-                <p className="text-white text-shadow font-semibold text-lg md:text-xl font-sans text-center max-w-3/4">
-                    I am <span className="text-2xl bg-pink-300">Nur Gültekin</span>, a data-driven UX/UI designer & web developer who draws great inspiration from music, games, and literature. My passion is creating interactive technologies for optimal user experience and accessibility. I am currently on the look-out for a stimulating and fun workplace that would unleash my creativity and help me grow.</p>
+                <p className="hero-text text-white text-shadow font-semibold text-lg md:text-xl font-sans text-center max-w-3/4">
+                    I am <span className="name">Nur Gültekin</span>, a data-driven UX/UI designer & web developer who draws great inspiration from music, games, and literature. My passion is creating interactive technologies for optimal user experience and accessibility. I am currently on the look-out for a stimulating and fun workplace that would unleash my creativity and help me grow.</p>
             </div>
 
             <div className="selected-cases" id="selected-cases">

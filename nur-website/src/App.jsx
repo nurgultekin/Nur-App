@@ -7,6 +7,8 @@ import Contact from './assets/components/Contact';
 import HeroSection from './assets/components/Hero'; 
 import CaseStudySlider from './assets/components/Slider';
 import Animation from './assets/components/Animation';
+import SkillsCredentials from './assets/components/Skills';
+import sideProjects from './assets/components/Sideprojects';
 
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
@@ -34,6 +36,15 @@ const Home = () => {
       </div>
       <div>
         <CaseStudySlider />
+      </div>
+      <div>
+        <About />
+      </div>
+      <div>
+        <SkillsCredentials />
+      </div>
+      <div>
+        <sideProjects />
       </div>
     </div>
   )

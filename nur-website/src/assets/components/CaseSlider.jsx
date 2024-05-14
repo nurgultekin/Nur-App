@@ -9,6 +9,8 @@ import onspotImage from "../media/images/onspot.png";
 import Kalmar from "../media/images/kalmar.jpg";
 import Portfolio from "../media/images/portfolio.jpg";
 
+
+
 const CaseStudySlider = () => {
   const settings = {
     dots: true,

@@ -1,7 +1,7 @@
 import React from 'react';
 import GalataTower from "../media/images/galata.png";
 
-const About = () => {
+const AboutSection = () => {
   return (
     <section className="about-container">
       <section className="about-home" id="about">
@@ -29,4 +29,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

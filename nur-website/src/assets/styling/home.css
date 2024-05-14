@@ -95,7 +95,7 @@ html, body {
     padding: 0;
     background-color: #01051377;
     overflow-x: hidden;
-    max-width: 100%;
+   
     
 }
 
@@ -140,7 +140,7 @@ font-weight: 600;
 line-height: 150%;
 word-wrap: break-word;
 margin: 0 auto; /* Center the text horizontally */
-max-width: 75%; /* Set maximum width to 75% */
+max-width: 75%; 
 z-index: 1000;
 }
 

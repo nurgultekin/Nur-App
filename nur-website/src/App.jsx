@@ -2,13 +2,12 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavigationBar from './assets/components/NavBar';
-import About from './assets/components/About';
-import Contact from './assets/components/Contact';
+import AboutSection from './assets/components/AboutSection';
+import ContactSection from './assets/components/ContactSection';
 import HeroSection from './assets/components/Hero'; 
-import CaseStudySlider from './assets/components/Slider';
 import Animation from './assets/components/Animation';
 import SkillsCredentials from './assets/components/Skills';
-import sideProjects from './assets/components/Sideprojects';
+import SideProjects from './assets/components/Sideprojects';
 
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
@@ -38,13 +37,16 @@ const Home = () => {
         <CaseStudySlider />
       </div>
       <div>
-        <About />
+        <AboutSection />
       </div>
       <div>
         <SkillsCredentials />
       </div>
       <div>
-        <sideProjects />
+        <SideProjects />
+      </div>
+      <div>
+        <ContactSection />
       </div>
     </div>
   )

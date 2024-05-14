@@ -5,7 +5,7 @@ module.exports = {
         './src/**/*.{js,ts,jsx,tsx}', 
         './components/**/*.{js,ts,jsx,tsx}', 
     ], 
-  content: ["./src/**/*.{js, jsx, ts, tsx}",],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {

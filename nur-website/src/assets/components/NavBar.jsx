@@ -29,7 +29,7 @@ const NavigationBar = () => {
                     <span className="block w-5 h-0.5 bg-white mb-1"></span>
                     <span className="block w-5 h-0.5 bg-white"></span>
                 </label>
-                <div className={`nav-links ${isMenuOpen ? 'block' : 'hidden'}`}>
+                <div className={`nav-links ${isMenuOpen ? 'block' : 'display'}`}>
                     <div className="menu">
                         <Link to="/about" className="text-white">About</Link>
                         <Link to="/works" className="text-white">Works</Link>

@@ -8,7 +8,7 @@ import redditImage from '../media/images/reddit.jpg';
 import '../styling/home.css';
 
 
-const sideProjects = () => {
+const SideProjects = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -81,4 +81,4 @@ const CustomNextArrow = (props) => {
   );
 };
 
-export default sideProjects;
+export default SideProjects;

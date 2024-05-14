@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import '../styling/home.css';
+import 'tailwindcss/tailwind.css';
 
 const HeroSection = () => {
     useEffect(() => {

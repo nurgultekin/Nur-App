@@ -2,7 +2,7 @@ import React from 'react';
 import GalataTower from "../media/images/galata.png";
 import 'tailwindcss/tailwind.css';
 
-const AboutSection = () => {
+const AboutPage = () => {
   return (
     <section className="about-container">
       <section className="about-home" id="about">
@@ -30,4 +30,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default AboutPage;

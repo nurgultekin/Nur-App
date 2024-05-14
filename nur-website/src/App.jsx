@@ -3,14 +3,17 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavigationBar from './assets/components/NavBar';
 import AboutSection from './assets/components/AboutSection';
+import AboutPage from './assets/components/AboutPage';
 import ContactSection from './assets/components/ContactSection';
 import HeroSection from './assets/components/Hero'; 
 import Animation from './assets/components/Animation';
 import SkillsCredentials from './assets/components/Skills';
 import SideProjects from './assets/components/Sideprojects';
+import CaseStudySlider from './assets/components/CaseSlider';
 
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
+
 
 
 const App = () => {
@@ -19,8 +22,8 @@ const App = () => {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/AboutPage" element={<AboutPage />} />
+          <Route path="/ContactSection" element={<ContactSection />} />
         </Routes>
     </BrowserRouter>
   );
@@ -45,7 +48,7 @@ const Home = () => {
       <div>
         <SideProjects />
       </div>
-      <div>
+      <div id="contact-section">
         <ContactSection />
       </div>
     </div>

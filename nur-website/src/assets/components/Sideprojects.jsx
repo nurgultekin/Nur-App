@@ -6,6 +6,7 @@ import pipelineImage from '../media/images/pipeline.jpg';
 import masterWorkflowImage from '../media/images/masterWorkflow.png';
 import redditImage from '../media/images/reddit.jpg';
 import '../styling/home.css';
+import 'tailwindcss/tailwind.css';
 
 
 const SideProjects = () => {

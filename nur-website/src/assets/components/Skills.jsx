@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styling/home.css';
+import 'tailwindcss/tailwind.css';
 
 const SkillsCredentials = () => {
   return (

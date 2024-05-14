@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import 'tailwindcss/tailwind.css';
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('contact-section');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -31,10 +39,10 @@ const NavigationBar = () => {
                 </label>
                 <div className={`nav-links ${isMenuOpen ? 'block' : 'display'}`}>
                     <div className="menu">
-                        <Link to="/about" className="text-white">About</Link>
+                        <Link to="/AboutPage" className="text-white">About</Link>
                         <Link to="/works" className="text-white">Works</Link>
                     </div>
-                    <Link to="/contact" className="cta-button">Say Hi!</Link>
+                    <button className="cta-button" onClick={scrollToContact}>Say Hi!</button>
                 </div>
             </nav>
         </header>

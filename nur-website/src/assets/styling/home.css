@@ -185,13 +185,21 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
     justify-content: space-between; /* Align children with space between */
     align-items: center; /* Vertically align items */
     margin-right: 0;
-    padding-left: 39px; /* Add left padding */
+    padding-left: 39px; 
+  }
+
+  .about-container h2 {
+    font-family: 'Roboto Bold', sans-serif;
+    font-style: italic;
+    font-size: 29px;
+    font-weight: 700; /* Explicitly set to bold */
+    color: whitesmoke;
   }
   
   .about-text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align text to the left */
+    align-items: flex-start; 
     gap: var(--Header, 40px);
     margin-left: 150px;
    
@@ -200,17 +208,22 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   .about-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align list items to the left */
+    align-items: flex-start; 
     gap: 14px;
     max-width: 680px;
-    text-align: left; /* Align text within list to the left */
+    text-align: left; 
     font-family: "Roboto";
     color:whitesmoke;
+    background: radial-gradient(farthest-corner at 50% 50%, 
+    rgba(28, 25, 25, 0.16) 80%, 
+    rgba(130, 118, 118, 0.05) 100%);
+    padding: 40px 30px;
   }
   
   .about-list li {
     text-align: left; 
     margin-bottom:10px;
+
   }
   
   .about-container img {
@@ -227,12 +240,19 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   padding: 90px;
 }
 
+.skills-credentials-container h2 {
+  color: rgb(7, 4, 4);
+  font-size: 30px;
+  margin-left: 40px;
+}
+
 .skills-credentials > h2 {
   color: rgb(7, 4, 4);
   font-size: 30px;
   margin-left: 40px;
  
 }
+
 .skills-credentials {
   background-color: #B894D0;
   display: flex;
@@ -244,10 +264,17 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   font-weight: bold;
   line-height: 130%; /* 20.8px */
 }
+.credentials li {
+  background-color: whitesmoke;
+  border-radius: 40px;
+  padding:40px;
+  margin-right: 100px;
+}
 
 .skills {
   margin-top: 20px;
   flex:1;
+  margin-left:100px;
 }
 
 .skills ul {
@@ -270,13 +297,68 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
 
 @keyframes fillProgress {
   from {
-      width: 0%;
+    width: 0%;
   }
   to {
-      width: 100%(--progress-width);
+    width: var(--progress-width);
   }
 }
 
+.progress-bar {
+  width: 200px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #c8fe06;
+  border-radius: 10px;
+  border: 1px solid rgb(153, 151, 151);
+  width: 0%; /* Ensure width starts from 0 */
+}
+
+.animate-progress {
+  animation: fillProgress 2s ease-in-out forwards;
+}
+
+/* Ensure each progress bar has its own width defined in CSS variable */
+.progress[data-progress-width="92%"] {
+  --progress-width: 92%;
+}
+
+.progress[data-progress-width="75%"] {
+  --progress-width: 75%;
+}
+
+.progress[data-progress-width="70%"] {
+  --progress-width: 70%;
+}
+
+.progress[data-progress-width="60%"] {
+  --progress-width: 60%;
+}
+
+.progress[data-progress-width="70%"] {
+  --progress-width: 70%;
+}
+
+.progress[data-progress-width="30%"] {
+  --progress-width: 30%;
+}
+
+.progress[data-progress-width="35%"] {
+  --progress-width: 35%;
+}
+
+.progress[data-progress-width="96%"] {
+  --progress-width: 96%;
+}
+
+.progress[data-progress-width="67%"] {
+  --progress-width: 67%;
+}
 .progress-bar {
   width: 200px; 
   height: 20px;
@@ -287,8 +369,9 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
 
 .progress {
   height: 100%;
-  background-color: #4CAF50;
+  background-color: #c8fe06;
   border-radius: 10px;
+  border: 1px solid rgb(153, 151, 151);
   animation: fillProgress 2s ease-in-out forwards;
 }
 
@@ -318,80 +401,179 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
 
 .other {
   background-color: #74349e;
-  margin-top: 30px;
+  margin-top: 70px;
+  padding-bottom: 50px;
 }
 
 .other > h2 {
   color: white;
   font-size: 30px;
-  margin-left: 40px;
-  margin-bottom: 50px;
   text-align: center;
+  padding-top: 60px;
+  margin-bottom: 50px;
 }
 
 .carousel {
-  display: flex;
-  overflow: hidden;
-  /* -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */ 
-  margin-bottom: 20px;
   position: relative;
-
 }
 
 .project-card {
-  flex: 0 0 calc(50% - 20px); /* Display two projects at once */
-  margin-right: 20px;
-  scroll-snap-align: start;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: row;
   background-color: #fff;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
 }
 
-.project-card:hover {
-  transform: translateY(-5px); /* Add hover effect */
+.project-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 
+.project-image {
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.project-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tags {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+}
+
+.tag-text {
+  font-size: 12px;
+  color: #333;
+}
+
+.read-more {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #74349e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: start;
+}
+
+.prev2, .next2 {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #dddddd7e;
+  border-radius: 40%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  margin-left: 30px;
+  margin-right:30px;
+}
+
+.prev2 {
+  left: 10px;
+}
+
+.next2 {
+  right: 10px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots button:before {
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+}
+
+.slick-dots .slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+
+
+/* 
 .controls {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   justify-content: space-between;
 }
-
-.prev2,
-.next2 {
-  cursor: pointer;
-  padding: 10px;
-  background-color: #ddd;
-}
-
-.dots2 {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.dot2 {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
-}
-
-.active2 {
-  background-color: #9f5da5;
-}
-
-.connect {
-  background-color:#02042471; 
-}
-
+ */
 
 .connect-content {
   direction: column;

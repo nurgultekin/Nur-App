@@ -1,6 +1,9 @@
 import React from 'react';
 import GalataTower from "../media/images/galata.png";
 import 'tailwindcss/tailwind.css';
+import '../styling/home.css';
+import '../../App.css';
+
 
 const AboutSection = () => {
   return (
@@ -8,7 +11,7 @@ const AboutSection = () => {
       <section className="about-home" id="about">
         <div className="about-container">
           <div className="about-text-container">
-            <h3>I am</h3>
+            <h2>I am</h2>
             <div className="about-list">
               <ul className="body-large-white" style={{ listStyleType: 'circle', color: 'whitesmoke'}}>
                 <li>a Stockholm-based UX/UI designer and front-end web developer.</li>
@@ -19,7 +22,7 @@ const AboutSection = () => {
               </ul>
             </div>
             <div>
-              <a href="#about" className="primary-button"><label className="button-text-primary">More about me</label></a>
+              <a href="#about" className="primary-button-desktop"><label className="label-small">More about me</label></a>
             </div>
           </div>
 

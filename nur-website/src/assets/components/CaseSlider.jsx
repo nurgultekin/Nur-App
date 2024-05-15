@@ -8,6 +8,7 @@ import luxeBiteImage from "./luxeBite.png";
 import onspotImage from "../media/images/onspot.png";
 import Kalmar from "../media/images/kalmar.jpg";
 import Portfolio from "../media/images/portfolio.jpg";
+import '../../App.css';
 
 
 
@@ -38,7 +39,7 @@ const CaseStudySlider = () => {
           </div>
 
           <div className="text-card">
-            <h2>LuxeBite</h2>
+            <h1>LuxeBite</h1>
             <div className="tags-container">
               <div className="tags">
                 <div className="tag"><label className="tag-text">UX RESEARCH</label></div>
@@ -53,7 +54,7 @@ const CaseStudySlider = () => {
 
             <p className="works-text">Collaboratively conducted extensive UX research, designed, and developed a website for a potential food delivery service.</p>
             <div>
-              <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
+              <a href="#seemore" className="secondary-button-desktop"><label className="label-small">Read more</label></a>
             </div>
           </div>
         </div>
@@ -67,7 +68,7 @@ const CaseStudySlider = () => {
         </div>
 
       <div className="text-card">
-        <h2>ArtVenture</h2>
+        <h1>ArtVenture</h1>
         <div className="tags-container">
           <div className="tags">
             <div className="tag"><label className="tag-text">UX RESEARCH</label></div>
@@ -85,7 +86,7 @@ const CaseStudySlider = () => {
 
         <p className="works-text">Crafted an innovative application prototype for personalized museum visits, blending UX research, testing, and collaborative paper authorship.</p>
         <div>
-          <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
+          <a href="#seemore" className="secondary-button-desktop"><label className="label-small">Read more</label></a>
         </div>
       </div>
         </div>
@@ -99,7 +100,7 @@ const CaseStudySlider = () => {
       </div>
 
           <div className="text-card">
-            <h2>My Portfolio Project</h2>
+            <h1>My Portfolio Project</h1>
             <div class="tags-container">
               <div class="tags"><label class="tag-text">UX RESEARCH</label></div>
               <div class="tags"><label class="tag-text">UI DESIGN</label></div>
@@ -108,7 +109,7 @@ const CaseStudySlider = () => {
 
             <p className="works-text">Created my website through the stages of UX research, UI/UX design, user testing, and front-end web development.</p>
               <div>
-                <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
+                <a href="#seemore" className="secondary-button-desktop"><label className="label-small">Read more</label></a>
               </div>
           </div>
           </div>
@@ -123,7 +124,7 @@ const CaseStudySlider = () => {
           </div>
 
           <div className="text-card">
-            <h2>Kalmar Library</h2>
+            <h1>Kalmar Library</h1>
             <div className="tags-container">
               <div className="tags"><label className="tag-text">UX RESEARCH</label></div>
               <div className="tags"><label className="tag-text">REQUIREMENT ANALYSIS</label></div>
@@ -131,7 +132,7 @@ const CaseStudySlider = () => {
             </div>
               <div>
                 <p className="works-text">Collaboratively conducted extensive UX research, designed, and developed a website for a potential food delivery service.</p>
-                <a href="#seemore" className="secondary-button"><label className="button-text-secondary">Read more</label></a>
+                <a href="#seemore" className="secondary-button-desktop"><label className="label-small">Read more</label></a>
               </div>
           </div> {/* text card closing tag */}
         </div> {/* mySlides fade closing tag */}
@@ -141,7 +142,7 @@ const CaseStudySlider = () => {
   );
 };
 
-// Custom previous arrow component
+// previous arrow button component
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
   return (
@@ -151,7 +152,7 @@ const CustomPrevArrow = (props) => {
   );
 };
 
-// Custom next arrow component
+// next arrow component
 const CustomNextArrow = (props) => {
   const { onClick } = props;
   return (
@@ -162,3 +163,5 @@ const CustomNextArrow = (props) => {
 };
 
 export default CaseStudySlider;
+
+

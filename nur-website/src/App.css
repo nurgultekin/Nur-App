@@ -62,6 +62,7 @@ opacity: 0.5;
   }
 }
 
+
 .card {
   padding: 2em;
 }
@@ -70,6 +71,50 @@ opacity: 0.5;
   color: #888;
 }
 
+
+/*Typescale*/
+
+H1 {
+  font-family: 'Titan One';
+  font-size: 48px;
+  color:rgb(19, 15, 15);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 62.4px */
+  width: 100%;
+  text-align: left;
+}
+
+h2 {
+ 
+    font-family: 'Titan One'; /* Ensure fallback */
+    font-size: 29px;
+    font-weight: 700; /* Explicitly set to bold */
+    color: whitesmoke;
+    margin: 20px 0px;
+    
+  }
+
+
+h3 {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 29px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  }
+  
+  .body-large-white {
+  color: var(--Text-White, #FEFEFE);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  }
+
+ 
 
 /*----Navigation bar-----*/
 
@@ -210,4 +255,132 @@ align-items: center;
 .toggle-menu:checked ~ .nav-links a {
 display: block;
 margin: 10px 0;
+}
+
+
+/*Buttons*/
+
+.primary-button-desktop {
+  background-color: #D1E366; 
+  border-radius: 40px;
+  padding: 26px;
+
+
+}
+
+.primary-button-mobile
+{
+
+}
+
+
+.secondary-button-desktop {
+
+  background-color: #FAFFE6;
+  padding: 26px 40px;
+  border:#111010;
+  border: 2px solid #b6beb8; 
+  border-radius: 40px;
+  
+}
+
+.secondary-button-mobile {
+
+}
+
+.label-small {
+  font-family: "Roboto";
+  color:#111010;
+  font-size: 18px;
+
+}
+
+.label-medium {
+
+  font-family: "Roboto";
+  color:#111010;
+  font-size: 18px;
+
+
+}
+
+.label-large {
+
+}
+
+
+
+.button-text-secondary {
+  color: var(--Color-palette-neutral-black, #000);
+
+/* label-desktop-XL */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 26px */
+}
+
+.button-text-primary {
+color: var(--Color-palette-neutral-black, #000);
+
+/* label-desktop-XL */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 26px */
+}
+
+.secondary-button {
+display: flex;
+padding: 14px 23px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 20px;
+border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
+background: #FAFFE6;
+text-decoration: none;
+max-width: 132px;
+max-height: 54px
+
+
+}
+
+
+.secondary-button:hover {
+background-color: var(--Color-palette-primary-accent, #D3E75B);
+cursor:pointer;
+}
+.button-text-secondary:hover {
+background-color: #0b0c05 3px;
+cursor:pointer;
+
+}
+
+.primary-button {
+display: flex;
+padding: 14px 23px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 20px;
+border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
+background: #C8FE06;
+text-decoration: none;
+max-width: 132px;
+max-height: 54px
+
+
+}
+
+.primary-button:hover {
+  background-color: #879e34;
+  cursor:pointer;
+}
+.button-text-primary:hover {
+  background-color: #0b0c05 3px;
+  cursor:pointer;
+
 }

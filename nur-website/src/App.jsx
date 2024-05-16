@@ -11,6 +11,7 @@ import SkillsCredentials from './assets/components/Skills';
 import SideProjects from './assets/components/Sideprojects';
 import CaseStudySlider from './assets/components/CaseSlider';
 import Footer from './assets/components/Footer';
+import CaseStudy1 from './assets/components/CaseStudy1'; 
 
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/AboutPage" element={<AboutPage />} />
           <Route path="/ContactSection" element={<ContactSection />} />
+          <Route path="/CaseStudy1" element={<CaseStudy1 />} />
         </Routes>
     </BrowserRouter>
   );

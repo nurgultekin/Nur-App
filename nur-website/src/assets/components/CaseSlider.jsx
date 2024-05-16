@@ -13,6 +13,7 @@ import '../../App.css';
 
 
 
+
 const CaseStudySlider = () => {
   const settings = {
     dots: true,
@@ -55,8 +56,8 @@ const CaseStudySlider = () => {
 
             <p className="works-text">Collaboratively conducted extensive UX research, designed, and developed a website for a potential food delivery service.</p>
             <div>
-              <a href="./CaseStudy1.jsx" className="secondary-button-desktop"><label className="label-small">Read more</label></a>
-            </div>
+                <Link to="/CaseStudy1" className="secondary-button-desktop"><label className="label-small">Read more</label></Link>
+              </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "../styling/slider.css";
 import "slick-carousel/slick/slick.css";
@@ -54,7 +55,7 @@ const CaseStudySlider = () => {
 
             <p className="works-text">Collaboratively conducted extensive UX research, designed, and developed a website for a potential food delivery service.</p>
             <div>
-              <a href="#seemore" className="secondary-button-desktop"><label className="label-small">Read more</label></a>
+              <a href="./CaseStudy1.jsx" className="secondary-button-desktop"><label className="label-small">Read more</label></a>
             </div>
           </div>
         </div>

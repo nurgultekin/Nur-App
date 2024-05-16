@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import 'tailwindcss/tailwind.css';
+import '../styling/home.css'; // Adjust the import path as necessary
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -16,10 +18,24 @@ const NavigationBar = () => {
         }
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <header>
-            {/* Navigation Bar */}
-            <nav className="navbar">
+            <nav className={`navbar ${isScrolled ? 'navbar_bg' : ''}`}>
                 <div className="logo">
                     <Link to="/" className="text-yellow-400 font-bold text-lg font-titan-one">
                         NurG
@@ -37,7 +53,7 @@ const NavigationBar = () => {
                     <span className="block w-5 h-0.5 bg-white mb-1"></span>
                     <span className="block w-5 h-0.5 bg-white"></span>
                 </label>
-                <div className={`nav-links ${isMenuOpen ? 'block' : 'display'}`}>
+                <div className="nav-links">
                     <div className="menu">
                         <Link to="/AboutPage" className="text-white">About</Link>
                         <Link to="/works" className="text-white">Works</Link>

@@ -10,6 +10,7 @@ import Animation from './assets/components/Animation';
 import SkillsCredentials from './assets/components/Skills';
 import SideProjects from './assets/components/Sideprojects';
 import CaseStudySlider from './assets/components/CaseSlider';
+import Footer from './assets/components/Footer';
 
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
@@ -50,6 +51,9 @@ const Home = () => {
       </div>
       <div id="contact-section">
         <ContactSection />
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   )

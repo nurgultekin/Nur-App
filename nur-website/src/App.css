@@ -122,18 +122,23 @@ h3 {
 .navbar {
   position: fixed;
   display: flex;
-  width: 95vw;
+  width: 97%;
   padding: 36px 30px;
   align-items: center;
   gap: 10px;
   justify-content: space-between;
   background-color: transparent; 
-  position: absolute; 
   top: 0; /* Align the navbar to the top of the viewport */
-  /* backdrop-filter: blur(10px); */ /* Apply a blur effect to the content behind */
   left:0;
   z-index: 1600; /* Ensure the navbar is above other elements */
+  transition: background-color 0.3s ease;
 }
+
+.navbar_bg {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0); /* Optional: Add a semi-transparent background color for better visibility */
+}
+
 
 /* Additional style for scrolled state */
 
@@ -164,6 +169,7 @@ h3 {
   justify-content: space-between; /* Distribute items evenly */
   align-items: center;
   order:2;  
+  
 }
 
 .menu {
@@ -175,6 +181,7 @@ h3 {
   color: #fff;
   text-decoration: none;
   margin-left: 20px; 
+  padding: 20px;
 }
 
 .cta-button {
@@ -268,10 +275,7 @@ margin: 10px 0;
 
 }
 
-.primary-button-mobile
-{
 
-}
 
 
 .secondary-button-desktop {
@@ -284,9 +288,7 @@ margin: 10px 0;
   
 }
 
-.secondary-button-mobile {
 
-}
 
 .label-small {
   font-family: "Roboto";
@@ -305,6 +307,8 @@ margin: 10px 0;
 }
 
 .label-large {
+  font-family: "Roboto";
+  font-size: 32px;
 
 }
 

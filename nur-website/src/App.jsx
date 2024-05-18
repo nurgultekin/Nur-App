@@ -29,6 +29,7 @@ const App = () => {
           <Route path="/CaseStudy1" element={<CaseStudy1 />} />
         </Routes>
     </BrowserRouter>
+    
   );
 };
 

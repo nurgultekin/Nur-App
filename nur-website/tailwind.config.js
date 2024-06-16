@@ -8,9 +8,13 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      borderWidth: {
+        "4": "4px"
+      },
       colors: {
         accentPrimary: '#D3E75B',
         accentPrimaryHover: '#eeffb2cc',
+        lime: '#00FF00', 
         
 
       },

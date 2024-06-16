@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       borderWidth: {
-        "4": "4px"
+        "4": "4px",
+        "text-l": "18px"
       },
       colors: {
         accentPrimary: '#D3E75B',
@@ -20,6 +21,7 @@ module.exports = {
       },
       typography: {
         heading: 'font-titan-one',
+
       }
     },
   },

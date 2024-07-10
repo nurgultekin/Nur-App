@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import '/src/assets/styling/home.css';
 
-const Animation = () => {
+const AnimationDark = () => {
     useEffect(() => {
         const auroralStarsContainer = document.querySelector('.auroral-stars');
 

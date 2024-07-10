@@ -10,7 +10,7 @@ const CaseStudy1 = () => {
     <div className="flex flex-col items-center justify-center mt-[100px]">
       <AnimationDark></AnimationDark>
 
-      <div className="flex flex-col md:flex-row justify-between mx-[70px] md:mx-[200px] w-4/5 mt-5">
+      <div className="flex flex-col md:flex-row justify-between mx-[70px] md:mx-[200px]  w-4/5 mt-5">
 
         <div className="flex gap-[15px] items-baseline mt-40 ">
           <video src={LuxeBiteDesktop} className=" rounded-lg md:block max-w-sm md:max-w-lg sm:max-w-sm" autoPlay loop muted />
@@ -18,8 +18,8 @@ const CaseStudy1 = () => {
         </div>
 
         <div className="text-white flex flex-col justify-center items-start md:mr-[200px] mt-10 md:mt-0">
-          <div className="text-[32.36px] font-tomorrow leading-[42.07px]">Case Study 1: </div>
-          <div className=" text-[78px] font-tomorrow leading-[78px]">LuxeBite</div>
+          <div className=" font-tomorrow sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 1: </div>
+          <div className=" font-tomorrow sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">LuxeBite</div>
         </div>
       </div>
 

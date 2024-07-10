@@ -8,14 +8,20 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      borderWidth: {
+        "4": "4px",
+        "text-l": "18px"
+      },
       colors: {
         accentPrimary: '#D3E75B',
         accentPrimaryHover: '#eeffb2cc',
+        lime: '#00FF00', 
         
 
       },
       typography: {
         heading: 'font-titan-one',
+
       }
     },
   },

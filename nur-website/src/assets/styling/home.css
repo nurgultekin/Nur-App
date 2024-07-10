@@ -50,6 +50,20 @@
     z-index: -1;
 }
 
+.auroral-northern-dark {
+  position: fixed;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  animation-name: northern;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  background: linear-gradient(15deg, #C8FE06 5%, #E26EF5 10%, #3eb1a7 20%, #010513 30%);
+  z-index: -1;
+}
 
 
 canvas {

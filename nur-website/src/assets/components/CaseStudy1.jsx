@@ -3,22 +3,22 @@ import LuxeBiteDesktop from '../media/images/LuxeBiteDesktopVideo.mp4';
 import LuxeBiteMobile from '../media/images/LuxeBiteMobileVideo.mp4';
 import '../../App.css';
 import '../styling/works.css';
-import Animation from "./Animation";
+import AnimationDark from "./AnimationDark";
 
 const CaseStudy1 = () => {
   return (
-    <section className="flex flex-col items-center justify-center mt-[200px]">
-      <Animation className="bg-black"></Animation>
+    <div className="flex flex-col items-center justify-center mt-[100px]">
+      <AnimationDark></AnimationDark>
 
-      <div className="flex flex-col md:flex-row justify-between mx-[100px] md:mx-[200px] w-4/5 mt-80">
+      <div className="flex flex-col md:flex-row justify-between mx-[70px] md:mx-[200px] w-4/5 mt-5">
 
-        <div className="flex gap-[15px] items-baseline mt-10">
-          <video src={LuxeBiteDesktop} className="rounded-lg hidden md:block mt-20" autoPlay loop muted />
-          <video src={LuxeBiteMobile} className="rounded-lg block md:block mt-20" autoPlay loop muted />
+        <div className="flex gap-[15px] items-baseline mt-40 ">
+          <video src={LuxeBiteDesktop} className=" rounded-lg md:block max-w-sm md:max-w-lg sm:max-w-sm" autoPlay loop muted />
+          <video src={LuxeBiteMobile} className="rounded-lg md:block max-w-xs md:max-w-md sm:max-w-xsm" autoPlay loop muted />
         </div>
 
         <div className="text-white flex flex-col justify-center items-start md:mr-[200px] mt-10 md:mt-0">
-          <div className=" text-[32.36px] font-tomorrow leading-[42.07px]">Case Study 1: </div>
+          <div className="text-[32.36px] font-tomorrow leading-[42.07px]">Case Study 1: </div>
           <div className=" text-[78px] font-tomorrow leading-[78px]">LuxeBite</div>
         </div>
       </div>
@@ -90,9 +90,9 @@ const CaseStudy1 = () => {
       <div>
         <div className="text-white text-5xl font-normal font-['Tomorrow'] leading-[62.40px] p-8 mb-9">DESIGN PROCESS
           </div> 
-        <div className="w-[1181px] h-[330px] justify-start items-start inline-flex">
+        <div className="w-[1181px] h-[330px] justify-start items-start inline-flex gap-4">
           <div className="flex-col justify-start items-center gap-[9px] inline-flex">
-              <div className="w-[190px] h-[90px] px-3 py-[19px] border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
+              <div className="w-[190px] h-[90px] px-3 py-[19px] border-2 border-lime-300 justify-center items-center  inline-flex">
                   <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Empathy</div>
               </div>
               <div className="flex-col justify-start items-start gap-[22px] flex">
@@ -119,11 +119,11 @@ const CaseStudy1 = () => {
                       </div>
                       <div className="justify-start items-center gap-2.5 inline-flex">
                           <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Problem statement</div>
+                          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px] ml-0">Problem statement</div>
                       </div>
                       <div className="justify-start items-center gap-2.5 inline-flex">
                           <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                          <div className="w-[159px] text-white text-l font-normal font-['Roboto'] leading-[30px]">User journey map</div>
+                          <div className="w-max-[159px] text-white text-l font-normal font-['Roboto'] leading-[30px] ">User journey map</div>
                       </div>
                   </div>
               </div>
@@ -136,11 +136,11 @@ const CaseStudy1 = () => {
               <div className="flex-col justify-start items-start gap-4 flex">
                   <div className="justify-start items-center gap-2.5 inline-flex">
                       <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Road map: What, Why, <br/>How</div>
+                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px] ">Road map: What, Why, How </div>
                   </div>
                   <div className="justify-start items-center gap-2.5 inline-flex">
                       <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Problem and user<br/>group refined</div>
+                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Problem and user group refined</div>
                   </div>
                   <div className="justify-start items-center gap-2.5 inline-flex">
                       <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
@@ -173,9 +173,9 @@ const CaseStudy1 = () => {
                   <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
                   <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Usability testing</div>
               </div>
-              <div className="justify-start items-center gap-2.5 inline-flex">
+              <div className="justify-start items-left gap-2.5 inline-flex">
                   <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                  <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">User experience<br/>research</div>
+                  <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">User experience research</div>
               </div>
           </div>
         </div>
@@ -183,7 +183,7 @@ const CaseStudy1 = () => {
 
       </div>
 
-    </section>
+    </div>
   );
 };
 

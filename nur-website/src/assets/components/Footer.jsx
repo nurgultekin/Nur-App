@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import '../styling/home.css'; // Adjust the import path as necessary
 import arrowImage from '../media/images/arrow.png';
 
@@ -24,7 +24,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="body-small" style={{ backgroundColor: '#D3E75B' }}>
+    <footer className="body-small">
       <p>Copyright © 2024 Nur Gültekin. All rights reserved.</p>
       <span className="arrow">
         <a id="scrollToTopBtn" href="#hero">

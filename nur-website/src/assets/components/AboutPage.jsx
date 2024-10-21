@@ -7,6 +7,13 @@ import chasHalloween from '../media/about-me/chas-halloween.png';
 import chasHalloween2 from '../media/about-me/chas-halloween_2.png';
 import chasElevator from '../media/about-me/chas-elevator.png';
 import diceEvent from '../media/about-me/dice_matilda.png';
+import metalMusicMeme from '../media/about-me/meta-meme.png';
+import metalMusicGif from '../media/about-me/metal_gif.png';
+import Concerts from '../media/about-me/nur-nils_concerts.png';
+import JazzVisuals from '../media/about-me/Jazz-visuals.png';
+import nurPhotography from '../media/about-me/nur-photography.png';
+import personalLife from '../media/about-me/personal-life.png';
+
 
 
 const AboutPage = () => {
@@ -25,7 +32,7 @@ const AboutPage = () => {
           <div className="about-text-container">
             <div className="Frame95 w-[35.375rem] h-[36.25rem] flex-col justify-start items-center gap-[1.25rem] inline-flex ">
               {/* Center-aligned About Title */}
-              <div className="About w-[7.75rem] h-[3.65rem] text-black text-[2.3125rem] font-normal font-['Titan_One'] leading-[3rem] text-center mx-auto">About</div>
+              <div className="About w-[7.75rem] h-[3.65rem] text-black text-6xl font-normal font-['Titan_One'] leading-[3rem] text-center mx-auto">About</div>
               
               {/* Left-aligned text content */}
               <div className="TextAboutMe w-[35.375rem] h-[30.125rem] text-black text-xl font-normal font-['Roboto'] leading-[1.875rem] text-left">
@@ -43,66 +50,120 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="Chas-pics">
-        <div className="flex w-[90vw] h-[90vh] justify-center mt-48">
-          <div><img src={chasHalloween}  style={{ Height: '80vh', width: 'auto', marginLeft: "9.375rem" }} alt="Halloween Image" className="rounded" /></div>
-        
-        <div className="flex-column gap-1">
-          <div><img src={chasHalloween2} style={{ Height: '45vh', width: 'auto', marginLeft: "9.375rem" }}  alt="Chas Halloween Fest 2" className="rounded" /></div>
-          <div><img src={chasElevator} style={{ Height: '45vh', width: 'auto', marginLeft: "9.375rem" }}  alt="Chas Academy Elevator" className="rounded" /></div>
-        </div>
-        <div><img src= {diceEvent} alt="Nur and her friend Matilda at Dice pink programming event" className="rounded" /></div>
+      <section className="Chas-pics hidden">
+        <div className="flex w-[90vw] h-[90vh] justify-center mt-48 gap-4"> {/* Added gap-4 for spacing */}
+          
+          {/* First image */}
+          <div>
+            <img 
+              src={chasHalloween} 
+              style={{ height: '80vh', width: 'auto' }} 
+              alt="Halloween Image" 
+              className="rounded" 
+            />
+          </div>
+          
+          {/* Column of two smaller images */}
+          <div className="flex flex-col gap-4"> {/* Changed flex-column to flex-col */}
+            <div>
+              <img 
+                src={chasHalloween2} 
+                style={{ height: '45vh', width: 'auto' }} 
+                alt="Chas Halloween Fest 2" 
+                className="rounded" 
+              />
+            </div>
+            <div>
+              <img 
+                src={chasElevator} 
+                style={{ height: '45vh', width: 'auto' }} 
+                alt="Chas Academy Elevator" 
+                className="rounded" 
+              />
+            </div>
+          </div>
+
+          {/* Third image */}
+          <div>
+            <img 
+              src={diceEvent} 
+              alt="Nur and her friend Matilda at Dice pink programming event" 
+              className="rounded" 
+            />
+          </div>
         </div>
       </section>
 
       {/* Section 1: Music Enthusiast */}
-      <section className="bg-dark text-white font-['Roboto'] text-l p-6 rounded-lg my-8">
-          <div className="flex gap-4">
-          <img src="/path/to/image1.jpg" alt="Metal image" className="rounded" />
-          <img src="/path/to/image2.jpg" alt="Rock image" className="rounded" />
+      <section className="bg-dark text-white font-['Roboto'] text-l p-48 rounded-lg flex gap-4">
+        <div className="flex gap-4 mr-24 ml-12">
+          <img src={metalMusicMeme} style={{ height: '45vh', width: 'auto' }} alt="Metal meme" className="rounded" />
+          <img src={metalMusicGif} style={{ height: '45vh', width: 'auto'}} alt="Metal meme" className="rounded mt-12" />
         </div>
-        <div>
-        <h3 className="text-2xl font-bold mb-4">Music Enthusiast</h3>
-        <p>I am undeniably passionate about music; you could say it is a big part of who I am. I dabble in singing and make time for guitar practice.</p>
+        <div className="mt-24 w-[50%] ml-24 flex-col flex gap-8">
+          <h3 className="text-5xl font-normal mb-4 font-['Titan_One']">Music Enthusiast</h3>
+          <p className="text-xl font-['Roboto'] w-[50%]">I am undeniably passionate about music; you could say it is a big part of who I am. I dabble in singing and make time for guitar practice.</p>
         </div>
-      
       </section>
 
       {/* Section 2: Metalhead & Rock 'N' Roller */}
-      <section className="bg-dark text-light p-6 rounded-lg my-8">
-        <h3 className="text-2xl font-bold mb-4">A metalhead & rock &lsquo;n&rsquo; roller who never wants to miss a gig</h3>
-        <p>
+      <section className="bg-dark text-white font-['Roboto'] text-l pl-6 pr-48 rounded-lg flex gap-4">
+        <div className="flex-col mt-12 w-[50%] ml-24 flex gap-8"><h3 className="text-5xl font-bold font-['Titan_One'] mt-24 max-w-2xl">A metalhead & rock &lsquo;n&rsquo; roller who never wants to miss a gig</h3>
+        <p className="text-xl font-['Roboto'] w-[50%]">
           My heart beats for heavy metal, classical & blues rock, and classical jazz. 
           Metallica, Black Sabbath, Rory Gallagher, Blue Öyster Cult, Led Zeppelin, Pink Floyd, and Queen are just a few of my favorites.
-        </p>
+        </p></div>
+        
         {/* You can add images below */}
         <div className="flex gap-4">
-          <img src="/path/to/image1.jpg" alt="Metal image" className="rounded" />
-          <img src="/path/to/image2.jpg" alt="Rock image" className="rounded" />
+          <img src={Concerts} alt="Concert image" className="rounded h-[70vh]" />
         </div>
       </section>
 
       {/* Section 3: Jazz Lover */}
-      <section className="bg-dark text-light p-6 rounded-lg my-8">
-        <h3 className="text-2xl font-bold mb-4">Jazz lover who likes swing dancing</h3>
-        <p>
-          I groove to classical jazz, particularly bebop, and take joy in getting out that energy through the moves of Lindy hop and Charleston.
-        </p>
-        {/* You can add more images or videos here */}
-        <div className="flex gap-4">
-          <img src="/path/to/image1.jpg" alt="Jazz image" className="rounded" />
-          <img src="/path/to/image2.jpg" alt="Swing image" className="rounded" />
+      <section className="bg-dark text-light p-6 rounded-lg my-8 flex gap-48">
+                <div className="flex gap-4">
+          <img src={JazzVisuals} style={{ height: '80vh', width: 'auto' }} alt="Jazz image" className="rounded ml-24" />
+        </div>
+        
+        <div className="flex-col mt-12 w-[50%] ml-24 flex gap-8">
+          <h3 className="text-5xl font-bold font-['Titan_One'] mt-48 max-w-2xl">Jazz nerd</h3>
+          <p className="text-xl text-white font-['Roboto'] w-[50%]">
+            I groove to classical jazz, particularly bebop, and take joy in getting out that energy through the moves of Lindy hop and Charleston.
+          </p>
         </div>
       </section>
 
-      {/* Section 4: Personal Image */}
-      <section className="bg-dark text-light p-6 rounded-lg my-8">
-        <h3 className="text-2xl font-bold mb-4">Personal Life</h3>
-        <p>And when I am not doing any of these, I love spending time with my cat!</p>
+      {/* Section 4: Personal life */}
+      <section className="bg-dark text-white font-['Roboto'] text-l pl-6 pr-48 rounded-lg flex gap-4">
+        <div className="flex-col mt-12 w-[50%] ml-24 flex gap-4"><h3 className="text-5xl font-bold font-['Titan_One'] mt-4 max-w-2xl">Social creature, party lover, gamer, roller-skater and a friend of animals</h3>
+        <p className="text-xl font-['Roboto'] w-[50%]">
+        <br/><br/>
+        Apart from music and dance, I find joy in gaming, going to concerts, hanging out with friends, watching movies, hosting small events and making connections with new people. 
+        <br/><br/>
+        Roller-skating is one of my favorite free-time activities, and I hope to get to the level where I can roll to and from work! 
+        <br/><br/>
+        Animals hold a special place in my heart, and I try to dedicate part of my life to animal welfare. 
+        </p></div>
+        
+        {/* You can add images below */}
         <div className="flex gap-4">
-          <img src="/path/to/your-cat-image.jpg" alt="Cat image" className="rounded" />
+          <img src={personalLife} alt="Concert image" className="rounded h-[90vh] w-[auto]" />
         </div>
       </section>
+
+            {/* Section 5: Photography */}
+            <section className="bg-dark text-light p-6 rounded-lg my-8 flex-col flex gap-8 items-center mb-48">
+                <div className="flex-col mt-12 w-[50%] ml-24 flex gap-8">
+                  <h3 className="text-5xl font-bold font-['Titan_One'] mt-24 max-w-2xl">Has a thing for photographing the beauty and the weirdness 
+                  that unfolds in the vast expanse of time and space.
+                  </h3>
+                </div>
+        
+                <div className="flex gap-4">
+                  <img src={nurPhotography} style={{ height: '80vh', width: 'auto' }} alt="Jazz image" className="rounded ml-24" />
+                </div>
+            </section>
     </div>  
   );
 };

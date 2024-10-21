@@ -253,10 +253,10 @@ margin: 10px 0;
 
 /*Buttons*/
 
-.primary-button-desktop {
+.primary-button {
   background-color: #D1E366; 
-  border-radius: 40px;
-  padding: 26px;
+  border-radius: 3rem;
+  padding: 1rem 1.2rem 1rem 1.2rem;
 
 
 }
@@ -264,7 +264,7 @@ margin: 10px 0;
 
 
 
-.secondary-button-desktop {
+.secondary-button {
 
   background-color: #FAFFE6;
   padding: 26px 40px;
@@ -287,15 +287,14 @@ margin: 10px 0;
 
   font-family: "Roboto";
   color:#111010;
-  font-size: 18px;
+  font-size: 1.125rem;
 
 
 }
 
 .label-large {
   font-family: "Roboto";
-  font-size: 32px;
-
+  font-size: 2rem;
 }
 
 
@@ -305,7 +304,7 @@ margin: 10px 0;
 
 /* label-desktop-XL */
 font-family: Roboto;
-font-size: 20px;
+font-size: 1.25rem;
 font-style: normal;
 font-weight: 400;
 line-height: 130%; /* 26px */
@@ -316,7 +315,7 @@ color: var(--Color-palette-neutral-black, #000);
 
 /* label-desktop-XL */
 font-family: Roboto;
-font-size: 20px;
+font-size: 1.125rem;
 font-style: normal;
 font-weight: 400;
 line-height: 130%; /* 26px */
@@ -324,16 +323,14 @@ line-height: 130%; /* 26px */
 
 .secondary-button {
 display: flex;
-padding: 14px 23px;
+padding: 0.875rem 1.438rem;
 justify-content: center;
 align-items: center;
-gap: 10px;
-border-radius: 20px;
+gap: 0.625rem;
+border-radius: 1.25rem;
 border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
 background: #FAFFE6;
 text-decoration: none;
-max-width: 132px;
-max-height: 54px
 
 
 }
@@ -359,8 +356,6 @@ border-radius: 20px;
 border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
 background: #C8FE06;
 text-decoration: none;
-max-width: 132px;
-max-height: 54px
 
 
 }

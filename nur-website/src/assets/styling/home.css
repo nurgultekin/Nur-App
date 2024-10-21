@@ -601,22 +601,5 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   line-height: 130%; /* 20.8px */
 }
 
-footer {
-  display: flex;
-  padding: 35px 86px;
-  justify-content: space-between;
-  align-items: center; /* Optional: vertically align elements */
-  gap: 10px;
-  height: 100px;
-  margin-top: -100px;
-}
 
-.arrow {
-  align-self: flex-end;
-  background-color: #B894D0;
-  border-radius: 40px;
-  padding: 30px;
 
- 
- 
-}

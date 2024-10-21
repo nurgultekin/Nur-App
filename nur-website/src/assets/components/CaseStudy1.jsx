@@ -1,4 +1,4 @@
-import React from 'react';
+
 import LuxeBiteDesktop from '../media/images/LuxeBiteDesktopVideo.mp4';
 import LuxeBiteMobile from '../media/images/LuxeBiteMobileVideo.mp4';
 import '../../App.css';

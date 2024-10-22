@@ -43,7 +43,7 @@ const NavigationBar = () => {
                     </Link>
                 </div>
                 <button
-                    className="md:hidden flex flex-col justify-center items-center cursor-pointer z-50"
+                    className="md:hidden flex flex-col justify-center items-center cursor-pointer z-50 bg-transparent"
                     onClick={toggleMenu}
                 >
                     <span className="block w-5 h-0.5 bg-white mb-1"></span>
@@ -88,7 +88,7 @@ const NavigationBar = () => {
                     <button className="cta-button text-white" onClick={scrollToContact}>Say Hi!</button>
                 </div>
                 {/* Mobile Navigation Links (within Hamburger Menu) */}
-                <div className={`nav-links ${isMenuOpen ? 'flex' : 'hidden'} flex-col absolute top-full right-0 w-3/4 bg-gray-800 md:hidden`} style={{ maxWidth: '70vw' }}>
+                <div className={`nav-links ${isMenuOpen ? 'flex' : 'hidden'} flex-col absolute top-full p-4 right-0 w-3/4 bg-gray-800 md:hidden`} style={{ maxWidth: '70vw' }}>
                     <Link to="/AboutPage" className="text-white py-2" onClick={toggleMenu}>About</Link>
                     <button
                         onClick={toggleDropdown}
@@ -98,8 +98,8 @@ const NavigationBar = () => {
                     </button>
                     {/* Dropdown for "Works" in Mobile Menu */}
                     {isDropdownOpen && (
-                        <div className="relative z-10 mt-2 w-full bg-gray-600 rounded-md shadow-lg transition-opacity duration-200 ease-in-out">
-                            <div className="py-1 flex flex-col pl-4">
+                        <div className="relative z-10 ml-40 mt-2 mb-2 w-2/4 bg-gray-600 rounded-md shadow-lg transition-opacity duration-200 ease-in-out">
+                            <div className="py-1 flex flex-col ">
                                 {[
                                     { name: 'Captn Catch', link: '/captn-catch' },
                                     { name: 'LuxeBite', link: '/luxebite' },
@@ -121,7 +121,7 @@ const NavigationBar = () => {
                             </div>
                         </div>
                     )}
-                    <button className="cta-button text-white py-2" onClick={scrollToContact}>Say Hi!</button>
+                    <button className="cta-button text-white py-2 mt-2 mr-4" onClick={scrollToContact}>Say Hi!</button>
                 </div>
             </nav>
         </header>

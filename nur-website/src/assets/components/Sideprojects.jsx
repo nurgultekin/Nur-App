@@ -1,4 +1,3 @@
-import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -7,6 +6,7 @@ import masterWorkflowImage from '../media/images/masterWorkflow.png';
 import redditImage from '../media/images/reddit.jpg';
 import '../styling/home.css';
 import 'tailwindcss/tailwind.css';
+import PropTypes from 'prop-types';
 
 const SideProjects = () => {
   const settings = {
@@ -50,7 +50,7 @@ const SideProjects = () => {
             </div>
             <div className="project-info">
               <h4>Bridging the Digital Disparities in Sweden: A Discursive Analysis of Swedish Policy Reports on Digital Inclusion</h4>
-              <p>Master's Thesis | Published: August 2023</p>
+              <p>Masters Thesis | Published: August 2023</p>
               <div className="tags-container">
                 <div className="tags"><label className="tag-text">Qualitative research</label></div>
                 <div className="tags"><label className="tag-text">Discourse analysis</label></div>
@@ -95,11 +95,21 @@ const CustomPrevArrow = (props) => {
   );
 };
 
+// Define PropTypes for CustomPrevArrow
+CustomPrevArrow.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
+
 const CustomNextArrow = (props) => {
   const { onClick } = props;
   return (
     <div className="next2" onClick={onClick}>&#10095;</div>
   );
+};
+
+// Define PropTypes for CustomNextArrow
+CustomNextArrow.propTypes = {
+  onClick: PropTypes.func.isRequired,
 };
 
 export default SideProjects;

@@ -1,12 +1,14 @@
-import LuxeBiteDesktop from '../media/images/LuxeBiteDesktopVideo.mp4';
-import LuxeBiteMobile from '../media/images/LuxeBiteMobileVideo.mp4';
+import LuxeBiteDesktop from '../media/luxebite/LuxeBiteDesktopVideo.mp4';
+import LuxeBiteMobile from '../media/luxebite/LuxeBiteMobileVideo.mp4';
 import '../../App.css';
-import AnimationDark from "./AnimationDark";
+import Animation from "./Animation";
+import 'tailwindcss/tailwind.css';
 
-const CaseStudy1 = () => {
+const LuxeBite = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-[100px]">
-      <AnimationDark></AnimationDark>
+    <div>
+      <Animation/>
+      
 
       <div className="flex flex-col lg:flex-row justify-between mx-[40px] md:mx-[200px]  w-4/5 mt-5">
 
@@ -68,7 +70,7 @@ const CaseStudy1 = () => {
       <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] md:mx-[200px] mb-5 mt-10">
         <div className="text-white  font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-5 mt-5 ">PROJECT OVERVIEW</div>
         <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px]">
-          <p>As part of our vocational education, we were tasked with case study aiming to deliver a distinctive food delivery web shop. My team members and I created a fictional company specializing in delivering exclusive, luxury food using climate-friendly drones, aiming to provide a "golden edge in everyday lives". Our case study showcases extensive market and user experience research, ideation, user interface design, and prototyping of our innovative web shop concept.</p>
+          <p>As part of our vocational education, we were tasked with case study aiming to deliver a distinctive food delivery web shop. My team members and I created a fictional company specializing in delivering exclusive, luxury food using climate-friendly drones, aiming to provide a golden edge in everyday lives. Our case study showcases extensive market and user experience research, ideation, user interface design, and prototyping of our innovative web shop concept.</p>
         </div>
       </div>
 
@@ -190,4 +192,4 @@ const CaseStudy1 = () => {
   );
 };
 
-export default CaseStudy1;
+export default LuxeBite;

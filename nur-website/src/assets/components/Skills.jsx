@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import '../styling/home.css';
 import 'tailwindcss/tailwind.css';
 import '../../App.css';
@@ -106,8 +106,8 @@ const SkillsCredentials = () => {
         <div className="credentials">
           <ul>
             <li>Technical Vocational education in UX/UI design and front-end web development (ongoing), <span> Chas Academy, Stockholm </span></li>
-            <li>Master's degree in Digital Humanities, <span> Linnaeus University, Växjö </span></li>
-            <li>Integrated bachelor's and master's degree in Philology and educational sciences in Turkish, <span> Yeditepe University, Istanbul </span></li>
+            <li>Masters degree in Digital Humanities, <span> Linnaeus University, Växjö </span></li>
+            <li>Integrated bachelors and masters degree in Philology and educational sciences in Turkish, <span> Yeditepe University, Istanbul </span></li>
           </ul>
         </div>
       </div>

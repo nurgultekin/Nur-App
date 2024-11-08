@@ -18,14 +18,14 @@ const LuxeBite = () => {
           <video src={LuxeBiteMobile} className="rounded-lg md:block max-w-xs md:max-w-md sm:max-w-xsm" autoPlay loop muted />
         </div>
 
-        <div className="text-white flex flex-col justify-center items-start md:mr-[200px] mt-10 md:mt-10 mr-10 max-w-fit">
+        <div className="text-white flex flex-col justify-center items-center md:mr-[200px] mt-10 md:mt-10 mr-10 max-w-fit">
           <div className=" font-tomorrow text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 1: </div>
           <div className=" font-tomorrow text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">LuxeBite</div>
         </div>
       </div>
 
-      <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-[30px] justify-center items-center w-11/12 md:w-4/5 mt-10 px-3 md:px-4">
-        <div className="flex flex-col items-start gap-[10px]">
+      <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-[30px] justify-items-center items-center w-11/12 mx-auto md:w-4/5 mt-24 px-3 md:px-4">
+        <div className="flex flex-col items-left gap-[10px]">
           <div className="flex items-center gap-[15px]">
             <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime rounded-full" />
             <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">My role</div>
@@ -94,7 +94,7 @@ const LuxeBite = () => {
       
       {/** DESIGN PROCESS SECTION */}
       <div>
-        <div className="text-white  font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-9 my-10">DESIGN PROCESS
+        <div className="text-white flex-col justify-center font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-9 mx-auto my-10">DESIGN PROCESS
           </div> 
         <div className="w-[1181px] h-[330px] justify-start items-start inline-flex gap-4">
           <div className="flex-col justify-start items-center gap-[9px] inline-flex">

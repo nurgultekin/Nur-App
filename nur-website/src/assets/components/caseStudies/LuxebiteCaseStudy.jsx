@@ -96,7 +96,7 @@ const LuxeBite = () => {
       <div>
         <div className="text-white flex-col justify-center font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-9 mx-auto my-10">DESIGN PROCESS
           </div> 
-        <div className="w-[1181px] h-[330px] justify-start items-start inline-flex gap-4">
+        <div className="w-[1181px] h-[330px] justify-center items-start inline-flex gap-4">
           <div className="flex-col justify-start items-center gap-[9px] inline-flex">
               <div className="w-[190px] h-[90px] px-3 py-[19px] border-2 border-lime-300 justify-center items-center  inline-flex">
                   <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Empathy</div>

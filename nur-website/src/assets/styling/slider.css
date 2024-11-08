@@ -56,10 +56,10 @@ section {
 .mySlides {
   display: flex;
   flex-direction: row;
-  margin: 300px 300px;
+  margin: 3rem 3rem;
   align-items: center;
   justify-content: space-between;
-  gap: 90px;
+  gap: 6rem;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -129,6 +129,7 @@ padding-bottom: 20px;
   flex-direction: column;
   align-items: space-between;
   gap: 30px;
+  width:50%;
 
 }
 

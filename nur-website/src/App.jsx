@@ -10,7 +10,7 @@ import Animation from './assets/components/Animation';
 import SkillsCredentials from './assets/components/Skills';
 import SideProjects from './assets/components/Sideprojects';
 import CaseStudySlider from './assets/components/CaseSlider';
-import LuxeBite from './assets/components/CaseStudy1'; 
+import LuxeBite from './assets/components/caseStudies/LuxebiteCaseStudy'; 
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
 
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/ContactSection" element={<ContactSection />} />
-        <Route path="/CaseStudy1" element={<LuxeBite />} />
+        <Route path="/LuxebiteCaseStudy" element={<LuxeBite />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

@@ -1,7 +1,8 @@
-import LuxeBiteDesktop from '../media/luxebite/LuxeBiteDesktopVideo.mp4';
-import LuxeBiteMobile from '../media/luxebite/LuxeBiteMobileVideo.mp4';
-import '../../App.css';
-import Animation from "./Animation";
+
+import LuxeBiteDesktop from '../../media/luxebite/LuxeBiteDesktopVideo.mp4';
+import LuxeBiteMobile from '../../media/luxebite/LuxeBiteMobileVideo.mp4';
+import '../../../App.css';
+import Animation from "../Animation";
 import 'tailwindcss/tailwind.css';
 
 const LuxeBite = () => {

@@ -15,7 +15,7 @@ const LuxeBite = () => {
       <AnimationDark/>
       
 
-      <div className="flex flex-col lg:flex-row justify-between mx-[40px] md:mx-[200px]  w-4/5 mt-5">
+      <div className="flex flex-col lg:flex-row justify-center mx-auto  w-4/5 mt-5">
 
         <div className="flex gap-[15px] items-baseline mt-40 mr-10 max-w-fit">
           <video src={LuxeBiteDesktop} className=" rounded-lg md:block max-w-sm md:max-w-lg sm:max-w-sm" autoPlay loop muted />
@@ -79,7 +79,7 @@ const LuxeBite = () => {
         </div>
       </div>
 
-      <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] md:mx-[200px] my-48">
+      <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10">
         <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">Problem and Solution</div>
         <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
           <p>In an already crowded online food delivery market, convenience is abundant, but the offerings often lack an elevated dining experience. User research showed a desire among customers for high-quality, fine dining even when ordering food to their homes, and a preference for platforms that are easy and enjoyable to navigate. Our solution was to develop a high-fidelity web shop that combines simplicity in the shopping process with an upscale aesthetic, presenting users with a seamless, exclusive ordering experience.</p>
@@ -209,9 +209,6 @@ const LuxeBite = () => {
 
 
 
-
-
-
       <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10">
           <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">Emphathy</div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
@@ -230,7 +227,7 @@ const LuxeBite = () => {
               <li><span className="border-lime ">The flashy one:</span> wants it to be an elaborate, innovative, and personalized food experience.</li>
             </ul>
           </div>
-          <div className="flex flex-col justify-center items-center gap-8 mt-24 md:mt-0">
+          <div className="flex flex-col justify-center items-center gap-8 mt-24 md:mt-24">
               {/* First image pair */}
               <div className="flex flex-col md:flex-row gap-8 md:gap-24 w-full items-center justify-center">
                 <img src={UserResearch1} alt="Image 1" className="w-full md:w-1/2 h-auto rounded-3xl" />

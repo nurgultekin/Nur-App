@@ -68,33 +68,24 @@ const LuxeBite = () => {
 
 
 
-      <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] md:mx-[200px] mb-5 mt-10">
+      <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] md:mx-[200px] mb-5 mt-48">
         <div className="text-white  font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-5 mt-5 ">PROJECT OVERVIEW</div>
         <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px]">
-          <p>As part of our vocational education, we were tasked with case study aiming to deliver a distinctive food delivery web shop. My team members and I created a fictional company specializing in delivering exclusive, luxury food using climate-friendly drones, aiming to provide a golden edge in everyday lives. Our case study showcases extensive market and user experience research, ideation, user interface design, and prototyping of our innovative web shop concept.</p>
+          <p>As part of our vocational education, we were tasked with case study aiming to deliver a distinctive food delivery web shop. Our company concept revolves around exclusivity, utilizing climate-friendly drones to provide a “golden edge” in customers&rsquo; everyday lives. This case study captures our journey through extensive market research, user experience analysis, ideation, UI design, and prototyping to create a distinctive, luxurious online food ordering experience.</p>
         </div>
       </div>
 
-      <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] md:mx-[200px] my-10">
-        <div className="text-[30px] md:text-[36px] lg:text-[42px] font-tomorrow text-whitesmoke mb-5 mt-5">Problem and Goal</div>
+      <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] md:mx-[200px] my-48">
+        <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">Problem and Solution</div>
         <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
-          <p>In the competitive online food delivery market, simplicity and speed are paramount user requirements. Established services already offer diverse options and widespread popularity. To compete in this saturated market, our fictional company must differentiate itself by providing a distinct user experience.</p>
-          <p>Through user research, we identified that established food delivery services are often perceived as convenient but lacking in quality and dining experience. Customers desire fine dining experiences even in home deliveries, craving a golden edge in simplicity and ease-of-enjoyment in their everyday lives. Our aim is to fulfill this demand by offering a service that is simple, smooth, unique, and exclusive, setting us apart from traditional delivery options.</p>
+          <p>In an already crowded online food delivery market, convenience is abundant, but the offerings often lack an elevated dining experience. User research showed a desire among customers for high-quality, fine dining even when ordering food to their homes, and a preference for platforms that are easy and enjoyable to navigate. Our solution was to develop a high-fidelity web shop that combines simplicity in the shopping process with an upscale aesthetic, presenting users with a seamless, exclusive ordering experience.</p>
         </div>
       </div>
 
-        <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] md:mx-[200px] my-10">
-          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-tomorrow text-whitesmoke mb-5 mt-5">Solution</div>
-          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
-            <p>By conducting comprehensive market research, analyzing user behaviors through big data, and engaging in qualitative user research, we pinpointed a growing interest and demand for luxury, exclusive food delivery services that stand out from established brands. </p>
-            <p>In response, we crafted a high-fidelity web shop offering exclusive food. The website design prioritizes simplicity while evoking a sense of exclusivity.</p>
-          </div>
-        </div>
 
-      
       {/** DESIGN PROCESS SECTION */}
-      <div>
-        <div className="text-white flex-col justify-center font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-9 mx-auto my-10">DESIGN PROCESS
+      <div className="text-white flex flex-col justify-center items-center mx-auto mt-10 md:mt-10 max-w-fit">
+        <div className="text-white flex-col justify-center font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-9 my-10">DESIGN PROCESS
           </div> 
         <div className="w-[1181px] h-[330px] justify-center items-start inline-flex gap-4">
           <div className="flex-col justify-start items-center gap-[9px] inline-flex">
@@ -188,6 +179,26 @@ const LuxeBite = () => {
         
 
       </div>
+
+      <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] mt-48 mb-24 md:mx-[200px] my-10">
+          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">Emphathy</div>
+          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+            <p>A good design requires good emphaty; and understanding the target group, their needs and drives in using a certain service. With that mindset we conducted a user research to initially identify our user group, the user habits in the online food delivery system and what our niche can aim at. </p>
+          </div>
+        </div>
+
+        <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] mt-48 mb-24 md:mx-[200px] my-10">
+          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">User Research</div>
+          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+            <p>Our methodology comprised qualitaive research through structured and semi-structured interviews with 18 participants living in Stockholm, between the ages 19-35.
+            In this phase, we identified our user group, the recurring user types, their motivation and needs in online home delivery services that offer fine dining. We identified:</p>
+            <ul>
+              <li><span className="border-lime ">The conscious one:</span> wants bigger portions, better ingredients, freebies in the delivery.</li>
+              <li><span className="border-lime ">The pleasure-seeker:</span> wants things to go fast, fast deliveries, easy to order, comfortable everyday life.</li>
+              <li><span className="border-lime ">The flashy one:</span> wants it to be an elaborate, innovative, and personalized food experience.</li>
+            </ul>
+          </div>
+        </div>
 
     </div>
   );

@@ -378,7 +378,10 @@ footer {
   gap: 0.825rem;
   height: 6.25rem;
   background-color: #D3E75B; /* Move background color to CSS */
-  margin: 0; /* Remove any margin */
+  margin-bottom: 0; /* Remove any margin */
+  margin-top: auto;
+  margin-left:0;
+  margin-right:0;
   padding: 0 1rem; 
   position: relative; 
   width: 100%; /* Ensure it takes the full width */

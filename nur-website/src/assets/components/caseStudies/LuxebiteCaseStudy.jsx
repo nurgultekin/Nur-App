@@ -2,13 +2,17 @@
 import LuxeBiteDesktop from '../../media/luxebite/LuxeBiteDesktopVideo.mp4';
 import LuxeBiteMobile from '../../media/luxebite/LuxeBiteMobileVideo.mp4';
 import '../../../App.css';
-import Animation from "../Animation";
+import AnimationDark from "../AnimationDark";
 import 'tailwindcss/tailwind.css';
+import UserResearch1 from '../../media/luxebite/user-research/1.png';
+import UserResearch2 from '../../media/luxebite/user-research/2.png';
+import UserResearch3 from '../../media/luxebite/user-research/3.png';
+import UserResearch4 from '../../media/luxebite/user-research/4.png';
 
 const LuxeBite = () => {
   return (
-    <div>
-      <Animation/>
+    <div className="min-h-screen flex flex-col justify-between">
+      <AnimationDark/>
       
 
       <div className="flex flex-col lg:flex-row justify-between mx-[40px] md:mx-[200px]  w-4/5 mt-5">
@@ -68,8 +72,8 @@ const LuxeBite = () => {
 
 
 
-      <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] md:mx-[200px] mb-5 mt-48">
-        <div className="text-white  font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-5 mt-5 ">PROJECT OVERVIEW</div>
+      <div className="text-white flex flex-col items-center w-11/12 mx-auto mb-5 mt-48">
+        <div className="text-white  font-normal font-['Tomorrow'] text-center text-3xl md:text-5xl p-8 mb-5 mt-5 ">PROJECT OVERVIEW</div>
         <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px]">
           <p>As part of our vocational education, we were tasked with case study aiming to deliver a distinctive food delivery web shop. Our company concept revolves around exclusivity, utilizing climate-friendly drones to provide a “golden edge” in customers&rsquo; everyday lives. This case study captures our journey through extensive market research, user experience analysis, ideation, UI design, and prototyping to create a distinctive, luxurious online food ordering experience.</p>
         </div>
@@ -84,110 +88,138 @@ const LuxeBite = () => {
 
 
       {/** DESIGN PROCESS SECTION */}
-      <div className="text-white flex flex-col justify-center items-center mx-auto mt-10 md:mt-10 max-w-fit">
-        <div className="text-white flex-col justify-center font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-9 my-10">DESIGN PROCESS
-          </div> 
-        <div className="w-[1181px] h-[330px] justify-center items-start inline-flex gap-4">
-          <div className="flex-col justify-start items-center gap-[9px] inline-flex">
-              <div className="w-[190px] h-[90px] px-3 py-[19px] border-2 border-lime-300 justify-center items-center  inline-flex">
-                  <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Empathy</div>
-              </div>
-              <div className="flex-col justify-start items-start gap-[22px] flex">
-                  <div className="justify-start items-center gap-[15px] inline-flex">
-                      <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">User research</div>
-                  </div>
-                  <div className="justify-start items-center gap-[15px] inline-flex">
-                      <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Creating personas</div>
-                  </div>
-              </div>
-          </div>
-          <div className="w-[62px] h-[265px] px-[9px] py-8 flex-col justify-start items-start gap-2.5 inline-flex" />
-          <div className="flex-col justify-start items-center gap-[9px] inline-flex">
-              <div className="w-[170px] h-[90px] px-8 py-6 border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
-                  <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Define</div>
-              </div>
-              <div className="flex-col justify-start items-start gap-[22px] flex">
-                  <div className="flex-col justify-start items-start gap-[22px] flex">
-                      <div className="justify-start items-center gap-2.5 inline-flex">
-                          <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Market research</div>
-                      </div>
-                      <div className="justify-start items-center gap-2.5 inline-flex">
-                          <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px] ml-0">Problem statement</div>
-                      </div>
-                      <div className="justify-start items-center gap-2.5 inline-flex">
-                          <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                          <div className="w-max-[159px] text-white text-l font-normal font-['Roboto'] leading-[30px] ">User journey map</div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div className="w-[62px] h-[315px] px-[9px] py-8 flex-col justify-start items-start gap-2.5 inline-flex" />
-          <div className="w-[186px] flex-col justify-start items-center gap-[13px] inline-flex">
-              <div className="w-[170px] h-[90px] px-[33px] py-6 border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
-                  <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Ideate</div>
-              </div>
-              <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="justify-start items-center gap-2.5 inline-flex">
-                      <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px] ">Road map: What, Why, How </div>
-                  </div>
-                  <div className="justify-start items-center gap-2.5 inline-flex">
-                      <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Problem and user group refined</div>
-                  </div>
-                  <div className="justify-start items-center gap-2.5 inline-flex">
-                      <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Minimum viable product</div>
-                  </div>
-              </div>
-          </div>
-          <div className="w-[62px] h-[313px] px-[9px] py-8 flex-col justify-start items-start gap-2.5 inline-flex" />
+
+      <div className="flex flex-col justify-center items-center lg:flex-row lg:flex-wrap">
+  <div className="text-white flex-col justify-center font-normal font-['Tomorrow'] text-5xl sm:text-2xl md:text-5xl p-8 mb-12 mx-auto my-10">
+    DESIGN PROCESS
+  </div>
+  <div className="flex flex-col md:flex-row justify-between md:justify-center items-start gap-24 md:gap-4 md:max-w-[100vw] flex-wrap">
+    {/* Empathy Section */}
+    <div className="flex-col justify-start items-center gap-[9px] inline-flex">
+      <div className="w-[12em] h-[5.625em] md:w-[12rem] md:h-[5.625rem] px-3 py-[19px] border-2 border-lime-300 justify-center items-center inline-flex">
+        <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Empathy</div>
+      </div>
+      <div className="flex-col justify-start items-start gap-[22px] flex">
+        <div className="justify-start items-center gap-[15px] inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">User research</div>
+        </div>
+        <div className="justify-start items-center gap-[15px] inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Creating personas</div>
+        </div>
+      </div>
+    </div>
+    {/* Centered Arrow */}
+    <div className="flex items-center relative top-10 pr-24 rotate-90 md:rotate-0">
+      <div className="w-[60px] h-[2px] bg-lime-300 relative top-1/2 transform -translate-y-1/2 "></div>
+      <div className="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-lime-300 absolute left-[60px] top-1/2 transform -translate-y-1/2"></div>
+    </div>
+    {/* Define Box */}
+    <div className="flex-col justify-start items-center gap-[9px] inline-flex">
+      <div className="w-[170px] h-[90px] px-8 py-6 border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
+        <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Define</div>
+      </div>
+      <div className="flex-col justify-start items-start gap-[22px] flex">
+        <div className="justify-start items-center gap-2.5 inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Market research</div>
+        </div>
+        <div className="justify-start items-center gap-2.5 inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Problem statement</div>
+        </div>
+        <div className="justify-start items-center gap-2.5 inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">User journey map</div>
+        </div>
+      </div>
+    </div>
+    {/* Centered Arrow */}
+    <div className="flex items-center relative top-10 pr-24 rotate-90 md:rotate-0">
+      <div className="w-[60px] h-[2px] bg-lime-300 absolute top-1/2 transform -translate-y-1/2"></div>
+      <div className="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-lime-300 absolute left-[60px] top-1/2 transform -translate-y-1/2"></div>
+    </div>
+    {/* Ideate Box */}
+    <div className="flex-col md:justify-start justify:center items-center gap-[13px] inline-flex">
+      <div className="w-[170px] h-[90px] px-[33px] py-6 border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
+        <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Ideate</div>
+      </div>
+      <div className="flex-col justify-start items-start gap-4 flex">
+        <div className="justify-start items-center gap-2.5 inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Road map: What, Why, How</div>
+        </div>
+        <div className="justify-start items-center gap-2.5 inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Problem and user group refined</div>
+        </div>
+        <div className="justify-start items-center gap-2.5 inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Minimum viable product</div>
+        </div>
+      </div>
+    </div>
+    {/* Centered Arrow */}
+    <div className="flex items-center relative pr-24 rotate-90 md:rotate-0">
+      <div className="w-[60px] h-[2px] bg-lime-300 absolute top-1/2 transform -translate-y-1/2"></div>
+      <div className="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-lime-300 absolute left-[60px] top-1/2 transform -translate-y-1/2"></div>
+    </div>
+    {/* Prototype Box */}
+    <div className="flex-col justify-start items-center gap-[15px] inline-flex">
+      <div className="w-[190px] px-[25px] py-6 border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
+        <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Prototype</div>
+      </div>
+      <div className="flex-col justify-start items-start gap-2.5 flex">
+        <div className="justify-start items-center gap-2.5 inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Wireframing</div>
+        </div>
+        <div className="justify-start items-center gap-2.5 inline-flex">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Creating prototypes</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Centered Arrow */}
+    <div className="flex items-center relative pr-24 rotate-90 md:rotate-0">
+      <div className="w-[60px] h-[2px] bg-lime-300 absolute top-1/2 transform -translate-y-1/2"></div>
+      <div className="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-lime-300 absolute left-[60px] top-1/2 transform -translate-y-1/2"></div>
+    </div>
+
+          {/* Test Box */}
           <div className="flex-col justify-start items-center gap-[15px] inline-flex">
-              <div className="w-[190px] px-[25px] py-6 border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
-                  <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Prototype</div>
-              </div>
-              <div className="flex-col justify-start items-start gap-2.5 flex">
-                  <div className="justify-start items-center gap-2.5 inline-flex">
-                      <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Wireframing</div>
-                  </div>
-                  <div className="justify-start items-center gap-2.5 inline-flex">
-                      <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                      <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">High-Fi Mock-Up</div>
-                  </div>
-              </div>
-          </div>
-          <div className="w-[62px] h-[327px] px-[9px] py-8 flex-col justify-start items-start gap-2.5 inline-flex" />
-          <div className="flex-col justify-start items-center gap-[11px] inline-flex">
-              <div className="w-[140px] px-[33px] py-6 border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
-                  <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Test</div>
+            <div className="w-[190px] px-[25px] py-6 border-2 border-lime-300 justify-center items-center gap-2.5 inline-flex">
+              <div className="text-white text-[20px] font-normal font-['Tomorrow'] leading-[42.07px]">Test</div>
+            </div>
+            <div className="flex-col justify-start items-start gap-2.5 flex">
+              <div className="justify-start items-center gap-2.5 inline-flex">
+                <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+                <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Usability testing</div>
               </div>
               <div className="justify-start items-center gap-2.5 inline-flex">
-                  <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                  <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">Usability testing</div>
+                <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+                <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">User experience research</div>
               </div>
-              <div className="justify-start items-left gap-2.5 inline-flex">
-                  <div className="w-[15px] h-3.5 bg-zinc-300/opacity-0 rounded-full border-4 border-lime-400" />
-                  <div className="text-white text-l font-normal font-['Roboto'] leading-[30px]">User experience research</div>
-              </div>
+            </div>
           </div>
-        </div>
-        
+  </div>
+</div>
 
-      </div>
 
-      <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] mt-48 mb-24 md:mx-[200px] my-10">
+
+
+
+
+      <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10">
           <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">Emphathy</div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
             <p>A good design requires good emphaty; and understanding the target group, their needs and drives in using a certain service. With that mindset we conducted a user research to initially identify our user group, the user habits in the online food delivery system and what our niche can aim at. </p>
           </div>
         </div>
 
-        <div className="text-white flex flex-col items-center w-11/12 md:w-4/5 mx-[100px] mt-48 mb-24 md:mx-[200px] my-10">
+        <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10">
           <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">User Research</div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
             <p>Our methodology comprised qualitaive research through structured and semi-structured interviews with 18 participants living in Stockholm, between the ages 19-35.
@@ -198,7 +230,24 @@ const LuxeBite = () => {
               <li><span className="border-lime ">The flashy one:</span> wants it to be an elaborate, innovative, and personalized food experience.</li>
             </ul>
           </div>
+          <div className="flex flex-col justify-center items-center gap-8 mt-24 md:mt-0">
+              {/* First image pair */}
+              <div className="flex flex-col md:flex-row gap-8 md:gap-24 w-full items-center justify-center">
+                <img src={UserResearch1} alt="Image 1" className="w-full md:w-1/2 h-auto rounded-3xl" />
+                <img src={UserResearch2} alt="Image 2" className="w-full md:w-1/2 h-auto rounded-3xl" />
+              </div>
+              
+              {/* Second image pair */}
+              <div className="flex flex-col md:flex-row gap-8 md:gap-24 w-full items-center">
+                <img src={UserResearch3} alt="Image 3" className="w-full md:w-1/2 h-auto rounded-3xl" />
+                <img src={UserResearch4} alt="Image 4" className="w-full md:w-1/2 h-auto rounded-3xl" />
+              </div>
+            </div>
+
+
         </div>
+
+        
 
     </div>
   );

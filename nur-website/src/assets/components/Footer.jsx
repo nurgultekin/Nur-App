@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../styling/home.css'; // Adjust the import path as necessary
+import '../styling/home.css'; 
 import arrowImage from '../media/images/arrow.png';
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="body-small">
+    <footer className="body-small relative bottom-0 mt-auto mb-0 ">
       <p>Copyright © 2024 Nur Gültekin. All rights reserved.</p>
       <span className="arrow">
         <a id="scrollToTopBtn" href="#hero">

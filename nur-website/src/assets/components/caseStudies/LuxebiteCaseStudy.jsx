@@ -9,7 +9,13 @@ import UserResearch2 from '../../media/luxebite/user-research/2.png';
 import UserResearch3 from '../../media/luxebite/user-research/3.png';
 import UserResearch4 from '../../media/luxebite/user-research/4.png';
 import UserJourneyMap from '../../media/luxebite/market-research/upplevelsekarta-bg.png';
-
+import IdeationImg from '../../media/luxebite/ideateImg.png'
+import Mvp from '../../media/luxebite/MVP.png';
+import Wireframe from '../../media/luxebite/wireframe.png';
+import MockUp from '../../media/luxebite/mockup.png';
+import Prototyping from '../../media/luxebite/prototyping.png';
+import ColorScheme from '../../media/luxebite/color-scheme.png';
+import Typescale from '../../media/luxebite/typescale.png';
 
 const LuxeBite = () => {
   return (
@@ -246,7 +252,7 @@ const LuxeBite = () => {
 
         </div>
 
-{/*         <div className="text-white flex items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10 gap-2.5">
+          {/* <div className="text-white flex items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10 gap-2.5">
           <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
           <div className="text-[22px] md:text-[24px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4">User research</div>
         </div> */}
@@ -270,10 +276,179 @@ const LuxeBite = () => {
             <img src={UserJourneyMap}></img>
             <p>Figure: User journey map</p>
           </div>
+        </div>   
+        <div className="flex flex-col lg:flex-row justify-center gap-5 mt-48 my-10 ">
+          <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
+          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 p-4 border border-lime-300" >Ideate</div>
+          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+            <p>To deepen our insights gathered from market and user research, our design team held a series of engaging workshops and brainstorming sessions.</p>
+            <p>Throughout these workshops, we utilized various creative exercises, including mindset activities, Crazy 8, and behavior stations, while collectively voting on strategies to enhance our offerings. I was responsible for the mindset activities and helping my team members think outside the box. </p>
+            <p>Our aim with these ideation sessions was to make informed decisions based on our user and market research, generating ideas that would help us create a more unique, flexible, and exclusive dining experience for the personas identified in the “empathy” phase of our design process: the conscious one, the pleasure seeker, and the flashy one.</p>
+            <p>As a result, we revisited our user road map (Who, Why and How) and the user journey map, and identified key features to prioritize, including monthly themes, a signature menu, partnerships with local businesses and renowned chefs, as well as innovations such as drone delivery and detailed nutritional content through icons. These key features, derived from our requirement analysis and user research, would form our minimum viable product (MVP).</p>
+          </div>
+           </div>
+
+           <div className="max-w-xl mt-8 lg:mt-24 justify-center  mx-auto lg:justify-end">
+            <img src={IdeationImg} alt="Ideation board"></img>
+           </div>
         </div>
 
-      
+        <div className="flex flex-col lg:flex-row justify-center gap-5 mt-48 my-10 ">
+          <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
+          <div className="text-[24px] md:text-[28px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border-b border-lime-300" >Minimum Viable Product</div>
+          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+            <p>To deepen our insights gathered from market and user research, our design team held a series of engaging workshops and brainstorming sessions.</p>
+            <p>Throughout these workshops, we utilized various creative exercises, including mindset activities, Crazy 8, and behavior stations, while collectively voting on strategies to enhance our offerings. I was responsible for the mindset activities and helping my team members think outside the box. </p>
+            <p>Our aim with these ideation sessions was to make informed decisions based on our user and market research, generating ideas that would help us create a more unique, flexible, and exclusive dining experience for the personas identified in the “empathy” phase of our design process: the conscious one, the pleasure seeker, and the flashy one.</p>
+            <p>As a result, we revisited our user road map (Who, Why and How) and the user journey map, and identified key features to prioritize, including monthly themes, a signature menu, partnerships with local businesses and renowned chefs, as well as innovations such as drone delivery and detailed nutritional content through icons. These key features, derived from our requirement analysis and user research, would form our minimum viable product (MVP).</p>
+          </div>
+           </div>
 
+           <div className="max-w-xl mt-8 lg:mt-24 justify-center mx-auto lg:justify-end">
+            <img src={Mvp} alt="Minimum viable product visualisation"></img>
+           </div>
+        </div>
+
+        <div className="flex flex-col justify-center gap-5 mt-48 my-10 ">
+          <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
+              <div className="text-[24px] md:text-[28px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border-b border-lime-300" >Prototype</div>
+           </div>
+
+           <div className="flex flex-col lg:flex-row justify-center gap-5 mt-48 my-10 ">
+              <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
+                  <div className="text-[24px] md:text-[28px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border-b border-lime-300" >Wireframing: Lo-Fi Design</div>
+                       <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+                          <p>When we created our wireframe, we drew up a requirement specification from our previous work regarding market research, user research, workshops and mvp. Where we prioritized &#34;must haves&#34; and &#34;should haves&#34;, which laid the foundation for our result.</p>
+                        </div>
+           </div>
+
+           <div className="max-w-xl mt-8 lg:mt-24 justify-center flex mx-auto lg:justify-end">
+            <img src={Wireframe} alt="Desktop and mobile wireframea which showcase our low fidelity design." className=" max-h-sm"></img>
+           </div>
+           </div>
+
+           <div className="flex flex-col lg:flex-row justify-center gap-5 mt-48 my-10 ">
+           <div className="max-w-xl mt-8 lg:mt-24 justify-center flex mx-auto lg:justify-end">
+                      <img src={MockUp} alt="Desktop and mobile mock-up which showcase our high fidelity design." className=" max-h-sm"></img>
+                  </div>
+              <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
+                  <div className="text-[24px] md:text-[28px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border-b border-lime-300" >Mock-up: High-Fi Design</div>
+                       <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+                          <p>When it was time to create a mockup, we followed our wireframes and adhered to the WCAG standards for elements such as size and contrast.</p>
+                          <p>We aimed to design with an airy, luxurious, and modern feel, using color choices that convey this aesthetic. At this stage, we established our visual identity and selected our brand color, gold, to represent the premium quality we deliver.</p>
+                        </div>
+           </div>
+
+
+           </div>
+
+           <div className="flex flex-col lg:flex-row justify-center gap-5 mt-48 my-10 ">
+              <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
+                  <div className="text-[24px] md:text-[28px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border-b border-lime-300" >Prototyping</div>
+                       <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+                          <p>In the final stage of prototyping phase, which is to implement the flow and connect the elements and pages with each other in a clickable format. Our prototype was designed to allow users to make a purchase as a guest (without logging in).</p>
+                          <p>We implemented the prototype to evaluate whether our website was clear, flexible, and easy for users to navigate and complete a purchase/order throughout the entire flow.</p>
+                        </div>
+           </div>
+
+           <div className="max-w-xl mt-8 lg:mt-24 justify-center flex mx-auto lg:justify-end">
+            <img src={Prototyping} alt="Prototyped mockup of the Desktop and mobile design." className=" max-h-sm"></img>
+           </div>
+           </div>
+
+           <div className="flex flex-col justify-center gap-5 mt-48 my-10 ">
+              <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
+                  <div className="text-[24px] md:text-[28px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border-b border-lime-300" >Design System</div>
+                       <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+                          <p>Based on our visual identity, semantic identity, and SEO and WCAG principles, we developed our design system. This system includes typography and scale, a color system and scale, and buttons and other UI elements as components.</p>
+                        </div>
+              </div>
+              <div className="max-w-xl mt-8 lg:mt-8 justify-center flex flex-col lg:flex-row mx-auto lg:justify-center gap-4">
+                      <img src={ColorScheme} alt="Color scheme within the design system" className=" max-h-md"></img>
+                      <img src={Typescale} alt="Typescale within the design system" className=" max-h-md"></img>
+                  </div>
+
+
+           </div>
+
+
+
+
+        </div>
+
+        <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 my-10">
+          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border border-lime-300" >Testing</div>
+          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+            <p>We conducted usability testing to evaluate the intuitiveness and appeal of our web shop. Here are the key findings and their contributions to solving our core user needs:  </p>
+            <ul className="flex flex-col gap-8">
+              <li className="list-disc marker:text-lime-300">
+                <span className="text-lime-300">Positive Feedback: </span>
+                Test participants understood the app&qrso;s purpose and appreciated the luxurious design, which reinforced the brand&wrso;s exclusive feel. They also found the checkout process to be straightforward, which checked out our goal of simplicity.
+              </li>
+              <li className="list-disc marker:text-lime-300">
+                <span className="text-lime-300">Areas for Improvement: </span>
+                Users noted difficulty in recognizing that the menu continued beyond the first displayed items, which we understood as a need for better navigation cues. Additionally, they found the text unclear and suggested improving readability, particularly around payment details.
+              </li>
+              <li className="list-disc marker:text-lime-300">
+                <span className="text-lime-300">Solutions Implemented: </span>
+                Based on this feedback, we adjusted the interface to make the menu navigation more intuitive, implemented a clearer font hierarchy, and increased the font size for critical details like prices. These changes enhanced usability, and helped the app meet its goal of offering a refined, user-friendly experience.              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div className="text-white flex flex-col items-center w-11/12 mx-auto mt-48 mb-48">
+        <div className="text-white  font-normal font-['Tomorrow'] text-center text-3xl md:text-5xl p-8 mb-5 mt-5 ">Conclusion</div>
+        <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px]">
+          <p>The usability testing outcomes and subsequent design adjustments directly addressed our users&qrso; needs for a smooth, accessible luxury experience. By refining the app&qrso;s navigational flow and readability, we created a web shop that aligns with our brand&qrso;s premium position while simplifying the customer journey. This case study demonstrates how our design process, from research to testing, led to a unique product in the luxury food delivery space, with a view to bring convenience and an elevated dining experience together.</p>
+        </div>
+      </div>
+
+      <div className="flex justify-between">
+        <div className="flex gap-4">
+            <div className="p-8">
+              <a href="#" onClick={(e) => {
+                          e.preventDefault();
+                          if (window.history.length > 1) {
+                            window.history.back();
+                          } else {
+                            window.location.href = "/"; // Fallback URL, e.g., home page
+                          }
+                        }}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </a>
+
+            </div>
+
+            <div className="p-8">
+              <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+              </a>
+        </div>
+
+        </div>
+
+        <div className="flex flex-col">
+          <div className="p-8">
+            <a href="/KappnsCatch">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>  
         
     </div>
   );

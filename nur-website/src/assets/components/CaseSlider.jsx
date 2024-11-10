@@ -78,7 +78,7 @@ const CaseStudySlider = () => {
                 <div className="tags"><label className="tag-text">USER RESEARCH</label></div>
               </div>
 
-              <p className="works-text">I collaboratively created an interactive, text-based RPG inspired by Dungeons and Dragons. The game’s AI acts as the Dungeon Master, guides players through customizable adventures, with options for AI-generated characters. A standout feature is the Stayin' Alive scenario, designed for crisis preparedness, which allows players to practice decision-making in simulated emergency situations.</p>
+              <p className="works-text">I collaboratively created an interactive, text-based RPG inspired by Dungeons and Dragons. The game&rsquo;s AI acts as the Dungeon Master, guides players through customizable adventures, with options for AI-generated characters. A standout feature is the Stayin&rsquo; Alive scenario, designed for crisis preparedness, which allows players to practice decision-making in simulated emergency situations.</p>
               <div>
                 <a href="#seemore" className="secondary-button"><label className="label-small">Read more</label></a>
               </div>
@@ -131,7 +131,7 @@ const CaseStudySlider = () => {
             </div>
 
             <div className="text-card">
-              <h1>Kapp'n's Catch</h1>
+              <h1>Kapp&rsquo; n&rsquo;s Catch</h1>
               <div className="tags-container">
                 <div className="tags">
                   <div className="tag"><label className="tag-text">FRONTEND DEVELOPMENT</label></div>
@@ -143,7 +143,7 @@ const CaseStudySlider = () => {
 
               <p className="works-text">In this project, I served as the Lead Frontend Developer and Codebase Manager, responsible for implementing dynamic product listings, ensuring responsive design, and managing version control on GitHub to maintain clean, cohesive code integration. I worked closely with the team to deliver a polished, functional web shop within a tight deadline, optimizing both development efficiency and collaborative workflow.</p>
               <div>
-                <Link to="/LuxebiteCaseStudy" className="secondary-button"><label className="label-small">Read more</label></Link>
+                <Link to="/KappnsCatch" className="secondary-button"><label className="label-small">Read more</label></Link>
               </div>
             </div>
           </div>

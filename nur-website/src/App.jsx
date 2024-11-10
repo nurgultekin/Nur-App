@@ -11,18 +11,22 @@ import SkillsCredentials from './assets/components/Skills';
 import SideProjects from './assets/components/Sideprojects';
 import CaseStudySlider from './assets/components/CaseSlider';
 import LuxeBite from './assets/components/caseStudies/LuxebiteCaseStudy'; 
+import KappnsCatch from './assets/components/caseStudies/KappnsCatch';
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
+import ScrollToTop from './ScrollToTop';
 
 const App = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop /> {/* Scroll to top on each route change */}
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/ContactSection" element={<ContactSection />} />
         <Route path="/LuxebiteCaseStudy" element={<LuxeBite />} />
+        <Route path="KappnsCatch" element={<KappnsCatch />}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

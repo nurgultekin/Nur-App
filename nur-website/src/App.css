@@ -134,6 +134,7 @@ h3 {
 
 .logo{
   flex: 1; /* Allow the logo to grow to fill available space */
+  margin-left:2rem;
 }
 
 .logo a {

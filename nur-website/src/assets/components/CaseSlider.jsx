@@ -49,12 +49,11 @@ const CaseStudySlider = () => {
               <div className="tags-container">
                 <div className="tags"><label className="tag-text">FRONTEND DEVELOPMENT</label></div>
                 <div className="tags"><label className="tag-text">UX DESIGN</label></div>
-                <div className="tags"><label className="tag-text">BRANDING</label></div>
               </div>
 
               <p className="works-text">As the sole frontend developer and UX designer, I designed and built a new website for Furhat Robotics, helped them tailor their brand expression to a new target audience. Additionally, I developed a graphical user interface for their robot software development kit using Freemarker, Java, and Kotlin.</p>
               <div>
-                <a href="#seemore" className="secondary-button"><label className="label-small">Read more</label></a>
+                <Link to="/Furhat" className="secondary-button"><label className="label-small">Read more</label></Link>
               </div>
             </div>
           </div>

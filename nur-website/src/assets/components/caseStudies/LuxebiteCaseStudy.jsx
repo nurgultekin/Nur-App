@@ -39,7 +39,7 @@ const LuxeBite = () => {
       <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-[30px] justify-items-center items-center w-11/12 mx-auto md:w-4/5 mt-24 px-3 md:px-4">
         <div className="flex flex-col items-left gap-[10px]">
           <div className="flex items-center gap-[15px]">
-            <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime rounded-full" />
+            <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
             <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">My role</div>
           </div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
@@ -49,17 +49,17 @@ const LuxeBite = () => {
 
         <div className="flex flex-col items-start gap-[10px]">
           <div className="flex items-center gap-[15px]">
-            <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime rounded-full" />
+            <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
             <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke ">Scope</div>
           </div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            January 25 - April 5, 2024 -- School project
+            January 25 - April 5, 2024 - School project
           </div>
         </div>
 
         <div className="flex flex-col items-start gap-[10px]">
           <div className="flex items-center gap-[15px]">
-            <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime rounded-full" />
+            <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
             <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">Team</div>
           </div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
@@ -69,7 +69,7 @@ const LuxeBite = () => {
 
         <div className="flex flex-col items-start gap-[10px]">
           <div className="flex items-center gap-[15px]">
-            <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime rounded-full" />
+            <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
             <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">Frameworks</div>
           </div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">

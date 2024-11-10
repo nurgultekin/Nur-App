@@ -259,8 +259,6 @@ margin: 10px 0;
   background-color: #D1E366; 
   border-radius: 3rem;
   padding: 1rem 1.2rem 1rem 1.2rem;
-
-
 }
 
 
@@ -280,7 +278,7 @@ margin: 10px 0;
 
 .secondary-button:hover {
   background-color: var(--Color-palette-primary-accent, #ffffff);
-  box-shadow: 3px 3px #B894D0, -1em 0 .4em olive;
+  box-shadow: 3px 3px #B894D0, -0.2em 0 .4em olive;
   cursor:pointer;
   transform:ease 500ms;
   }
@@ -290,37 +288,44 @@ margin: 10px 0;
     box-shadow: 3px 3px #1e1821, 1em 0 .4em olive;
     cursor:pointer;
     transform:ease 500ms;
-    }
+}
 
-  .button-text-secondary:hover {
-  background-color: #0b0c05 3px;
-  cursor:pointer;
+.primary-button {
+  display: flex;
+  padding: 14px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
+  background: #D3E75B;
+  text-decoration: none;
+  
   
   }
+  
+  .primary-button:hover {
+    background-color: #879e34;
+    cursor:pointer;
+    color:rgb(26, 25, 25);
+    box-shadow: 3px 3px #e7bfde, -0.2em 0 .4em olive;
+  }
+  .button-text-primary:hover {
+   color: #0b0c05 3px;
+    cursor:pointer;
+  
+  }
+  
+  .primary-button:focus {
+    background-color: #cad896;
+    cursor:pointer;
+    color:rgb(26, 25, 25);
+    box-shadow: 3px 3px #e7bfde, -0.2em 0 .2em rgb(240, 240, 134);
+    transform:ease 500ms;
 
+  }
+  
 
-
-.label-small {
-  font-family: "Roboto";
-  color:#111010;
-  font-size: 1.125rem;
-  cursor:pointer;
-
-}
-
-.label-medium {
-
-  font-family: "Roboto";
-  color:#111010;
-  font-size: 1.125rem;
- 
-
-}
-
-.label-large {
-  font-family: "Roboto";
-  font-size: 2rem;
-}
 
 
 
@@ -347,30 +352,6 @@ line-height: 130%; /* 26px */
 }
 
 
-
-.primary-button {
-display: flex;
-padding: 14px 23px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 20px;
-border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
-background: #C8FE06;
-text-decoration: none;
-
-
-}
-
-.primary-button:hover {
-  background-color: #879e34;
-  cursor:pointer;
-}
-.button-text-primary:hover {
-  background-color: #0b0c05 3px;
-  cursor:pointer;
-
-}
 
 footer {
   display: flex;

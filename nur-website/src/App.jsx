@@ -12,6 +12,7 @@ import SideProjects from './assets/components/Sideprojects';
 import CaseStudySlider from './assets/components/CaseSlider';
 import LuxeBite from './assets/components/caseStudies/LuxebiteCaseStudy'; 
 import KappnsCatch from './assets/components/caseStudies/KappnsCatch';
+import Furhat from './assets/components/caseStudies/Furhat';
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
 import ScrollToTop from './ScrollToTop';
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/ContactSection" element={<ContactSection />} />
         <Route path="/LuxebiteCaseStudy" element={<LuxeBite />} />
         <Route path="KappnsCatch" element={<KappnsCatch />}/>
+        <Route path="Furhat" element={<Furhat />}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

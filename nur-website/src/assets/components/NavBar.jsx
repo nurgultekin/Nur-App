@@ -39,7 +39,7 @@ const NavigationBar = () => {
             <nav className={`navbar ${isScrolled ? 'navbar_bg' : ''} flex justify-between items-center p-4`}>
                 <div className="logo">
                     <Link to="/" className="text-yellow-400 font-bold text-lg font-titan-one">
-                        NurG
+                        NoraG
                     </Link>
                 </div>
                 <button
@@ -85,7 +85,7 @@ const NavigationBar = () => {
                             </div>
                         )}
                     </div>
-                    <button className="cta-button text-white" onClick={scrollToContact}>Say Hi!</button>
+                    <button className="cta-button text-black" onClick={scrollToContact}>Say Hi!</button>
                 </div>
                 {/* Mobile Navigation Links (within Hamburger Menu) */}
                 <div className={`nav-links ${isMenuOpen ? 'flex' : 'hidden'} flex-col absolute top-full p-4 right-0 w-3/4 bg-gray-800 md:hidden`} style={{ maxWidth: '70vw' }}>
@@ -121,7 +121,7 @@ const NavigationBar = () => {
                             </div>
                         </div>
                     )}
-                    <button className="cta-button text-white py-2 mt-2 mr-4" onClick={scrollToContact}>Say Hi!</button>
+                    <button className="cta-button text-black py-2 mt-2 mr-4" onClick={scrollToContact}>Say Hi!</button>
                 </div>
             </nav>
         </header>

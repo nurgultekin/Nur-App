@@ -8,6 +8,8 @@ import UserResearch1 from '../../media/luxebite/user-research/1.png';
 import UserResearch2 from '../../media/luxebite/user-research/2.png';
 import UserResearch3 from '../../media/luxebite/user-research/3.png';
 import UserResearch4 from '../../media/luxebite/user-research/4.png';
+import UserJourneyMap from '../../media/luxebite/market-research/upplevelsekarta-bg.png';
+
 
 const LuxeBite = () => {
   return (
@@ -72,8 +74,8 @@ const LuxeBite = () => {
 
 
 
-      <div className="text-white flex flex-col items-center w-11/12 mx-auto mb-5 mt-48">
-        <div className="text-white  font-normal font-['Tomorrow'] text-center text-3xl md:text-5xl p-8 mb-5 mt-5 ">PROJECT OVERVIEW</div>
+      <div className="text-white flex flex-col items-center w-11/12 mx-auto mt-48">
+        <div className="text-white  font-normal font-['Tomorrow'] text-center text-3xl md:text-5xl p-8 mb-5 mt-5 ">Project Overview</div>
         <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px]">
           <p>As part of our vocational education, we were tasked with case study aiming to deliver a distinctive food delivery web shop. Our company concept revolves around exclusivity, utilizing climate-friendly drones to provide a “golden edge” in customers&rsquo; everyday lives. This case study captures our journey through extensive market research, user experience analysis, ideation, UI design, and prototyping to create a distinctive, luxurious online food ordering experience.</p>
         </div>
@@ -209,15 +211,15 @@ const LuxeBite = () => {
 
 
 
-      <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10">
-          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">Emphathy</div>
+      <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48  my-10 ">
+          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border border-lime-300">Emphathy</div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
             <p>A good design requires good emphaty; and understanding the target group, their needs and drives in using a certain service. With that mindset we conducted a user research to initially identify our user group, the user habits in the online food delivery system and what our niche can aim at. </p>
           </div>
         </div>
 
-        <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10">
-          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5">User Research</div>
+        <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 my-10 ">
+          <div className="text-[24px] md:text-[28px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border-b border-lime-300 ">User Research</div>
           <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
             <p>Our methodology comprised qualitaive research through structured and semi-structured interviews with 18 participants living in Stockholm, between the ages 19-35.
             In this phase, we identified our user group, the recurring user types, their motivation and needs in online home delivery services that offer fine dining. We identified:</p>
@@ -244,8 +246,35 @@ const LuxeBite = () => {
 
         </div>
 
-        
+{/*         <div className="text-white flex items-center justify-center w-11/12 mx-auto mt-48 mb-24 my-10 gap-2.5">
+          <div className="w-[15px] h-3.5 rounded-full border-4 border-lime-400" />
+          <div className="text-[22px] md:text-[24px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4">User research</div>
+        </div> */}
 
+        <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 my-10">
+          <div className="text-[30px] md:text-[36px] lg:text-[42px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border border-lime-300" >Define</div>
+          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+            <p>We identified user behaviors, needs, and personas. Based on this analysis, we aimed to create a unique offering that wasn&rsquo;t already available in the market. Our goal was to meet the market demand for an exclusive experience in online food ordering. Our user research revealed that while users typically expect online ordering to be convenient, time-saving, and tasty, they do not anticipate it to be a luxury experience. This was a gap we wanted to address. </p>
+            <p>We sought to deliver a sense of luxury to customers looking for an elevated experience in their everyday lives, offering an extraordinary dining experience directly to their homes. During this stage, we refined our understanding of our user types, categorizing them into three distinct personas and aligning them with specific desires and motivations identified in our research.</p>
+            <p>With these insights, we redefined our user roadmap and developed a detailed user journey map.</p>
+          </div>
+        </div>
+
+        <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto mt-48 my-10">
+          <div className="text-[24px] md:text-[28px] lg:text-[35px] font-['Tomorrow'] text-whitesmoke mb-5 mt-5 p-4 border-b border-lime-300" >User Journey</div>
+          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
+            <p>Throughout the previous phases of the design process, which included market research and user research, and the definition of “what,” our user journey evolved organically. Initially, we had a more general target group, but the empathy,  phase with user research and market research refined our user roadmap, helped us identify our target group as middle and upper-middle-class young adults and middle-aged adults living in Stockholm. </p>
+            <p>We concluded that they want to access food delivery services in an exclusive, smooth, and unique way. They should prefer our services because we aim to make every day a little more special by offering a “golden edge to everyday life” and providing an exclusive experience even in a quick food ordering setting online.</p>
+          </div>
+          <div className="mt-10 md:mt-24 md:max-w-4xl ">
+            <img src={UserJourneyMap}></img>
+            <p>Figure: User journey map</p>
+          </div>
+        </div>
+
+      
+
+        
     </div>
   );
 };

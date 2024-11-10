@@ -5,7 +5,7 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.8rem;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -16,6 +16,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -32,14 +33,26 @@ body {
   display: flex;
   min-height:100vh;
   overflow-y: scroll;
+
   
 }
 
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 1.3rem;
+  margin-bottom:1.3rem;
 }
+
+p {
+  line-height: 1.8rem;
+  margin-bottom:2rem;
+
+}
+
+
+
+
 
 button {
   border-radius: 8px;

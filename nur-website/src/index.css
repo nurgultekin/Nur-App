@@ -5,7 +5,8 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.8rem;
+  font-size: 18px;
+  line-height: 180%;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -77,6 +78,8 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
   }
   a:hover {
     color: #747bff;

@@ -94,8 +94,13 @@ const AboutPage = () => {
       </section>
 
       <section className="bg-dark text-light p-6 rounded-lg flex flex-col gap-6 items-center mt-48 mb-48">
-        <h3 className="text-3xl lg:text-5xl font-bold font-['Titan_One'] text-center">Photography Lover</h3>
+        <div className="flex flex-col justify-left gap-12" >
+
+        <h3 className="text-3xl lg:text-5xl font-bold font-['Titan_One'] text-left">Photography Lover</h3>
         <p className=" text-white text-lg lg:text-xl font-['Roboto'] max-w-md ">Capturing the beauty and quirks of life is my way of exploring the world.</p>
+
+        </div>
+        
         <img src={nurPhotography} className="rounded max-h-[70vh] w-auto" alt="Photography" />
       </section>
     </div>  

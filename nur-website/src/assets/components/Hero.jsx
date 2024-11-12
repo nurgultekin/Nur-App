@@ -23,7 +23,7 @@ const HeroSection = () => {
             <div>
                 <h1 className="hero-title">
                     Hello, <br />
-                    <span className="text-9xl xl:text-[12rem]">World!</span>
+                    <span className="text-9xl xl:text-[12rem] lg:leading-normal xl:leading-tight">World!</span>
                 </h1>
             </div>
 

@@ -22,7 +22,7 @@ const AboutSection = () => {
               </ul>
             </div>
             <div>
-              <a href="#about" className="primary-button-desktop"><label className="label-small">More about me</label></a>
+              <a href="/AboutPage" className="primary-button-desktop"><label className="label-small">More about me</label></a>
             </div>
           </div>
 

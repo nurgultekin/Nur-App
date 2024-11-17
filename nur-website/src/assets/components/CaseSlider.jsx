@@ -87,15 +87,18 @@ const CaseStudySlider = () => {
         
         <div className="slideshow-container">
           <div className="mySlides fade">
-            <div style={{width: "50%",
-                          height: "90vh",
-                          backgroundImage: `url(${luxeBiteImage})`,
-                          backgroundSize: "contain", 
-                          backgroundPosition: "center",
-                          backgroundRepeat: "no-repeat",}}>
-              {/* <img src={luxeBiteImage} alt="Project Image" style={{ width: "100%", maxHeight: "700px" }} /> */}
-            </div>
+            <div className="h-[50em] w-[50em] bg-transparent mx-auto lg:ml-48">
+              <div style={{ width: "50%",
+                            height: "90vh",
+                            backgroundImage: `url(${luxeBiteImage})`,
+                            backgroundSize: "contain", 
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",}}>
+                            {/* <img src={luxeBiteImage} alt="Project Image" style={{ width: "100%", maxHeight: "700px" }} /> */}
+              </div>
 
+            </div>
+            
             <div className="text-card">
               <h1>LuxeBite</h1>
               <div className="tags-container">

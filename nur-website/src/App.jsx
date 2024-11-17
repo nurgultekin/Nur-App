@@ -9,7 +9,7 @@ import HeroSection from './assets/components/Hero';
 import Animation from './assets/components/Animation';
 import SkillsCredentials from './assets/components/Skills';
 import SideProjects from './assets/components/Sideprojects';
-import CaseStudySlider from './assets/components/CaseSlider';
+import CaseStudyCards from './assets/components/caseStudyCards';
 import LuxeBite from './assets/components/caseStudies/LuxebiteCaseStudy'; 
 import KappnsCatch from './assets/components/caseStudies/KappnsCatch';
 import Furhat from './assets/components/caseStudies/Furhat';
@@ -40,11 +40,11 @@ const Home = () => {
   return (
     <div>
       <Animation />
-      <div>
+      <div className="mt-24">
         <HeroSection />
       </div>
-      <div>
-        <CaseStudySlider />
+      <div className="my-24">
+        <CaseStudyCards />
       </div>
       <div>
         <AboutSection />

@@ -77,12 +77,11 @@ H1 {
   text-align: left;
 }
 
-h2 {
+H2 {
  
-    font-family: 'Titan One'; /* Ensure fallback */
+    font-family: 'Titan One'; 
     font-size: 2.8rem;
-    font-weight: 700; /* Explicitly set to bold */
-    color: whitesmoke;
+    font-weight: 700; 
     margin: 20px 0px;
     
   }
@@ -306,6 +305,7 @@ margin: 10px 0;
   border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
   background: #D3E75B;
   text-decoration: none;
+  color:black;
   
   
   }

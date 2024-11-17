@@ -61,18 +61,20 @@ section {
   margin: 3rem 3rem;
   align-items: center;
   justify-content: space-between;
-  gap: 6rem;
+
 }
 
-/* @media screen and (max-width: 778px) {
+ @media screen and (max-width: 778px) {
   .mySlides {
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem; 
+    gap: 1rem; 
     margin: 1.5rem 1.5rem; 
+    width:100vw;
   }
-} */
+} 
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {

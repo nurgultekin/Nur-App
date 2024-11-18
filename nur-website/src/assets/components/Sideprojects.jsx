@@ -49,7 +49,7 @@ const SideProjects = () => {
       <Slider {...settings} className="relative">
         {projectData.map((project, index) => (
           <div key={index} className="flex ">
-            <div className="flex flex-col justify-center items-center bg-transparent hover:shadow-2xl hover:shadow-accentPrimary rounded-lg shadow-lg p-5 w-full">
+            <div className="flex flex-col justify-center items-center bg-transparent rounded-lg shadow-lg p-5 w-full">
               <div className="flex flex-1 justify-center items-center mr-5">
                 <img
                   src={project.image}

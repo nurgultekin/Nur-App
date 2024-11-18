@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import FurhatMockup from "../media/furhat-img.png";
-import FantasyChass from "../media/fantasyChass.png";
+import FurhatMockup from "../media/furhat-mockup.svg";
+import FantasyChass from "../media/fantasyChass.svg";
 import luxeBiteImage from "./luxeBite.png";
 import KappnCatch from "../media/kappn-catch.png";
 import onspotImage from "../media/images/onspot.png";
@@ -13,7 +13,7 @@ const CaseStudyCards = () => {
     {
       title: "Furhat Robotics",
       image: FurhatMockup,
-      tags: ["FrontEnd Development", "UX Design"],
+      tags: ["Front-End Development", "UX Design"],
       type: "Internship",
       description:
         "As the sole frontend developer and UX designer, I designed and built a new website for Furhat Robotics, tailored their brand expression to a new target audience.",
@@ -79,7 +79,7 @@ const CaseStudyCards = () => {
             >
               {/* Image */}
               <div
-                className="w-[50%] h-[30%]"
+                className="w-[90%] h-[50%]"
                 style={{
                   backgroundImage: `url(${study.image})`,
                   backgroundSize: "contain",
@@ -93,7 +93,7 @@ const CaseStudyCards = () => {
               {/* Text Section */}
               <div className="flex flex-col justify-center gap-2 px-4 mx-auto">
                 {/* Case Study Type */}
-                <p className="text-sm text-gray-800 font-semibold">{study.type}</p>
+                <p className="text-sm text-gray-800 font-semibold mb-1">{study.type}</p>
 
                 {/* Title */}
                 <h2 className="text-[2.3rem] leading-snug text-black lg:text-[2.5rem]">{study.title}</h2>

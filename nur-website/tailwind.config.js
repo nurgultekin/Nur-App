@@ -16,8 +16,8 @@ module.exports = {
         accentPrimary: '#D3E75B',
         accentPrimaryHover: '#eeffb2cc',
         lime: '#00FF00', 
-        whiteOpacHover: "rgba(228, 228, 217, 0.94)",
-        whiteOpac: "rgba(255, 255, 255, 0.47)"
+        bgLight: "rgba(228, 228, 217, 0.94)",
+        bgYellowLight: "rgba(217, 220, 180, 1)"
 
         
 

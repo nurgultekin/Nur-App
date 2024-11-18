@@ -14,14 +14,14 @@ const projectData = [
     title: 'Sentiment Analysis and Topic Modelling on Twitter Activity of Elon Musk',
     date: 'May 2022',
     tags: ['Python', 'NLTK', 'Topic modelling', 'API calls', 'Data analysis', 'Orange'],
-    link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype",
+    link: "https://www.academia.edu/104149506/Sentiment_Analysis_and_Topic_Modelling_on_Twitter_Activity_of_Elon_Musk",
   },
   {
     image: masterWorkflowImage,
     title: 'Bridging the Digital Disparities in Sweden: A Discursive Analysis of Swedish Policy Reports on Digital Inclusion',
     date: 'Masters Thesis | Published: August 2023',
     tags: ['Qualitative research', 'Discourse analysis', 'Text mining', 'Quantitative research', 'Academic writing', 'Text vectorization'],
-    link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype",
+    link: "https://lnu.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=6&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=sv&pid=diva2%3A1801426&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-2182",
   },
   {
     image: redditImage,
@@ -44,20 +44,20 @@ const SideProjects = () => {
   };
 
   return (
-    <section className="bg-purple-300 mt-16 pb-12 flex flex-col justify-center max-h-full">
-      <h2 className="text-white text-3xl text-center pt-14 mb-12">Projects outside of UX/UI</h2>
+    <section className="bg-bgLight mt-16 pb-12 flex flex-col justify-center max-h-full">
+      <h2 className="text-black text-2xl md:text-3xl max-w-[80%] text-center mx-auto pt-14 mb-8">Featured projects outside of work</h2>
       <Slider {...settings} className="relative">
         {projectData.map((project, index) => (
-          <div key={index} className="flex justify-center items-center">
-            <div className="flex flex-col bg-white hover:shadow-2xl hover:shadow-accentPrimary rounded-lg shadow-lg p-5 w-full">
+          <div key={index} className="flex ">
+            <div className="flex flex-col justify-center items-center bg-transparent hover:shadow-2xl hover:shadow-accentPrimary rounded-lg shadow-lg p-5 w-full">
               <div className="flex flex-1 justify-center items-center mr-5">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-[40dvh] object-cover rounded-lg max-w-[90%]"
+                  className="h-[50dvh] lg:h-[70dvh] object-cover rounded-lg max-w-[100%]"
                 />
               </div>
-              <div className="flex flex-2 flex-col justify-center mx-auto px-24 py-24 max-w-3/4 ">
+              <div className="flex flex-2 flex-col justify-center px-24 py-8 max-w-3/4 ">
                 <h4 className="text-lg font-bold mb-2 text-black">{project.title}</h4>
                 <p className="text-sm text-gray-600 mb-3">{project.date}</p>
                 <div className="flex flex-wrap mb-3">
@@ -95,7 +95,7 @@ const CustomPrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute left-3 top-1/2 transform -translate-y-1/2 cursor-pointer bg-gray-300 rounded-full p-2 z-10"
+      className="absolute left-3 top-1/2 transform -translate-y-1/2 cursor-pointer bg-purple-300 bg-gray-300 rounded-full p-2 z-10"
       onClick={onClick}
     >
       &#10094;
@@ -111,7 +111,7 @@ const CustomNextArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer bg-gray-300 rounded-full p-2 z-10"
+      className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer bg-purple-300 rounded-full p-2 z-10"
       onClick={onClick}
     >
       &#10095;

@@ -73,7 +73,7 @@ const CaseStudyCards = () => {
           {caseStudies.slice(i * 2, i * 2 + 2).map((study, index) => (
             <Link
               to={study.link}
-              className="flex flex-col justify-center items-center gap-6 w-[30rem] h-[40rem] border border-lime-300 hover:shadow-2xl hover:shadow-accentPrimary bg-whiteOpac hover:bg-whiteOpacHover transition-shadow duration-300 rounded-md group p-4"
+              className="flex flex-col justify-center items-center gap-6 w-full h-auto md:w-[30rem] md:h-[40rem] border border-lime-300 hover:shadow-2xl hover:shadow-accentPrimary bg-bgLight hover:bg-bgYellowLight transition-shadow duration-300 rounded-md group p-4"
               key={index}
               target={study.link.startsWith("http") ? "_blank" : "_self"}
             >

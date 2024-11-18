@@ -351,10 +351,14 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   margin-bottom: 10px;
 }
 
-.other {
+/* .other {
   background-color: #74349e;
   margin-top: 70px;
   padding-bottom: 50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
 }
 
 .other > h2 {
@@ -394,6 +398,7 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  
 }
 
 .project-image {
@@ -435,8 +440,8 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
 .tag-text {
   font-size: 12px;
   color: #333;
-}
-
+} */
+/* 
 .read-more {
   margin-top: 15px;
   padding: 10px 20px;
@@ -513,7 +518,7 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   opacity: .75;
   color: black;
 }
-
+ */
 
 
 /* 

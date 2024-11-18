@@ -42,7 +42,7 @@ const AboutSection = () => {
       <img
         src={GalataTower}
         alt="About Image"
-        className=" lg:w-auto lg:h-[80vh] w-full h-auto object-contain"
+        className=" lg:w-auto lg:h-[80vh] w-full h-auto object-contain  data-twe-lazy-load-init"
       />
     </section>
   );

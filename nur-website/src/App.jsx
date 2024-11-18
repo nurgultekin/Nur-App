@@ -7,7 +7,7 @@ import AboutPage from './assets/components/AboutPage';
 import ContactSection from './assets/components/ContactSection';
 import HeroSection from './assets/components/Hero'; 
 import Animation from './assets/components/Animation';
-import SkillsCredentials from './assets/components/Skills';
+/* import SkillsCredentials from './assets/components/Skills'; */
 import SideProjects from './assets/components/Sideprojects';
 import CaseStudyCards from './assets/components/caseStudyCards';
 import LuxeBite from './assets/components/caseStudies/LuxebiteCaseStudy'; 
@@ -48,9 +48,6 @@ const Home = () => {
       </div>
       <div>
         <AboutSection />
-      </div>
-      <div>
-        <SkillsCredentials />
       </div>
       <div>
         <SideProjects />

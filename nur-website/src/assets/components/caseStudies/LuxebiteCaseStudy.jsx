@@ -26,8 +26,8 @@ const LuxeBite = () => {
       <div className="flex flex-col lg:flex-row justify-center mx-auto  w-4/5 mt-5">
 
         <div className="flex gap-[15px] items-baseline mt-40 mr-10 max-w-fit">
-          <video src={LuxeBiteDesktop} className=" rounded-lg md:block max-w-sm md:max-w-lg sm:max-w-sm" autoPlay loop muted />
-          <video src={LuxeBiteMobile} className="rounded-lg md:block max-w-xs md:max-w-md sm:max-w-xsm" autoPlay loop muted />
+          <video src={LuxeBiteDesktop} className=" rounded-lg md:block max-w-sm md:max-w-lg sm:max-w-sm  data-twe-lazy-load-init" autoPlay loop muted />
+          <video src={LuxeBiteMobile} className="rounded-lg md:block max-w-xs md:max-w-md sm:max-w-xsm  data-twe-lazy-load-init" autoPlay loop muted />
         </div>
 
         <div className="text-white flex flex-col justify-center items-center md:mr-[200px] mt-10 md:mt-10 mr-10 max-w-fit">

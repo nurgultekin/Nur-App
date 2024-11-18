@@ -13,7 +13,7 @@ const Furhat = () => {
         <div className="flex flex-col lg:flex-row justify-center mx-auto w-4/5 mt-5">
 
         <div className="flex gap-[15px] items-baseline mt-40 mr-auto lg:mr-10 max-w-fit object-scale-down mx-auto">
-          <img src={FurhatMockUp} className=" rounded-lg md:block max-w-sm md:max-w-lg sm:max-w-sm"  />
+          <img src={FurhatMockUp} className=" rounded-lg md:block max-w-sm md:max-w-lg sm:max-w-sm  data-twe-lazy-load-init"  />
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 mr-auto lg:mr-10 mx-auto max-w-fit gap-4">

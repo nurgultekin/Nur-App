@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import 'tailwindcss/tailwind.css';
 import '../styling/home.css'; // Adjust the import path as necessary
+import '../../App.css';
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,16 +60,18 @@ const NavigationBar = () => {
                             className="text-white focus:outline-none bg-transparent"
                         >
                             Works
+                            
                         </button>
+                        
+
                         {/* Dropdown for "Works" */}
                         {isDropdownOpen && (
                             <div className="absolute left-0 z-10 mt-2 w-48 bg-gray-800 rounded-md shadow-lg transition-opacity duration-200 ease-in-out">
                                 <div className="py-1">
                                     {[
-                                        { name: 'Captn Catch', link: '/captn-catch' },
-                                        { name: 'LuxeBite', link: '/luxebite' },
-                                        { name: 'Portfolio Website', link: '/portfolio-website' },
-                                        { name: 'Furhat Robotics', link: '/furhat-robotics' },
+                                        { name: "Kapp'n's Catch", link: '/KappnsCatch' },
+                                        { name: 'LuxeBite', link: '/LuxebiteCaseStudy' },
+                                        { name: 'Furhat Robotics', link: '/Furhat' },
                                         { name: 'Fantasy Chas', link: '/fantasy-chas' },
                                         { name: 'Museum App', link: '/museum-app' },
                                         { name: 'Kalmar City Library', link: '/kalmar-city-library' },
@@ -88,7 +91,7 @@ const NavigationBar = () => {
                     <button className="cta-button text-black" onClick={scrollToContact}>Say Hi!</button>
                 </div>
                 {/* Mobile Navigation Links (within Hamburger Menu) */}
-                <div className={`nav-links ${isMenuOpen ? 'flex' : 'hidden'} flex-col absolute top-full p-4 right-0 w-3/4 bg-gray-800 md:hidden`} style={{ maxWidth: '70vw' }}>
+                <div className={`nav-links ${isMenuOpen ? 'flex' : 'hidden'} flex-col absolute top-full p-4 right-0 w-svw bg-gray-800 md:hidden`} style={{ maxWidth: '70vw' }}>
                     <Link to="/AboutPage" className="text-white py-2" onClick={toggleMenu}>About</Link>
                     <button
                         onClick={toggleDropdown}
@@ -98,12 +101,11 @@ const NavigationBar = () => {
                     </button>
                     {/* Dropdown for "Works" in Mobile Menu */}
                     {isDropdownOpen && (
-                        <div className="relative z-10 ml-40 mt-2 mb-2 w-2/4 bg-gray-600 rounded-md shadow-lg transition-opacity duration-200 ease-in-out">
+                        <div className="relative z-10 mx-auto mt-2 mb-2 w-3/4 bg-gray-600 rounded-md shadow-lg transition-opacity duration-200 ease-in-out">
                             <div className="py-1 flex flex-col ">
                                 {[
-                                    { name: 'Captn Catch', link: '/captn-catch' },
-                                    { name: 'LuxeBite', link: '/luxebite' },
-                                    { name: 'Portfolio Website', link: '/portfolio-website' },
+                                    { name: "Kapp'n's Catch", link: '/KappnsCatch' },
+                                    { name: 'LuxeBite', link: '/LuxebiteCaseStudy' },
                                     { name: 'Furhat Robotics', link: '/furhat-robotics' },
                                     { name: 'Fantasy Chas', link: '/fantasy-chas' },
                                     { name: 'Museum App', link: '/museum-app' },

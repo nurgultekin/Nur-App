@@ -11,7 +11,7 @@ const ContactSection = () => {
   return (
     <section className="contact-section">
       <div className="contact-container">
-        <img src={nurImage} className="contact-img" alt="Contact Image" />
+        <img src={nurImage} className="contact-img" loading="lazy" alt="Contact Image" />
         <p>Eager to connect and collaborate. Let's make things happen!</p>
         <div className="social-links">
         <a href="mailto:nur.gultekin1@gmail.com">

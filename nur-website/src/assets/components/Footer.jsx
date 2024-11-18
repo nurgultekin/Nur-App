@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <footer className="body-small relative bottom-0 mt-auto mb-0 ">
-      <p>Copyright © 2024 Nur Gültekin. All rights reserved.</p>
+      <p className="my-0 mx-0">Copyright © 2024 Nur Gültekin. All rights reserved.</p>
       <span className="arrow">
         <a id="scrollToTopBtn" href="#hero">
           <img src={arrowImage} alt="Scroll to top" />

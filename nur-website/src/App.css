@@ -77,12 +77,11 @@ H1 {
   text-align: left;
 }
 
-h2 {
+H2 {
  
-    font-family: 'Titan One'; /* Ensure fallback */
+    font-family: 'Titan One'; 
     font-size: 2.8rem;
-    font-weight: 700; /* Explicitly set to bold */
-    color: whitesmoke;
+    font-weight: 700; 
     margin: 20px 0px;
     
   }
@@ -273,11 +272,11 @@ margin: 10px 0;
 .secondary-button {
 
   background-color: #FAFFE6;
-  padding: 1.2rem 2rem;
+  padding: 0.7rem 1.2rem;
   border:#111010;
   border: 2px solid #b6beb8; 
   border-radius: 30px;
-  max-width: 10rem;
+  max-width: 13rem;
   cursor: pointer;
   
 }
@@ -306,6 +305,7 @@ margin: 10px 0;
   border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
   background: #D3E75B;
   text-decoration: none;
+  color:black;
   
   
   }
@@ -364,7 +364,6 @@ footer {
   justify-content: space-between;
   align-items: center; /* Vertically align elements */
   gap: 0.825rem;
-  height: 6.25rem;
   background-color: #D3E75B; /* Move background color to CSS */
   margin-bottom: 0; /* Remove any margin */
   margin-top: auto;
@@ -380,6 +379,8 @@ footer {
   background-color: #B894D0;
   border-radius: 40px;
   padding: 30px;
+  position:relative;
+  bottom:16px;
 
  
  

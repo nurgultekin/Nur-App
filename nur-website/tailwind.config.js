@@ -16,6 +16,9 @@ module.exports = {
         accentPrimary: '#D3E75B',
         accentPrimaryHover: '#eeffb2cc',
         lime: '#00FF00', 
+        bgLight: "rgba(228, 228, 217, 0.94)",
+        bgYellowLight: "rgba(217, 220, 180, 1)"
+
         
 
       },

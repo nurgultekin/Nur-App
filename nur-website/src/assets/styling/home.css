@@ -121,7 +121,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   width: 90%;
   margin: auto;
   margin-bottom:0; /* Center the hero section horizontally */
@@ -165,14 +164,16 @@ font-family: "Titan One";
 }
 
 .selected-cases {
-color: #D3E75B; /* Text color */
-font-family: 'Nico Moji', sans-serif; /* Choose appropriate font */
-font-size: 20px; /* Adjust font size */
-position: absolute; /* Position it absolutely */
-bottom: 20px; /* Adjust distance from the bottom */
-left: 50%; /* Center horizontally */
-transform: translateX(-50%); /* Center horizontally */
-cursor: pointer; /* Show pointer cursor on hover */
+color: #D3E75B; 
+font-family: 'Nico Moji', sans-serif; 
+font-size: 20px; 
+position: relative; 
+margin-top:4rem;
+bottom: 20px; 
+margin-left: 5rem;
+justify-content: center;
+transform: translateX(-50%); 
+cursor: pointer; 
 }
 
 .arrow-down {
@@ -245,69 +246,6 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
     max-height: 70vh;
     width: auto;
   }
-
-  /*------SKILLS AND CREDENTIALS-------*/
-.skills-credentials-container {
-  background-color: #B894D0;
-  display: flex;
-  flex-direction: column;
-  padding: 90px;
-}
-
-.skills-credentials-container h2 {
-  color: rgb(7, 4, 4);
-  font-size: 30px;
-  margin-left: 40px;
-}
-
-.skills-credentials > h2 {
-  color: rgb(7, 4, 4);
-  font-size: 30px;
-  margin-left: 40px;
- 
-}
-
-.skills-credentials {
-  background-color: #B894D0;
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 130%; /* 20.8px */
-}
-.credentials li {
-  background-color: whitesmoke;
-  border-radius: 40px;
-  padding:40px;
-  margin-right: 100px;
-}
-
-.skills {
-  margin-top: 20px;
-  flex:1;
-  margin-left:100px;
-}
-
-.skills ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skills li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-
-}
-
-.skill-name {
-  margin-right: 10px;
-  width: 100px; /* Adjust as needed */
-}
-/*Progress animation*/
 
 @keyframes fillProgress {
   from {
@@ -413,10 +351,14 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   margin-bottom: 10px;
 }
 
-.other {
+/* .other {
   background-color: #74349e;
   margin-top: 70px;
   padding-bottom: 50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
 }
 
 .other > h2 {
@@ -456,6 +398,7 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  
 }
 
 .project-image {
@@ -497,8 +440,8 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
 .tag-text {
   font-size: 12px;
   color: #333;
-}
-
+} */
+/* 
 .read-more {
   margin-top: 15px;
   padding: 10px 20px;
@@ -575,7 +518,7 @@ animation: arrow-bounce 1s infinite alternate; /* Animation */
   opacity: .75;
   color: black;
 }
-
+ */
 
 
 /* 

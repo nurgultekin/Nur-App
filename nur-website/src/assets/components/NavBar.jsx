@@ -121,7 +121,7 @@ const NavigationBar = () => {
 
                 {/* Mobile Navigation Links (within Hamburger Menu) */}
                 <div
-                   className={`nav-links flex-col absolute top-full p-4 right-0 w-svw bg-gray-800 md:hidden space-y-4 transition-transform duration-300 ease-in-out transform ${
+                   className={`nav-links absolute top-full p-4 right-0 w-svw bg-gray-800 md:hidden space-y-4 transition-transform duration-300 ease-in-out transform flex flex-col justify-left ${
         isMenuOpen ? "opacity-100 translate-y-0 scale-100" : "opacity-0 -translate-y-4 scale-95 pointer-events-none"
     }`}
                     style={{ maxWidth: "70vw" }}

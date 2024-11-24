@@ -30,23 +30,23 @@ const Furhat = () => {
       <div className="flex flex-col justify-center items-center mx-auto ">
         <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 mx-auto md:w-4/5 mt-24 px-3 md:px-4">
             <div className="flex flex-col items-left gap-[10px]">
-            <div className="flex items-center gap-2">
-                <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lim-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">My role</div>
-            </div>
-            <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            Frontend Developer
-            </div>
+              <div className="flex items-center gap-2">
+                  <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
+                  <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">My role</div>
+              </div>
+              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
+              Frontend Developer
+              </div>
             </div>
 
-            <div className="flex flex-col items-start gap-[10px]">
-            <div className="flex items-center gap-2">
-                <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke ">Scope</div>
-            </div>
-            <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-                July 2024 - January 2025 - Internship
-            </div>
+            <div className="flex flex-col items-left gap-[10px]">
+              <div className="flex items-center gap-2">
+                  <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
+                  <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">Scope</div>
+              </div>
+              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
+              July 2024 - January 2025 - Internship
+              </div>
             </div>
 
             <div className="flex flex-col items-start gap-[10px]">
@@ -84,7 +84,7 @@ const Furhat = () => {
 
       <div className="text-white flex flex-col items-center justify-center mx-auto mt-48 my-10">
           <div className="text-[30px] md:text-[36px] lg:text-5xl font-['Tomorrow'] text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300" >Problem and Solution</div>
-            <div className="max-w-xl justify-center mx-auto lg:justify-end mb-12">
+            <div className=" text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-xl justify-center lg:justify-end mb-12 mx-[100px] md:mx-[200px] lg:max-w-[700px]">
                 <p>As Furhat Robotics has grown, so has their audience. While the old website suited a different era of the company, it now fell short in key areas:</p>
             </div>
             
@@ -110,7 +110,7 @@ const Furhat = () => {
 
         <div className="text-white flex flex-col items-center justify-center mx-auto mt-48 my-10">
           <div className="text-[30px] md:text-[36px] lg:text-5xl font-['Tomorrow'] text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300" >Design and Development Process</div>
-            <div className="max-w-xl justify-center mx-auto lg:justify-end mb-12">
+            <div className=" text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-xl justify-center lg:justify-end mb-12 mx-[100px] md:mx-[200px] lg:max-w-[700px]">
                 <p>Since this was a real-world project and with work-confidentiality in mind, I am limited in the information I can share, but I&qrsqo;d be glad to provide a link to the live site once it&qrsqo;s available.</p>
                 <p>Throughout the design process, I focused on three core principles:</p>
             </div>

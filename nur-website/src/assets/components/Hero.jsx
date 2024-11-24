@@ -5,10 +5,10 @@ import 'tailwindcss/tailwind.css';
 const HeroSection = () => {
     useEffect(() => {
         const selectedCases = document.getElementById("selected-cases");
-        const slideshowContainer = document.querySelector(".slideshow-container");
+        const caseStudies = document.querySelector("#case-studies");
 
         const handleClick = () => {
-            slideshowContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            caseStudies.scrollIntoView({ behavior: 'smooth', block: 'start' });
         };
 
         selectedCases.addEventListener("click", handleClick);
@@ -29,7 +29,7 @@ const HeroSection = () => {
 
             <div>
                 <p className="hero-text text-white text-shadow font-semibold text-xl md:text-2xl leading-loose font-sans text-left max-w-3xl">
-                    I am <span className="name">Nur Gültekin</span>, front-end software developer and UX designer who draws great inspiration from arts, games, and nature. My passion is creating interactive technologies for optimal user experience and accessibility. 
+                    I am <span className="name">Nur Gültekin</span>, front-end software developer who draws great inspiration from arts, games, and nature. My passion is creating interactive technologies for optimal user experience and accessibility. 
                 </p>
             </div>
 

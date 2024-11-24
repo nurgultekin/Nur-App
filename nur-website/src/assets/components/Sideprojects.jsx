@@ -50,11 +50,11 @@ const SideProjects = () => {
         {projectData.map((project, index) => (
           <div key={index} className="flex ">
             <div className="flex flex-col justify-center items-center bg-transparent rounded-lg shadow-lg p-5 w-full">
-              <div className="flex flex-1 justify-center items-center mr-5">
+              <div className="flex flex-1 justify-center items-center">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-[50dvh] lg:h-[70dvh] object-cover rounded-lg max-w-[100%]"
+                  className="h-[50dvh] lg:h-[70dvh] object-cover rounded-lg max-w-[90%]"
                 />
               </div>
               <div className="flex flex-2 flex-col justify-center px-24 py-8 max-w-3/4 ">
@@ -95,7 +95,7 @@ const CustomPrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute left-3 top-1/2 transform -translate-y-1/2 cursor-pointer bg-purple-300 bg-gray-300 rounded-full p-2 z-10"
+      className="absolute left-3 top-1/2 transform -translate-y-1/2 cursor-pointer bg-purple-300 rounded-full p-2 z-10"
       onClick={onClick}
     >
       &#10094;

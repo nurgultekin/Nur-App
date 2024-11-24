@@ -67,7 +67,7 @@ const CaseStudyCards = () => {
   ];
 
   return (
-    <section className="flex flex-col gap-12 mx-auto">
+    <section className="flex flex-col gap-12 mx-auto" id="case-studies">
       {Array.from({ length: caseStudies.length / 2 }, (_, i) => (
         <div className="flex flex-col lg:flex-row justify-center items-center gap-12" key={i}>
           {caseStudies.slice(i * 2, i * 2 + 2).map((study, index) => (

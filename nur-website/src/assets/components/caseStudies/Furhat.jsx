@@ -10,19 +10,19 @@ const Furhat = () => {
   const overView = [
     {
       title: "My role",
-      description: "UX research, UI design, developing design systems, agile project management and branding",
+      description: "Frontend Developer",
     },
     {
       title: "Scope",
-      description: "January 25 - April 5, 2024 - School project",
+      description: "July 8, 2024 -  January 8, 2025 - Internship",
     },
     {
-      title: "Team",
-      description: "Nur Gültekin, Joakim Strandlund, Niloofar Shahsavar, Julia Kleresjö and Ronja Tiving.",
+      title: "Created By",
+      description: "Nur Gültekin",
     },
     {
       title: "Frameworks",
-      description: "UX research, UX Design, UI design with Figma, agile project management",
+      description: "React.js, Webflow, Figma, Vanilla js, HTML & CSS, Freemarker, Kotlin and Java.",
     },
   ];
 
@@ -108,7 +108,7 @@ const designAndDevelopmentProcess = {
 
 
         {/* Details  Overview using mapping method so that I am optimizing layout and creating reusable components even in script*/}
-        <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-[30px] max-w-md lg:max-w-4xl items-start justify-center mx-auto mt-24 px-12 md:px-4">
+        <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-[30px] max-w-md lg:max-w-4xl items-start justify-center mx-auto mt-24 mb-48 px-12 md:px-4">
           {overView.map((section, index) => (
             <div key={index} className="flex flex-col items-start gap-[10px]">
               <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] lg:max-w-[25rem] mt-[4px] text-left">
@@ -125,8 +125,10 @@ const designAndDevelopmentProcess = {
               </div>
             </div>
           ))}
-    </div>
+        </div>
 
+
+           {/* Summary  */}
     <Section title={summary.title} paragraph={summary.paragraph}/>
 
     {/* Problem and Solution Section */}

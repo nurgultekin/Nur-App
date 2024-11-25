@@ -83,13 +83,14 @@ const NavigationBar = () => {
                                     { name: "Furhat Robotics", link: "/Furhat", type: "internal" },
                                     { name: "Kapp'n's Catch", link: "/KappnsCatch", type: "internal" },
                                     { name: "LuxeBite", link: "/LuxebiteCaseStudy", type: "internal" },
-                                    { name: "Fantasy Chas", link: "/FantasyChass", type: "internal" },
-                                    { name: "Museum App", link: "https://external-link.com/museum-app", type: "external" },
-                                    { name: "Kalmar City Library", link: "https://external-link.com/kalmar-city-library", type: "external" },
+                                    /* { name: "Fantasy Chas", link: "/FantasyChass", type: "internal" }, */
+                                    { name: "Museum App", link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype", type: "external" },
+                                    { name: "Kalmar City Library", link: "https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek", type: "external" },
                                 ].map((item) => (
                                     <Link
                                         key={item.name}
                                         to={item.link}
+                                        target="_blank"
                                         className="pl-6 px-4 py-2 text-white hover:bg-gray-700 transition duration-200 ease-in-out flex items-center gap-4"
                                     >
                                         {item.name}
@@ -157,13 +158,14 @@ const NavigationBar = () => {
                                 { name: "Furhat Robotics", link: "/Furhat", type: "internal" },
                                 { name: "Kapp'n's Catch", link: "/KappnsCatch", type: "internal" },
                                 { name: "LuxeBite", link: "/LuxebiteCaseStudy", type: "internal" },
-                                { name: "Fantasy Chas", link: "/FantasyChass", type: "internal" },
-                                { name: "Museum App", link: "https://external-link.com/museum-app", type: "external" },
-                                { name: "Kalmar City Library", link: "https://external-link.com/kalmar-city-library", type: "external" },
+                                /* { name: "Fantasy Chas", link: "/FantasyChass", type: "internal" }, */
+                                { name: "Museum App", link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype", type: "external" },
+                                { name: "Kalmar City Library", link: "https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek", type: "external" },
                             ].map((item) => (
                                 <Link
                                     key={item.name}
                                     to={item.link}
+                                    target="_blank"
                                     className="pl-6 px-4 py-2 text-white hover:bg-gray-700 transition duration-200 ease-in-out flex items-center"
                                 >
                                     {item.name}

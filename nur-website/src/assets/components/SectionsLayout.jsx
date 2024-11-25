@@ -2,18 +2,18 @@ import PropTypes from "prop-types";
 
 const Section = ({ title, paragraph, content, isList }) => {
   return (
-    <div className="text-white flex flex-col items-center justify-center mx-auto mt-48 my-10">
+    <div className="text-white flex flex-col items-center justify-center mx-auto mt-24">
       <div className="text-[30px] md:text-[36px] lg:text-5xl font-['Tomorrow'] text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300">
         {title}
       </div>
       {/* Render the paragraph if available */}
       {paragraph && (
-        <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-md justify-center lg:justify-end mb-4 mx-auto md:mx-[15rem] lg:max-w-[45rem]">
+        <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left max-w-[80%] lg:max-w-[40%] px-12">
           <p>{paragraph}</p>
         </div>
       )}
       {/* Render list content if isList is true, otherwise just display paragraph text */}
-      <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-md justify-center lg:justify-end mb-12 mx-auto md:mx-[15rem] lg:max-w-[45rem]">
+      <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] justify-center lg:justify-end mb-12 mx-auto max-w-[80%] lg:max-w-[40%] px-12">
         {isList ? (
           <ul className="flex flex-col gap-8">
             {content.map((item, index) => (

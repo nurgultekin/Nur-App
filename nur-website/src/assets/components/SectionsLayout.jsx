@@ -23,11 +23,13 @@ const Section = ({ title, paragraph, content, isList }) => {
               </li>
             ))}
           </ul>
-        ) : (
+        ) : content && content.length > 0 ? (
           content.map((item, index) => (
             <p key={index} className="text-white">{item.text}</p>
           ))
-        )}
+        ) : content && content.length === 0 && !isList ? (
+          <p className="text-whitesmoke mt-4">No content available</p>
+        ) : null}
       </div>
     </div>
   );

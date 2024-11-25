@@ -27,6 +27,15 @@ const Furhat = () => {
   ];
 
 // Data for other sections
+
+const summary = {
+  title: "Project Overview",
+  paragraph: "During my internship at Furhat Robotics, I’ve undertaken the challenge of designing and building a completely new website tailored to the company’s evolved brand and new target audience. The previous site, built for an earlier phase in Furhat’s journey, no longer aligned with their expanded product line, broader audience, or brand identity. My task was to create a website that not only addressed accessibility and user experience shortcomings but also redefined Furhat’s online presence with a fresh, engaging, and adaptable design. ",
+  content:null,
+  isList:false,
+
+};
+
 const problemAndSolution = {
   title: "Problem and Solution",
   paragraph: "As Furhat Robotics has grown, so has their audience. While the old website suited a different era of the company, it now fell short in key areas:",
@@ -118,7 +127,7 @@ const designAndDevelopmentProcess = {
           ))}
     </div>
 
-
+    <Section title={summary.title} paragraph={summary.paragraph}/>
 
     {/* Problem and Solution Section */}
     <Section title={problemAndSolution.title} paragraph={problemAndSolution.paragraph} content={problemAndSolution.content} isList={problemAndSolution.isList} />

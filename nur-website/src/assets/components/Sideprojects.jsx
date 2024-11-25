@@ -23,13 +23,13 @@ const projectData = [
     tags: ['Qualitative research', 'Discourse analysis', 'Thematic Analysis(Python)', 'Quantitative research', 'Academic writing', 'Text vectorization'],
     link: "https://lnu.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=6&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=sv&pid=diva2%3A1801426&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-2182",
   },
-  {
+  /* {
     image: redditImage,
     title: 'Data-analysis on Reddit discussion patterns around the Russo-Ukrainian War',
     date: 'November 2022',
     tags: ['Python', 'API calls', 'Data mining', 'Quantitative research', 'Social network analysis', 'Data modelling'],
     link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype",
-  },
+  }, */
 ];
 
 const SideProjects = () => {

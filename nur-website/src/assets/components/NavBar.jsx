@@ -80,10 +80,10 @@ const NavigationBar = () => {
                         >
                             <div className="py-1">
                                 {[
-                                    { name: "Furhat Robotics", link: "/furhat-robotics", type: "internal" },
+                                    { name: "Furhat Robotics", link: "/Furhat", type: "internal" },
                                     { name: "Kapp'n's Catch", link: "/KappnsCatch", type: "internal" },
                                     { name: "LuxeBite", link: "/LuxebiteCaseStudy", type: "internal" },
-                                    { name: "Fantasy Chas", link: "/fantasy-chas", type: "internal" },
+                                    { name: "Fantasy Chas", link: "/FantasyChass", type: "internal" },
                                     { name: "Museum App", link: "https://external-link.com/museum-app", type: "external" },
                                     { name: "Kalmar City Library", link: "https://external-link.com/kalmar-city-library", type: "external" },
                                 ].map((item) => (
@@ -154,10 +154,10 @@ const NavigationBar = () => {
                     >
                         <div className="py-1 flex flex-col">
                             {[
-                                { name: "Furhat Robotics", link: "/furhat-robotics", type: "internal" },
+                                { name: "Furhat Robotics", link: "/Furhat", type: "internal" },
                                 { name: "Kapp'n's Catch", link: "/KappnsCatch", type: "internal" },
                                 { name: "LuxeBite", link: "/LuxebiteCaseStudy", type: "internal" },
-                                { name: "Fantasy Chas", link: "/fantasy-chas", type: "internal" },
+                                { name: "Fantasy Chas", link: "/FantasyChass", type: "internal" },
                                 { name: "Museum App", link: "https://external-link.com/museum-app", type: "external" },
                                 { name: "Kalmar City Library", link: "https://external-link.com/kalmar-city-library", type: "external" },
                             ].map((item) => (

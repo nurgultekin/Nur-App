@@ -1,10 +1,79 @@
 
-import FurhatMockUp from '../../media/furhat-mockup.png';
+import FurhatMockUp from "../../media/furhat-mockup.svg";
 import '../../../App.css';
 import AnimationDark from "../AnimationDark";
+import Section from "../SectionsLayout";
 import 'tailwindcss/tailwind.css';
 
 const Furhat = () => {
+
+  const overView = [
+    {
+      title: "My role",
+      description: "UX research, UI design, developing design systems, agile project management and branding",
+    },
+    {
+      title: "Scope",
+      description: "January 25 - April 5, 2024 - School project",
+    },
+    {
+      title: "Team",
+      description: "Nur Gültekin, Joakim Strandlund, Niloofar Shahsavar, Julia Kleresjö and Ronja Tiving.",
+    },
+    {
+      title: "Frameworks",
+      description: "UX research, UX Design, UI design with Figma, agile project management",
+    },
+  ];
+
+// Data for other sections
+const problemAndSolution = {
+  title: "Problem and Solution",
+  paragraph: "As Furhat Robotics has grown, so has their audience. While the old website suited a different era of the company, it now fell short in key areas:",
+  content: [
+    {
+      title: "Accessibility",
+      description: "The website needed updates to meet accessibility standards in order to ensure usability for all visitors.",
+    },
+    {
+      title: "Visual Design & User Experience",
+      description: "The prior design lacked a cohesive structure and visual hierarchy, thereby entailed the risk of not effectively engaging or informing Furhat's new audience.",
+    },
+    {
+      title: "Brand Consistency",
+      description: "The evolving company profile and new target demographic demanded a rebranded approach to showcase Furhat's value propositions.",
+    },
+  ],
+  isList: true,
+};
+
+const designAndDevelopmentProcess = {
+  title: "Design and Development Process",
+  paragraph: [
+    "Since this was a real-world project and with work-confidentiality in mind, I am limited in the information I can share, but I’d be glad to provide a link to the live site once it’s available.",
+    "Throughout the design process, I focused on three core principles:"
+  ],
+  
+
+  content: [
+    {
+      title: "Accessibility",
+      description: "Ensuring a website that could be easily navigated and understood by diverse users was paramount. I carefully created a design system with typography & typescale, color contrasts, and layout structures to enhance readability and meet accessibility guidelines.",
+    },
+    {
+      title: "Visual Cohesion & Branding",
+      description: "I established a design language that expressed Furhat's identity—professional yet friendly, innovative yet approachable. This involved choosing a color scheme, typography, and page flow that aligned with their brand values.",
+    },
+    {
+      title: "Efficient Codebase",
+      description: "Building with scalability in mind, I used clean and modular code, which optimized performance and future maintenance. This approach allowed for reusable components across pages and ensured a seamless experience regardless of user device or screen size.",
+    },
+  ],
+  isList: true,
+};
+
+
+
   return (
     <div className="min-h-screen flex flex-col justify-between">
       <AnimationDark/>
@@ -27,112 +96,35 @@ const Furhat = () => {
         </div>
         </div>
 
-      <div className="flex flex-col justify-center items-center mx-auto ">
-        <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 mx-auto md:w-4/5 mt-24 px-3 md:px-4">
-            <div className="flex flex-col items-left gap-[10px]">
-              <div className="flex items-center gap-2">
-                  <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                  <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">My role</div>
-              </div>
-              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-              Frontend Developer
-              </div>
-            </div>
 
-            <div className="flex flex-col items-left gap-[10px]">
-              <div className="flex items-center gap-2">
-                  <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                  <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">Scope</div>
-              </div>
-              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-              July 2024 - January 2025 - Internship
-              </div>
-            </div>
 
-            <div className="flex flex-col items-start gap-[10px]">
-            <div className="flex items-center gap-2">
+        {/* Details  Overview using mapping method so that I am optimizing layout and creating reusable components even in script*/}
+        <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-[30px] max-w-md lg:max-w-4xl items-start justify-center mx-auto mt-24 px-12 md:px-4">
+          {overView.map((section, index) => (
+            <div key={index} className="flex flex-col items-start gap-[10px]">
+              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] lg:max-w-[25rem] mt-[4px] text-left">
+                {section.paragraph}
+              </div>
+              <div className="flex items-center gap-[15px]">
                 <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">Created By</div>
+                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">
+                  {section.title}
+                </div>
+              </div>
+              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] lg:max-w-[25rem] mt-[4px] text-left">
+                {section.description}
+              </div>
             </div>
-            <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            Nur Gültekin
-            </div>
-            </div>
-
-            <div className="flex flex-col items-start gap-[10px]">
-            <div className="flex items-center gap-2">
-                <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">Frameworks</div>
-            </div>
-            <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            React.js, Webflow, Vanilla.js, Figma, HTML & CSS, Freemarker, Kotlin, Wordpress
-            </div>
-            </div>
-        </div>
-      </div>
-
-
-      <div className="text-white flex flex-col items-center mx-auto mt-48">
-        <div className="text-white  font-normal font-['Tomorrow'] text-center text-3xl md:text-5xl p-8 mb-12 mt-5 border-b border-lime-300 ">Project Overview</div>
-        <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px]">
-          <p>During my internship at Furhat Robotics, I&qrsqo;ve undertaken the challenge of designing and building a completely new website tailored to the company&qrsqo;s evolved brand and new target audience. The previous site, built for an earlier phase in Furhat&qrsqo;s journey, no longer aligned with their expanded product line, broader audience, or brand identity. My task was to create a website that not only addressed accessibility and user experience shortcomings but also redefined Furhat&qrsqo;s online presence with a fresh, engaging, and adaptable design. </p>
-        </div>
-      </div>
+          ))}
+    </div>
 
 
 
+    {/* Problem and Solution Section */}
+    <Section title={problemAndSolution.title} paragraph={problemAndSolution.paragraph} content={problemAndSolution.content} isList={problemAndSolution.isList} />
 
-      <div className="text-white flex flex-col items-center justify-center mx-auto mt-48 my-10">
-          <div className="text-[30px] md:text-[36px] lg:text-5xl font-['Tomorrow'] text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300" >Problem and Solution</div>
-            <div className=" text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-xl justify-center lg:justify-end mb-12 mx-[100px] md:mx-[200px] lg:max-w-[700px]">
-                <p>As Furhat Robotics has grown, so has their audience. While the old website suited a different era of the company, it now fell short in key areas:</p>
-            </div>
-            
-          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
-            <ul className="flex flex-col gap-8">
-                <li className="list-disc marker:text-lime-300">
-                    <span className="text-lime-300">Accessibility: </span>
-                    The website needed updates to meet accessibility standards, ensuring usability for all visitors.</li>
-                <li className="list-disc marker:text-lime-300">
-                    <span className="text-lime-300">Visual Design & User Experience: </span>
-                    The prior design lacked a cohesive structure and didn&qrsqo;t effectively engage or inform Furhat&qrsqo;s new audience. </li>
-                <li className="list-disc marker:text-lime-300">
-                    <span className="text-lime-300">Brand Consistency: </span>
-                    The evolving company profile and new target demographic demanded a rebranded approach to showcase Furhat&qrsqo;s value propositions.</li>
-            </ul>
-            <p>To address these needs, I set out to design and build a website from scratch that would communicate Furhat&qrsqo;s refined brand voice, in line with modern UX/UI principles, and appeal to their new audience. I aimed to deliver a visually engaging experience that was intuitive to navigate and developed with clean, reusable code.</p>
-          </div>
-        </div>
-
-
-
-     
-
-        <div className="text-white flex flex-col items-center justify-center mx-auto mt-48 my-10">
-          <div className="text-[30px] md:text-[36px] lg:text-5xl font-['Tomorrow'] text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300" >Design and Development Process</div>
-            <div className=" text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-xl justify-center lg:justify-end mb-12 mx-[100px] md:mx-[200px] lg:max-w-[700px]">
-                <p>Since this was a real-world project and with work-confidentiality in mind, I am limited in the information I can share, but I&qrsqo;d be glad to provide a link to the live site once it&qrsqo;s available.</p>
-                <p>Throughout the design process, I focused on three core principles:</p>
-            </div>
-          <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left mx-[100px] md:mx-[200px] lg:max-w-[700px] ">
-            <ul className="flex flex-col gap-8">
-                <li className="list-disc marker:text-lime-300">
-                    <span className="text-lime-300">Accessibility: </span>
-                    Ensuring a website that could be easily navigated and understood by diverse users was paramount. I carefully created a design system with typography & typescale, color contrasts, and layout structures to enhance readability and meet accessibility guidelines. 
-                    </li>
-                <li className="list-disc marker:text-lime-300">
-                    <span className="text-lime-300">Visual Cohesion & Branding: </span>
-                    I established a design language that expressed Furhat&qrsqo;s identity—professional yet friendly, innovative yet approachable. This involved choosing a color scheme, typography, and page flow that aligned with their brand values.
-                </li>
-                <li className="list-disc marker:text-lime-300">
-                    <span className="text-lime-300">Efficient Codebase </span>
-                        Building with scalability in mind, I used clean and modular code, which optimized performance and future maintenance. This approach allowed for reusable components across pages and ensured a seamless experience regardless of user device or screen size.
-                </li>
-            </ul>
-            <p>In addition to the website, I had the opportunity to work with Furhat&qrsqo;s graphical user interface  for robot skill development. Developers use this GUI to add and adjust skills for Furhat&qrsqo;s robots. My role involved rebuilding parts of this interface using Freemarker, which also included solving some backend issues with Kotlin & Java that arose as the new interface took shape. This experience allowed me to contribute to both frontend and backend areas to ensure the overall functionality and ease of use of the interface.</p>
-          </div>
-        </div>
-
+    {/* Design and Development Process Section */}
+    <Section title={designAndDevelopmentProcess.title} paragraph={designAndDevelopmentProcess.paragraph} content={designAndDevelopmentProcess.content} isList={designAndDevelopmentProcess.isList} />
 
 
       

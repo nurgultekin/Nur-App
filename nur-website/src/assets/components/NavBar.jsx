@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "tailwindcss/tailwind.css";
 import "../styling/home.css"; // Adjust the import path as necessary
 import "../../App.css";
@@ -8,6 +8,8 @@ const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -18,9 +20,15 @@ const NavigationBar = () => {
     };
 
     const scrollToContact = () => {
-        const contactSection = document.getElementById("contact-section");
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: "smooth" });
+        if (location.pathname === "/") {
+            // If on the home page, scroll to the contact section
+            const contactSection = document.getElementById("contact-section");
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+        } else {
+            // If not on the home page, navigate there and scroll after navigation
+            navigate("/", { state: { scrollToContact: true } });
         }
     };
 
@@ -35,9 +43,21 @@ const NavigationBar = () => {
         };
     }, []);
 
+    // Scroll to the contact section after navigating to the home page
+    useEffect(() => {
+        if (location.state?.scrollToContact) {
+            const contactSection = document.getElementById("contact-section");
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location]);
+
     return (
         <header>
-            <nav className={`navbar ${isScrolled ? "navbar_bg" : ""} flex justify-between items-center p-4`}>
+            <nav
+                className={`navbar ${isScrolled ? "navbar_bg" : ""} flex justify-between items-center p-4`}
+            >
                 <div className="logo">
                     <Link to="/" className="text-yellow-400 font-bold text-lg font-titan-one">
                         NoraG
@@ -83,14 +103,13 @@ const NavigationBar = () => {
                                     { name: "Furhat Robotics", link: "/Furhat", type: "internal" },
                                     { name: "Kapp'n's Catch", link: "/KappnsCatch", type: "internal" },
                                     { name: "LuxeBite", link: "/LuxebiteCaseStudy", type: "internal" },
-                                    /* { name: "Fantasy Chas", link: "/FantasyChass", type: "internal" }, */
                                     { name: "Museum App", link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype", type: "external" },
                                     { name: "Kalmar City Library", link: "https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek", type: "external" },
                                 ].map((item) => (
                                     <Link
                                         key={item.name}
                                         to={item.link}
-                                        target="_blank"
+                                        target={item.type === "external" ? "_blank" : "_self"}
                                         className="pl-6 px-4 py-2 text-white hover:bg-gray-700 transition duration-200 ease-in-out flex items-center gap-4"
                                     >
                                         {item.name}
@@ -122,9 +141,11 @@ const NavigationBar = () => {
 
                 {/* Mobile Navigation Links (within Hamburger Menu) */}
                 <div
-                   className={`nav-links absolute top-full p-4 right-0 w-svw bg-gray-800 md:hidden space-y-4 transition-transform duration-300 ease-in-out transform flex flex-col justify-left ${
-        isMenuOpen ? "opacity-100 translate-y-0 scale-100" : "opacity-0 -translate-y-4 scale-95 pointer-events-none"
-    }`}
+                    className={`nav-links absolute top-full p-4 right-0 w-svw bg-gray-800 md:hidden space-y-4 transition-transform duration-300 ease-in-out transform flex flex-col justify-left ${
+                        isMenuOpen
+                            ? "opacity-100 translate-y-0 scale-100"
+                            : "opacity-0 -translate-y-4 scale-95 pointer-events-none"
+                    }`}
                     style={{ maxWidth: "70vw" }}
                 >
                     <Link to="/AboutPage" className="text-white py-2 w-full ml-8" onClick={toggleMenu}>
@@ -147,7 +168,9 @@ const NavigationBar = () => {
                     {/* Dropdown for "Works" in Mobile Menu */}
                     <div
                         className={`relative left-0 right-0 mx-auto mt-2 w-3/4 h-auto bg-gray-600 rounded-md shadow-lg transition-all duration-300 ease-in-out transform ${
-        isDropdownOpen ? "opacity-100 translate-y-0 scale-100" : "opacity-0 -translate-y-2 scale-95 pointer-events-none"
+                            isDropdownOpen
+                                ? "opacity-100 translate-y-0 scale-100"
+                                : "opacity-0 -translate-y-2 scale-95 pointer-events-none"
                         }`}
                         style={{
                             display: isDropdownOpen ? "block" : "none",
@@ -158,14 +181,13 @@ const NavigationBar = () => {
                                 { name: "Furhat Robotics", link: "/Furhat", type: "internal" },
                                 { name: "Kapp'n's Catch", link: "/KappnsCatch", type: "internal" },
                                 { name: "LuxeBite", link: "/LuxebiteCaseStudy", type: "internal" },
-                                /* { name: "Fantasy Chas", link: "/FantasyChass", type: "internal" }, */
                                 { name: "Museum App", link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype", type: "external" },
                                 { name: "Kalmar City Library", link: "https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek", type: "external" },
                             ].map((item) => (
                                 <Link
                                     key={item.name}
                                     to={item.link}
-                                    target="_blank"
+                                    target={item.type === "external" ? "_blank" : "_self"}
                                     className="pl-6 px-4 py-2 text-white hover:bg-gray-700 transition duration-200 ease-in-out flex items-center"
                                 >
                                     {item.name}

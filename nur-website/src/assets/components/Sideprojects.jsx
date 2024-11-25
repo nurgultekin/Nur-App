@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import "tailwindcss/tailwind.css";
 import pipelineImage from '../media/images/pipeline.jpg';
 import masterWorkflowImage from '../media/images/masterWorkflow.png';
-import redditImage from '../media/images/reddit.jpg';
+/* import redditImage from '../media/images/reddit.jpg'; */
 
 
 const projectData = [

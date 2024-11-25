@@ -1,21 +1,20 @@
 .contact-section {
     display: flex;
-    
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+  
     text-align: center;
     width: 100%;
     box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
   }
   
   .contact-container {
-    max-width: 95%;
+    max-width: 100%;
     margin: 100px auto;
   }
   
   .contact-img {
-    max-width: 90%; /* Ensures the image doesn't get too large on wide screens */
+    max-width: 90vw; /* Ensures the image doesn't get too large on wide screens */
     margin-bottom: 20px; /* Adds some space between the image and the text */
     background-color: antiquewhite;
     border-radius: 4px;

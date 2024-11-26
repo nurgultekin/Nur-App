@@ -113,28 +113,32 @@ h3 {
 .navbar {
   position: fixed;
   display: flex;
-  width: 97%;
-  padding: 36px 30px;
+  width: 100%;
+  padding: 2.25rem 1.875rem;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   justify-content: space-between;
   background-color: transparent; 
-  top: 0; /* Align the navbar to the top of the viewport */
+  top: 0; 
   left:0;
-  z-index: 1600; /* Ensure the navbar is above other elements */
+  z-index: 1600; 
   transition: background-color 0.3s ease;
+ 
+  
 }
 
 .navbar_bg {
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0); /* Optional: Add a semi-transparent background color for better visibility */
+  background-color: rgba(0, 0, 0, 0); 
+  
 }
+
 
 
 /* Additional style for scrolled state */
 
 .navbar.default {
-  background: #333; /* Default background color */
+  background: #333;
 }
 
 .logo{
@@ -164,6 +168,12 @@ h3 {
   
 }
 
+/* @media screen and (max-width:1000px){
+  .nav-links {
+    justify-content: left;
+  }
+} */
+
 .menu {
   margin-right: 20px;
 
@@ -179,14 +189,14 @@ h3 {
 .cta-button {
   color: #111010;
   background-color: #D3E75B;
-  padding: 8px 20px;
-  border-radius: 20px;
+  padding: 0.6rem 1.7rem;
+  border-radius: 1.25rem;
   text-decoration: none;
-  margin-left: 20px; /* Adjust spacing between button and menu */
 }
 
 .cta-button:hover {
   background-color: #C8FE06;
+  box-shadow: 3px 3px #e7bfde, -0.2em 0 .4em rgb(236, 236, 115);
 }
 
 /*

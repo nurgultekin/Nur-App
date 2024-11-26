@@ -121,21 +121,20 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom:0; /* Center the hero section horizontally */
-  height: 100dvh;
+  height: 90dvh;
 }
 
 .hero-title {
   color: #CDE82B;
   -webkit-text-stroke: rgba(0, 0, 0, 0.331) 0.1rem;
-  text-shadow: none; /* Remove any existing text shadow */
+  text-shadow: none; 
   font-family: 'Titan One';
   letter-spacing: 1px;
   font-size: 5rem;
-  text-align: center; /* Center the title text */
-  margin-bottom: 20px; /* Add spacing below the title */
+  text-align: center; 
+  margin-bottom: 20px; 
   z-index: 1000;
 }
 
@@ -151,10 +150,25 @@ font-size: 1.5rem;
 font-style: normal;
 font-weight: 600;
 line-height: 150%;
-word-wrap: break-word;
-margin: 0 auto; /* Center the text horizontally */
+margin: 0 auto; 
 max-width: 75%; 
 z-index: 1000;
+justify-self:center;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-text{
+    max-width:100%;
+    margin: 0 auto;
+    padding-left:2rem;
+    padding-right:2rem;
+    justify-content:center;
+
+  }
+  .hero-container{
+    margin: 0 auto;
+  }
+
 }
 
 .name {
@@ -166,13 +180,11 @@ font-family: "Titan One";
 .selected-cases {
 color: #D3E75B; 
 font-family: 'Nico Moji', sans-serif; 
-font-size: 20px; 
+font-size: 1.225rem; 
 position: relative; 
 margin-top:4rem;
-bottom: 20px; 
-margin-left: 5rem;
+bottom: 1.220rem; 
 justify-content: center;
-transform: translateX(-50%); 
 cursor: pointer; 
 }
 

@@ -56,10 +56,10 @@ const NavigationBar = () => {
     return (
         <header>
             <nav
-                className={`navbar ${isScrolled ? "navbar_bg" : ""} flex justify-between items-center p-4`}
+                className={`navbar ${isScrolled ? "navbar_bg" : ""} flex justify-between items-center py-4 pl-4 lr-8 lg:py-8 lg:px-12`}
             >
                 <div className="logo">
-                    <Link to="/" className="text-yellow-400 font-bold text-lg font-titan-one">
+                    <Link to="/" className="text-yellow-400 font-bold text-lg font-['Titan-one']">
                         NoraG
                     </Link>
                 </div>
@@ -73,8 +73,8 @@ const NavigationBar = () => {
                 </button>
 
                 {/* Desktop Navigation Links */}
-                <div className={`nav-links hidden md:flex md:items-center md:space-x-4`}>
-                    <Link to="/AboutPage" className="text-white">
+                <div className={` hidden md:flex md:items-center md:space-x-4 lg:pr-4 lg:gap-8 `}>
+                    <Link to="/AboutPage" className="text-white lg:mr-4">
                         About
                     </Link>
                     <div className="relative inline-block text-left">
@@ -84,7 +84,7 @@ const NavigationBar = () => {
                         >
                             Works
                             <span
-                                className={`ml-2 transform transition-transform duration-300 ${
+                                className={`ml-4 transform transition-transform duration-300 ${
                                     isDropdownOpen ? "rotate-180" : ""
                                 }`}
                             >
@@ -141,19 +141,19 @@ const NavigationBar = () => {
 
                 {/* Mobile Navigation Links (within Hamburger Menu) */}
                 <div
-                    className={`nav-links absolute top-full p-4 right-0 w-svw bg-gray-800 md:hidden space-y-4 transition-transform duration-300 ease-in-out transform flex flex-col justify-left ${
+                    className={` absolute top-full p-4 right-0 w-svw bg-gray-800 md:hidden space-y-4 transition-transform duration-300 ease-in-out transform flex flex-col justify-left ${
                         isMenuOpen
                             ? "opacity-100 translate-y-0 scale-100"
                             : "opacity-0 -translate-y-4 scale-95 pointer-events-none"
                     }`}
                     style={{ maxWidth: "70vw" }}
                 >
-                    <Link to="/AboutPage" className="text-white py-2 w-full ml-8" onClick={toggleMenu}>
+                    <Link to="/AboutPage" className="text-white p-4 w-full" onClick={toggleMenu}>
                         About
                     </Link>
                     <button
                         onClick={toggleDropdown}
-                        className="text-white py-2 flex items-center focus:outline-none bg-transparent w-full justify-between"
+                        className="text-white p-4 w-full flex items-center focus:outline-none bg-transparent justify-between"
                     >
                         Works
                         <span
@@ -195,7 +195,7 @@ const NavigationBar = () => {
                             ))}
                         </div>
                     </div>
-                    <button className="cta-button text-black py-2 mt-2" onClick={scrollToContact}>
+                    <button className="cta-button text-black mt-2" onClick={scrollToContact}>
                         Say Hi!
                     </button>
                 </div>

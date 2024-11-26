@@ -20,7 +20,7 @@ const KappnsCatch = () => {
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 mr-auto lg:mr-10 mx-auto max-w-fit gap-4">
-          <div className=" font-['Tomorrow'] text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 3: </div>
+          <div className=" font-['Tomorrow'] text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 2: </div>
           <div className=" font-['Tomorrow'] text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Kapp&rsquo;n&rsquo;s Catch</div>
             <div className="flex gap-4">
               <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button max-w-60 text-black py-2 mt-10 mr-4 ">See the Website 
@@ -157,13 +157,9 @@ const KappnsCatch = () => {
       </div>
       
 
-      <div className="flex justify-between items-baseline pr-4">
-        <div className="flex gap-0">
+      <div className="flex justify-between items-center">
+        <div className="flex items-baseline lg:gap-4">
             <div className="p-8">
-            <div className="flex flex-col">
-              <p className="font-['Roboto'] text-white text-[14px] m-0">  </p>
-              <p className="font-['Roboto'] text-white text-[18px] m-0">Go Back</p>
-            </div>
               <a href="#" onClick={(e) => {
                           e.preventDefault();
                           if (window.history.length > 1) {
@@ -178,19 +174,32 @@ const KappnsCatch = () => {
               </a>
 
             </div>
+
+            <div className="p-8">
+              <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+              </a>
         </div>
 
-        <div className="flex flex-col items-center gap-2 p-8">
-  <p className="font-['Roboto'] text-white text-[14px] m-0">Next Case Study:</p>
-  <a href="https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-    <p className="font-['Roboto'] text-white text-[18px] m-0">Kalmar City Library</p>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6">
-      <path strokeLinecap="round" strokeLinejoin="round" d="m13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-    </svg>
-  </a>
-</div>
+        </div>
 
+        <div className="flex flex-col px-4 pb-12">
+          <div>
+            <div>
+          <p className="font-['Roboto'] text-white text-[14px] m-0">Next Case Study:</p>
+          <p className="font-['Roboto'] text-white text-[18px] m-0">LuxeBite</p>
+        </div>
+            <a href="/LuxebiteCaseStudy">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            </a>
 
+          </div>
+
+        </div>
 
 
 

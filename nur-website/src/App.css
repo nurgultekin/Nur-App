@@ -293,7 +293,7 @@ margin: 10px 0;
   padding: 0.7rem 1.2rem;
   border:#111010;
   border: 2px solid #b6beb8; 
-  border-radius: 30px;
+  border-radius: 1.25rem;
   max-width: 13rem;
   cursor: pointer;
   
@@ -326,7 +326,7 @@ margin: 10px 0;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   border: 3px solid var(--Color-palette-primary-accent, #D3E75B);
   background: #D3E75B;
   text-decoration: none;
@@ -353,6 +353,8 @@ margin: 10px 0;
     color:rgb(26, 25, 25);
     box-shadow: 3px 3px #e7bfde, -0.2em 0 .2em rgb(240, 240, 134);
     transform:ease 500ms;
+    white-space: nowrap;
+    overflow: hidden;
 
   }
   

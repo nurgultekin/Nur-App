@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "tailwindcss/tailwind.css";
-import "../styling/home.css"; // Adjust the import path as necessary
+import "../styling/home.css";
 import "../../App.css";
 
 const NavigationBar = () => {
@@ -59,7 +59,7 @@ const NavigationBar = () => {
                 className={`navbar ${isScrolled ? "navbar_bg" : ""} flex justify-between items-center py-4 pl-4 lr-8 lg:py-8 lg:px-12`}
             >
                 <div className="logo">
-                    <Link to="/" className="text-yellow-400 font-bold text-lg font-['Titan-one']">
+                    <Link to="/" className="text-yellow-400 font-bold text-lg">
                         NoraG
                     </Link>
                 </div>
@@ -73,8 +73,8 @@ const NavigationBar = () => {
                 </button>
 
                 {/* Desktop Navigation Links */}
-                <div className={` hidden md:flex md:items-center md:space-x-4 lg:pr-4 lg:gap-8 `}>
-                    <Link to="/AboutPage" className="text-white lg:mr-4">
+                <div className={` hidden md:flex md:items-center md:space-x-4 lg:pr-[2vw] `}>
+                    <Link to="/AboutPage" className="text-white">
                         About
                     </Link>
                     <div className="relative inline-block text-left">

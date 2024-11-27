@@ -54,10 +54,10 @@ const SideProjects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-[50dvh] lg:h-[70dvh] object-cover rounded-lg max-w-[90%]"
+                  className="max-h-[30dvh] object-cover rounded-lg max-w-[90%]"
                 />
               </div>
-              <div className="flex flex-2 flex-col justify-center px-24 py-8 max-w-3/4 ">
+              <div className="flex flex-2 flex-col justify-center px-8 py-8 max-w-3/4 ">
                 <h4 className="text-lg font-bold mb-2 text-black">{project.title}</h4>
                 <p className="text-sm text-gray-600 mb-3">{project.date}</p>
                 <div className="flex flex-wrap mb-3">
@@ -72,7 +72,7 @@ const SideProjects = () => {
                 </div>
                 <div className="flex justify-center items-center ">
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="secondary-button whitespace-nowrap">
-                    <span className="flex items-center gap-2 text-black">
+                    <span className="flex items-center gap-2 text-black text-sm md:text-md">
                     View Project
                 
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.5rem" height="1.5rem" viewBox="0 0 100 100">

@@ -3,6 +3,13 @@
 @import 'tailwindcss/utilities';
 
 
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 0.1rem rgba(0, 0, 0, 0.331);
+  }
+}
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -19,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 
 }
+
+
+
 
 a {
   font-weight: 500;

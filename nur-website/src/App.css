@@ -199,6 +199,14 @@ h3 {
   box-shadow: 3px 3px #e7bfde, -0.2em 0 .4em rgb(236, 236, 115);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cta-button {
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+
+
 /*
 .toggle-menu {
 display: none; 
@@ -289,6 +297,13 @@ margin: 10px 0;
   max-width: 13rem;
   cursor: pointer;
   
+}
+
+@media screen and (max-width: 1024px) {
+  .secondary-button {
+    padding: 0.7rem 1.2rem; 
+   
+  }
 }
 
 .secondary-button:hover {

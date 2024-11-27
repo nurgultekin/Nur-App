@@ -11,7 +11,7 @@ const SkillsCredentials = () => {
           if (entry.isIntersecting) {
             const progressBar = entry.target;
             progressBar.classList.remove("animate-progress");
-            void progressBar.offsetWidth; // Trigger a reflow to restart the animation
+            void progressBar.offsetWidth; 
             progressBar.classList.add("animate-progress");
           } else {
             entry.target.classList.remove("animate-progress");

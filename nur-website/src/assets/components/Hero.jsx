@@ -19,7 +19,7 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="flex flex-col justify-center items-center mb-0 mx-auto pt-8 md:pt-24 px-24 h-full
+        <div className="flex flex-col justify-center items-center mb-0 pt-8 md:pt-24 px-8 lg:px-24 h-full
 ">
             <div>
                 <h1 className="text-4xl md:text-6xl lg:text-[3.5rem] xl:text-[6rem] text-[#CDE82B] font-titan tracking-wide text-center mb-5 z-[1000] text-stroke">

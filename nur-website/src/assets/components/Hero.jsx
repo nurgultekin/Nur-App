@@ -28,8 +28,8 @@ const HeroSection = () => {
                 </h1>
             </div>
 
-            <div className="max-w-[80vw] lg:max-w-3xl">
-                <p className="text-white text-[1rem] md:text-[1rem] lg:text-[1.2rem] mx-auto md:ml-12 text-shadow font-semibold text-lg md:text-xl leading-[130%] font-sans text-left">
+            <div>
+                <p className=" lg:max-w-3xl text-white text-[1rem] md:text-[1rem] lg:text-[1.2rem] mx-auto md:ml-12 text-shadow font-semibold text-lg md:text-xl leading-[130%] font-sans text-left">
                     I am <span className=" text-[1.2rem] lg:text-[1.6rem] text-[#b4b459] font-titan leading-normal">Nur</span>, (a.k.a. Nora), a front-end software developer from Istanbul, now based in Stockholm. I draw great inspiration from arts, games, and nature. I enjoy applying my creativity and logical thinking to design and develop interactive technologies that are both enjoyable and usable.  
                 </p>
             </div>

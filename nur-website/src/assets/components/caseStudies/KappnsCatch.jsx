@@ -32,15 +32,15 @@ const KappnsCatch = () => {
 
 const summary = {
   title: "Project Overview",
-  paragraph: " As part of a school project, my team and I created Kapp’n’s, a whimsical web shop offering an imaginary selection of living fish products. This playful project combined dynamic content, a smooth checkout process, and an interface styled with Tailwind CSS. The challenge lay in developing a functional and engaging web shop within a one-week timeline, while managing a collaborative workflow to ensure smooth integration of our code. ",
+  paragraph: " As part of a school project, my team and I created Kapp’n’s Catch, a whimsical web shop offering an imaginary selection of living fish products. This playful project combined dynamic content, a smooth checkout process, and an interface styled with Tailwind CSS. The challenge lay in developing a functional and engaging web shop within a one-week timeline, while managing a collaborative workflow to ensure smooth integration of our code. ",
   content:null,
   isList:false,
 
 };
 
 const problemAndSolution = {
-  title: "Problem and Solution",
-  paragraph: "Our key challenge was the tight deadline: we had only one week to take Kapp&qrsqo;n&qrsqo;s Catch from concept to completion. As one of the two developers, my role was to manage our codebase and ensure efficient collaboration. Rasmus and I focused on clean, reusable code, utilizing Tailwind CSS to streamline our styling process and speed up interface development with pre-built components. By dynamically fetching product data, we built a website that could adapt to content changes without manual updates, providing a functional shopping experience with dynamic content.",
+  title: "Problem & Solution",
+  paragraph: "Our key challenge was the tight deadline: we had only one week to take Kapp’n’s Catch from concept to completion. As one of the two developers, my role was to manage our codebase and ensure efficient collaboration. Rasmus and I focused on clean, reusable code, utilizing Tailwind CSS to streamline our styling process and speed up interface development with pre-built components. By dynamically fetching product data, we built a website that could adapt to content changes without manual updates, providing a functional shopping experience with dynamic content.",
   isList: false,
 };
 
@@ -58,7 +58,7 @@ const designAndDevelopmentProcess = {
     },
     {
       title: "Time Optimization",
-      description: "Tailwind&qrsqo;s utility-first framework helped us quickly style the interface. By leveraging pre-built components, we saved time without compromising on design quality. This resulted in a visually engaging and cohesive experience.",
+      description: "Tailwind's utility-first framework helped us quickly style the interface. By leveraging pre-built components, we saved time without compromising on design quality. This resulted in a visually engaging and cohesive experience.",
     },
     {
       title: "Tools & Frameworks",

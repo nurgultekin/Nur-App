@@ -3,17 +3,17 @@ import PropTypes from "prop-types";
 const Section = ({ title, paragraph, content, isList }) => {
   return (
     <div className="text-white flex flex-col items-center justify-center mx-auto mt-24">
-      <div className="text-[30px] md:text-[36px] lg:text-5xl font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300">
+      <div className="text-[1.875rem] md:text-[2.25rem] lg:text-5xl font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]">
         {title}
       </div>
       {/* Render the paragraph if available */}
       {paragraph && (
-        <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] text-left max-w-[80%] lg:max-w-[40%] px-12">
+        <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto text-whitesmoke text-left max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
           <p>{paragraph}</p>
         </div>
       )}
       {/* Render list content if isList is true, otherwise just display paragraph text */}
-      <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] justify-center lg:justify-end mb-12 mx-auto max-w-[80%] lg:max-w-[40%] px-12">
+      <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mb-12 mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
         {isList ? (
           <ul className="flex flex-col gap-8">
             {content.map((item, index) => (

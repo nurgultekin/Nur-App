@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Section = ({ title, paragraph, content, isList }) => {
   return (
     <div className="text-white flex flex-col items-center justify-center mx-auto mt-24">
-      <div className="text-[30px] md:text-[36px] lg:text-5xl font-['Tomorrow'] text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300">
+      <div className="text-[30px] md:text-[36px] lg:text-5xl font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300">
         {title}
       </div>
       {/* Render the paragraph if available */}

@@ -112,8 +112,8 @@ const conclusion = {
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
-          <div className=" font-['Tomorrow'] text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 2: </div>
-          <div className=" font-['Tomorrow'] text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Kapp&rsquo;n&rsquo;s Catch</div>
+          <div className=" font-titan text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 2: </div>
+          <div className=" font-titan text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Kapp&rsquo;n&rsquo;s Catch</div>
             <div className="flex flex-col md:flex-row gap-4 mt-8">
               <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button text-black text-sm py-2 md:mt-10 mr-4 scale-90 md:scale-100 whitespace-nowrap ">See the Website 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -135,7 +135,7 @@ const conclusion = {
             <div className="flex flex-col items-left gap-[10px]">
             <div className="flex items-center gap-2">
                 <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">My role</div>
+                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">My role</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
             Lead Frontend Developer
@@ -145,7 +145,7 @@ const conclusion = {
             <div className="flex flex-col items-start gap-[10px]">
             <div className="flex items-center gap-2">
                 <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke ">Scope</div>
+                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke ">Scope</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
                 June 2024 (One week) - School project
@@ -155,7 +155,7 @@ const conclusion = {
             <div className="flex flex-col items-start gap-[10px]">
             <div className="flex items-center gap-2">
                 <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">Team</div>
+                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">Team</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
             Nur Gültekin, Rasmus Mattsson, Matilda Danielsson, Rebecca Reimers, Kenny Gustafsson
@@ -165,7 +165,7 @@ const conclusion = {
             <div className="flex flex-col items-start gap-[10px]">
             <div className="flex items-center gap-2">
                 <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-tomorrow text-whitesmoke">Frameworks</div>
+                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">Frameworks</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
             React.js, Figma, Tailwind CSS, Scrum
@@ -224,8 +224,8 @@ const conclusion = {
         <div className="flex flex-col px-4 pb-12">
           <div>
             <div>
-          <p className="font-['Roboto'] text-white text-[14px] m-0">Next Case Study:</p>
-          <p className="font-['Roboto'] text-white text-[18px] m-0">LuxeBite</p>
+          <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
+          <p className="font-titan text-white text-[18px] m-0">LuxeBite</p>
         </div>
             <a href="/LuxebiteCaseStudy">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">

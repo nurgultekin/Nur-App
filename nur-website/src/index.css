@@ -9,9 +9,35 @@
   }
 }
 
+/* Custom fonts */
+
+@font-face {
+  font-family: "Titan One";
+  src: url('/fonts/titan.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Nico Moji";
+  src: url('/fonts/NicoMoji-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url('/fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 180%;
   font-weight: 400;
@@ -53,6 +79,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.3rem;
   margin-bottom:1.3rem;
+  font-family:"Titan One";
 }
 
 p {

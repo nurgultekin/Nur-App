@@ -95,8 +95,8 @@ const designAndDevelopmentProcess = {
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 mr-auto lg:mr-10 mx-auto max-w-fit gap-4">
-          <div className=" font-['Tomorrow'] text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 1: </div>
-          <div className=" font-['Tomorrow'] text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Furhat Robotics</div>
+          <div className=" font-titan text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 1: </div>
+          <div className=" font-titan text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Furhat Robotics</div>
             {/* <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button max-w-60 text-black py-2 mt-10 mr-4 ">See the Website 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -111,16 +111,16 @@ const designAndDevelopmentProcess = {
         <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-[30px] max-w-md lg:max-w-4xl items-start justify-center mx-auto mt-24 mb-48 px-12 md:px-4">
           {overView.map((section, index) => (
             <div key={index} className="flex flex-col items-start gap-[10px]">
-              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-['Roboto'] text-whitesmoke leading-[30px] lg:max-w-[25rem] mt-[4px] text-left">
+              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] lg:max-w-[25rem] mt-[4px] text-left">
                 {section.paragraph}
               </div>
               <div className="flex items-center gap-[15px]">
                 <div className="w-[21.04px] h-[21.04px] bg-transparent border-[4px] border-lime-300 rounded-full" />
-                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-['Tomorrow'] text-whitesmoke">
+                <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">
                   {section.title}
                 </div>
               </div>
-              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-['Roboto'] text-whitesmoke leading-[30px] lg:max-w-[25rem] mt-[4px] text-left">
+              <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] lg:max-w-[25rem] mt-[4px] text-left">
                 {section.description}
               </div>
             </div>
@@ -144,8 +144,8 @@ const designAndDevelopmentProcess = {
         <div className="flex gap-0">
             <div className="p-8">
             <div className="flex flex-col">
-              <p className="font-['Roboto'] text-white text-[14px] m-0">  </p>
-              <p className="font-['Roboto'] text-white text-[18px] m-0">Go Back</p>
+              <p className="font-roboto text-white text-[14px] m-0">  </p>
+              <p className="font-roboto text-white text-[18px] m-0">Go Back</p>
             </div>
               <a href="#" onClick={(e) => {
                           e.preventDefault();
@@ -165,8 +165,8 @@ const designAndDevelopmentProcess = {
 
       <div className="flex flex-col items-left gap-2 p-8">
         <div>
-          <p className="font-['Roboto'] text-white text-[14px] m-0">Next Case Study:</p>
-          <p className="font-['Roboto'] text-white text-[18px] m-0">Kapp&rsquo;n&rsquo;s Catch</p>
+          <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
+          <p className="font-titan text-white text-[18px] m-0">Kapp&rsquo;n&rsquo;s Catch</p>
         </div>
   
   

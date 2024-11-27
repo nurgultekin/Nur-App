@@ -20,8 +20,9 @@ module.exports = {
         bgYellowLight: "rgba(217, 220, 180, 1)",
       },
       fontFamily: {
-        'titan': ['"Titan One"', 'cursive'],
-        'roboto': ['Roboto', 'sans-serif']
+        titan: ['"Titan One"', 'serif'], 
+        nico: ['"Nico Moji"', 'serif'], 
+        roboto: ['"Roboto"', 'serif'],  
       },
     },
   },

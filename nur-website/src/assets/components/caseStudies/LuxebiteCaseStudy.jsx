@@ -102,8 +102,63 @@ const LuxeBite = () => {
     isList:false,
   
   };
+
+  /* const designSections = {
+    title: null,
+    paragraph: "This section covers the iterative steps we followed in our design process, including wireframing, developing a design system, creating high-fidelity mock-ups, and prototyping.",
+    content: [
+      {
+        title: "4.1 Wireframing: Lo-Fi Design",
+        description: "When we created our wireframe, we drew up a requirement specification from our previous work regarding market research, user research, workshops, and MVP. We prioritized 'must-haves' and 'should-haves,' which laid the foundation for our results.",
+        imageLeft: false,
+        media: {
+          type: "image",
+          src: Wireframe,
+          alt: "Desktop and mobile wireframes showcasing our low-fidelity design."
+        }
+      },
+      {
+        title: "4.2 Design System",
+        description: "Based on our visual identity, semantic identity, and SEO and WCAG principles, we developed our design system. This system includes typography and scale, a color system and scale, and buttons and other UI elements as components.",
+        imageLeft: true,
+        media: [
+          {
+            type: "image",
+            src: ColorScheme,
+            alt: "Color scheme within the design system."
+          },
+          {
+            type: "image",
+            src: Typescale,
+            alt: "Typescale within the design system."
+          }
+        ]
+      },
+      {
+        title: "4.3 Mock-up: High-Fi Design",
+        description: "When it was time to create a mockup, we followed our wireframes and adhered to WCAG standards for elements such as size and contrast. We aimed to design with an airy, luxurious, and modern feel, using color choices that convey this aesthetic. At this stage, we established our visual identity and selected our brand color, gold, to represent the premium quality we deliver.",
+        imageLeft: false,
+        media: {
+          type: "image",
+          src: MockUp,
+          alt: "Desktop and mobile mock-up showcasing our high-fidelity design."
+        }
+      },
+      {
+        title: "4.4 Prototyping: Interactivity",
+        description: "In the final stage of the prototyping phase, we implemented the flow and connected the elements and pages in a clickable format. Our prototype was designed to allow users to make a purchase as a guest (without logging in). We evaluated whether our website was clear, flexible, and easy for users to navigate and complete a purchase/order throughout the entire flow.",
+        imageLeft: false,
+        media: {
+          type: "image",
+          src: Prototyping,
+          alt: "Prototyped mockup of the desktop and mobile design."
+        }
+      }
+    ],
+    isList: true
+  };
   
-  
+   */
 
 
 
@@ -153,6 +208,8 @@ const LuxeBite = () => {
       {/* Problem and Solution Section */}
       <Section title={problemAndSolution.title} paragraph={problemAndSolution.paragraph} content={problemAndSolution.content} isList={problemAndSolution.isList} />
 
+
+     
 
 
 {/** DESIGN PROCESS SECTION */}
@@ -224,10 +281,9 @@ const LuxeBite = () => {
 </div>
 
 
-
       <Section title={empathy.title} paragraph={empathy.paragraph} content={empathy.content} isList={empathy.isList} />
 
-        <div className="text-white flex flex-col items-center justify-center mx-auto mt-24">
+        <div className="text-white flex flex-col items-center justify-center mx-auto mt-24 mb-24 lg-mb-48">
           <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%] "> 1.1. User Research</div>
           <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto text-whitesmoke text-left max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
             <p>Our methodology comprised qualitaive research through structured and semi-structured interviews with 18 participants living in Stockholm, between the ages 19-35.
@@ -238,17 +294,17 @@ const LuxeBite = () => {
               <li><span className="border-lime ">The flashy one:</span> wants it to be an elaborate, innovative, and personalized food experience.</li>
             </ul>
           </div>
-          <div className="flex flex-col justify-center items-center gap-8 mt-24 md:mt-24">
+          <div className="flex flex-col justify-center items-center gap-8 mt-24 md:mt-24 lg:max-w-[100vh] max-w-[110vh]">
               {/* First image pair */}
               <div className="flex flex-col md:flex-row gap-8 md:gap-24 w-full items-center justify-center">
-                <img src={UserResearch1} alt="Image 1" className="w-full md:w-1/2 h-auto rounded-3xl" />
-                <img src={UserResearch2} alt="Image 2" className="w-full md:w-1/2 h-auto rounded-3xl" />
+                <img src={UserResearch1} alt="Image 1" className="w-full md:w-1/2 h-auto rounded-3xl object-scale-down" />
+                <img src={UserResearch2} alt="Image 2" className="w-full md:w-1/2 h-auto rounded-3xl object-scale-down" />
               </div>
               
               {/* Second image pair */}
               <div className="flex flex-col md:flex-row gap-8 md:gap-24 w-full items-center">
-                <img src={UserResearch3} alt="Image 3" className="w-full md:w-1/2 h-auto rounded-3xl" />
-                <img src={UserResearch4} alt="Image 4" className="w-full md:w-1/2 h-auto rounded-3xl" />
+                <img src={UserResearch3} alt="Image 3" className="w-full md:w-1/2 h-auto rounded-3xl object-scale-down" />
+                <img src={UserResearch4} alt="Image 4" className="w-full md:w-1/2 h-auto rounded-3xl object-scale-down" />
               </div>
             </div>
 
@@ -292,12 +348,15 @@ const LuxeBite = () => {
             </div>
            </div>
 
-           <div className="max-w-xl mt-0 lg:mt-24 justify-center mx-auto lg:justify-end">
+           <div className="hidden max-w-xl mt-0 lg:mt-24 justify-center mx-auto lg:justify-end">
             <img src={IdeationImg} alt="Ideation board"></img>
            </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-center gap-5 mb-24">
+        <div className="flex flex-col-reverse lg:flex-row justify-center gap-5 mb-24"> 
+          <div className="hidden max-w-xl mt-0 lg:mt-24 justify-center mx-auto lg:mr-48">
+            <img src={Mvp} alt="Minimum viable product visualisation"></img>
+          </div>
           <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
           <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >3.1. Minimum Viable Product</div>
           <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
@@ -308,9 +367,7 @@ const LuxeBite = () => {
           </div>
            </div>
 
-           <div className="max-w-xl mt-0 lg:mt-24 justify-center mx-auto lg:mr-48">
-            <img src={Mvp} alt="Minimum viable product visualisation"></img>
-           </div>
+ 
         </div>
 
         <div className="flex flex-col justify-center gap-5 mt-24 my-10 ">

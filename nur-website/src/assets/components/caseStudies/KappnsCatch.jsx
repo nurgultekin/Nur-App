@@ -106,7 +106,7 @@ const conclusion = {
 
         <div className="flex flex-col lg:flex-row justify-center mx-auto mt-5">
 
-        <div className="flex gap-[0.5rem] items-center justify-center lg:items-baseline justify-center mt-40  lg:max-w-[40vw] max-w-full object-scale-down mx-auto">
+        <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-40  lg:max-w-[40vw] max-w-full object-scale-down mx-auto">
           <img src={KappnsCatchDT} className=" rounded-lg md:block max-w-[50vw] lg:max-w-[70%] data-twe-lazy-load-init"  />
           <img src={KappnsCatchMob} className="rounded-lg block lg:block max-w-[30vw] lg:max-w-[40%] data-twe-lazy-load-init" />
         </div>
@@ -182,7 +182,12 @@ const conclusion = {
     <Section title={problemAndSolution.title} paragraph={problemAndSolution.paragraph} content={problemAndSolution.content} isList={problemAndSolution.isList} />
 
     {/* Design and Development Process Section */}
-    <Section title={designAndDevelopmentProcess.title} paragraph={designAndDevelopmentProcess.paragraph} content={designAndDevelopmentProcess.content} isList={designAndDevelopmentProcess.isList} />
+    <div className="flex flex-col justify-center items-center">
+      <img src={KappnsCatchDev} className="rounded-md md:block max-w-50vw lg:max-w-[50%] data-twe-lazy-load-init"/>
+      <Section title={designAndDevelopmentProcess.title} paragraph={designAndDevelopmentProcess.paragraph} content={designAndDevelopmentProcess.content} isList={designAndDevelopmentProcess.isList} />
+
+    </div>
+    
 
      
      {/* Improvements Section */}

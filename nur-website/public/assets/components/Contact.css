@@ -1,0 +1,99 @@
+.contact-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  }
+  
+  .contact-container {
+    max-width: 100%;
+    margin: 100px auto;
+  }
+  
+  .contact-img {
+    max-width: 90vw; /* Ensures the image doesn't get too large on wide screens */
+    margin-bottom: 20px; /* Adds some space between the image and the text */
+    background-color: antiquewhite;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+  }
+  
+  .contact-container p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 20px 0; /* Adjusted margin for better spacing */
+  }
+  
+
+.connect-content {
+    direction: column;
+    margin-top: 1rem;
+    margin-right: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 124px;
+   
+  }
+  
+  .connect-content > h3 {
+    font-style: normal;
+    color: black;
+    width: 760vw;
+    align-content: center;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    width: auto;
+    height: 40px;
+  }
+  
+.name-surname {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.name-surname input {
+    width: 35%; /* Each name and surname input takes up 45% of the container width */
+
+}
+
+.input-group {
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%; 
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 18px; 
+    font-family: "Roboto", sans-serif; 
+}
+
+
+.input-group input {
+    width: 100%; /* Each input field takes up 100% of the container width */
+    height: 40px; /* Adjust the height as needed */
+}
+
+.input-group textarea {
+    width: 100%; /* The textarea takes up 100% of the container width */
+    height: 120px; /* Adjust the height as needed */
+}
+
+

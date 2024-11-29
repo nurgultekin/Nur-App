@@ -27,8 +27,8 @@ const App = () => {
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/ContactSection" element={<ContactSection />} />
         <Route path="/LuxebiteCaseStudy" element={<LuxeBite />} />
-        <Route path="KappnsCatch" element={<KappnsCatch />}/>
-        <Route path="Furhat" element={<Furhat />}/>
+        <Route path="/KappnsCatch" element={<KappnsCatch />}/>
+        <Route path="/Furhat" element={<Furhat />}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

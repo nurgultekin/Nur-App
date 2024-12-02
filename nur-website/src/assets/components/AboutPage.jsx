@@ -37,7 +37,7 @@ const AboutPage = () => {
               <br/><br/>
               Since September 2023, I&rsquo;ve been enrolled in the vocational education program for UX design and front-end development and UX design at Chas Academy, and I am now approaching the end of this phase. 
               <br/><br/>
-              Currently, I&rsquo;m a Front-end Developer at Furhat Robotics in Stockholm where I have designed and built a new website for the world&rsquo;s coolest conversational robots! Oh, and I&rsquo;ve adding skills to Furhat robots every now and then just for fun. 
+              Currently, I&rsquo;m a Front-end Developer at Furhat Robotics in Stockholm where I have designed and built a new website for the world&rsquo;s coolest conversational robots! Oh, and I&rsquo;ve been adding skills to Furhat robots every now and then just for fun. 
               <span role="img" aria-label="smiley" className="text-2xl lg:text-[2rem]">😊</span>
             </p>
           </div>

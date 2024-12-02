@@ -13,6 +13,7 @@ import CaseStudyCards from './assets/components/caseStudyCards';
 import LuxeBite from './assets/components/caseStudies/LuxebiteCaseStudy'; 
 import KappnsCatch from './assets/components/caseStudies/KappnsCatch';
 import Furhat from './assets/components/caseStudies/Furhat';
+import FantasyChass from "./assets/components/caseStudies/FantasyChass";
 import 'tailwindcss/tailwind.css';
 import './assets/styling/home.css';
 import ScrollToTop from './ScrollToTop';
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/LuxebiteCaseStudy" element={<LuxeBite />} />
         <Route path="/KappnsCatch" element={<KappnsCatch />}/>
         <Route path="/Furhat" element={<Furhat />}/>
+        <Route path="/FantasyChass" element={<FantasyChass/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

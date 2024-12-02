@@ -18,6 +18,7 @@ import ColorScheme from '../../media/luxebite/color-scheme.png';
 import Typescale from '../../media/luxebite/typescale.png';
 import Section from "../SectionsLayout";
 import React from "react";
+import {Link} from "react-router-dom";
 
 const LuxeBite = () => {
 
@@ -471,14 +472,14 @@ const LuxeBite = () => {
         </div>
 
         <div className="flex flex-col items-center gap-2 p-8">
-  <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
-  <a href="https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-    <p className="font-titan text-white text-[18px] m-0">Kalmar City Library</p>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6">
-      <path strokeLinecap="round" strokeLinejoin="round" d="m13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-    </svg>
-  </a>
-</div>
+          <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
+          <Link to="/FantasyChass" className="flex items-center gap-2">
+            <p className="font-titan text-white text-[18px] m-0">Kalmar City Library</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </Link>
+        </div>
 
 
 

@@ -113,8 +113,8 @@ const conclusion = {
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
-          <div className=" font-titan text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 2: </div>
-          <div className=" font-titan text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Kapp&rsquo;n&rsquo;s Catch</div>
+          <div className=" font-titan text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 4: </div>
+          <div className=" font-titan text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Fantasy Chass</div>
             <div className="flex flex-col md:flex-row gap-4 mt-8">
               <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button text-black text-sm py-2 md:mt-10 mr-4 scale-90 md:scale-100 whitespace-nowrap ">See the Website 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

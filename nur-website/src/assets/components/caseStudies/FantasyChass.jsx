@@ -1,7 +1,6 @@
 
-import KappnsCatchMob from '../../media/kappns-catch/mockup-mobile.gif';
-import KappnsCatchDT from '../../media/kappns-catch/mockup-desktop.gif';
-import KappnsCatchDev from '../../media/kappns-catch/codeLove.png';
+import fantasyChass from '../../media/fantasyChass.png';
+import fantasyChassFlow from '../../media/fantasyChass-flow.png';
 import '../../../App.css';
 import Section from "../SectionsLayout";
 import AnimationDark from "../AnimationDark";
@@ -33,7 +32,7 @@ const FantasyChass = () => {
 
 const summary = {
   title: "Project Overview",
-  paragraph: " As part of a school project, my team and I created Kapp’n’s Catch, a whimsical web shop offering an imaginary selection of living fish products. This playful project combined dynamic content, a smooth checkout process, and an interface styled with Tailwind CSS. The challenge lay in developing a functional and engaging web shop within a one-week timeline, while managing a collaborative workflow to ensure smooth integration of our code. ",
+  paragraph: "This project is a text-based RPG inspired by Dungeons and Dragons, where an AI played the role of the Dungeon Master, dynamically creating stories and gameplay for users. It was developed as part of an innovation competition and involved a multidisciplinary team, including frontend developers, fullstack developers, .NET developers, and DevOps engineers. My role as a frontend developer and UX designer was to design the user interface and implement the game flow, ensuring an engaging and intuitive experience for players. ",
   content:null,
   isList:false,
 
@@ -41,7 +40,7 @@ const summary = {
 
 const problemAndSolution = {
   title: "Problem & Solution",
-  paragraph: "Our key challenge was the tight deadline: we had only one week to take Kapp’n’s Catch from concept to completion. As one of the two developers, my role was to manage our codebase and ensure efficient collaboration. Rasmus and I focused on clean, reusable code, utilizing Tailwind CSS to streamline our styling process and speed up interface development with pre-built components. By dynamically fetching product data, we built a website that could adapt to content changes without manual updates, providing a functional shopping experience with dynamic content.",
+  paragraph: "Traditional tabletop RPGs like Dungeons and Dragons are popular for their storytelling and collaborative gameplay. However, they often require a skilled Dungeon Master to craft immersive narratives and manage gameplay, making it challenging for casual players to enjoy the experience without extensive preparation or expertise. Also, we think that the existing digital RPG platforms lack the creativity and adaptability of human DMs, which can turn into a repetitive or predictable experiences. This gap highlights the need for an innovative approach to delivering personalized, AI-driven RPG experiences that are accessible and engaging for players of all skill levels. So to address that shortcoming, we wanted to create a dynamic and accessible role-playing game experience for users without the need for a human Dungeon Master, while maintaining the creativity and unpredictability that make RPGs engaging.",
   isList: false,
 };
 
@@ -108,8 +107,7 @@ const conclusion = {
         <div className="flex flex-col lg:flex-row justify-center mx-auto mt-5">
 
         <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-40  lg:max-w-[40vw] max-w-full object-scale-down mx-auto">
-          <img src={KappnsCatchDT} className=" rounded-lg md:block max-w-[50vw] lg:max-w-[70%] data-twe-lazy-load-init"  />
-          <img src={KappnsCatchMob} className="rounded-lg block lg:block max-w-[30vw] lg:max-w-[40%] data-twe-lazy-load-init" />
+          <img src={fantasyChass} className=" rounded-lg md:block max-w-[50vw] lg:max-w-[70%] data-twe-lazy-load-init"  />
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
@@ -184,7 +182,7 @@ const conclusion = {
 
     {/* Design and Development Process Section */}
     <div className="flex flex-col justify-center items-center">
-      <img src={KappnsCatchDev} className="rounded-md md:block max-w-50vw lg:max-w-[50%] data-twe-lazy-load-init"/>
+      <img src={fantasyChassFlow} className="rounded-md md:block max-w-50vw lg:max-w-[50%] data-twe-lazy-load-init"/>
       <Section title={designAndDevelopmentProcess.title} paragraph={designAndDevelopmentProcess.paragraph} content={designAndDevelopmentProcess.content} isList={designAndDevelopmentProcess.isList} />
 
     </div>

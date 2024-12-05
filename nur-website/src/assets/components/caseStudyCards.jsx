@@ -26,7 +26,7 @@ const CaseStudyCards = () => {
       type: "School Assignment",
       description:
         "Created an interactive text-based RPG inspired by Dungeons and Dragons, using AI to act as the Dungeon Master.",
-      link: "/FantasyChass",
+      link: "https://www.linkedin.com/posts/chas-academy_chas-challenge-2024-tredjeplaceringvem-activity-7212040805971075072-PBM5?utm_source=share&utm_medium=member_desktop",
     },
     {
       title: "LuxeBite",

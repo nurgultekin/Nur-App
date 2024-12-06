@@ -22,9 +22,9 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center items-center mb-0 pt-8 md:pt-24 px-4 lg:px-24 h-full
 ">
             <div>
-                <h1 className="text-5xl md:text-6xl lg:text-[3.5rem] xl:text-[6rem] text-[#CDE82B] font-titan tracking-wide text-center mb-5 z-[1000] text-stroke">
+                <h1 className="text-4xl md:text-6xl lg:text-[3.5rem] xl:text-[6rem] text-[#CDE82B] font-titan tracking-wide text-center mb-5 z-[1000] text-stroke">
                     Hello, <br />
-                    <span className="text-7xl md:text-9xl lg:text-[9rem] xl:text-[10rem] lg:leading-[100%] xl:leading-[100%]">World!</span>
+                    <span className="text-6xl md:text-9xl lg:text-[9rem] xl:text-[10rem] lg:leading-[100%] xl:leading-[100%]">World!</span>
                 </h1>
             </div>
 

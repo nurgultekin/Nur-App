@@ -1,7 +1,6 @@
 
-import KappnsCatchMob from '../../media/kappns-catch/mockup-mobile.gif';
-import KappnsCatchDT from '../../media/kappns-catch/mockup-desktop.gif';
-import KappnsCatchDev from '../../media/kappns-catch/codeLove.png';
+import fantasyChass from '../../media/fantasyChass.png';
+import fantasyChassFlow from '../../media/fantasyChass-flow.png';
 import '../../../App.css';
 import Section from "../SectionsLayout";
 import AnimationDark from "../AnimationDark";
@@ -33,7 +32,7 @@ const FantasyChass = () => {
 
 const summary = {
   title: "Project Overview",
-  paragraph: " As part of a school project, my team and I created Kapp’n’s Catch, a whimsical web shop offering an imaginary selection of living fish products. This playful project combined dynamic content, a smooth checkout process, and an interface styled with Tailwind CSS. The challenge lay in developing a functional and engaging web shop within a one-week timeline, while managing a collaborative workflow to ensure smooth integration of our code. ",
+  paragraph: "This project is a text-based RPG inspired by Dungeons and Dragons, where an AI played the role of the Dungeon Master, dynamically creating stories and gameplay for users. It was developed as part of an innovation competition and involved a multidisciplinary team, including frontend developers, fullstack developers, .NET developers, and DevOps engineers. My role as a frontend developer and UX designer was to design the user interface and implement the game flow, ensuring an engaging and intuitive experience for players. ",
   content:null,
   isList:false,
 
@@ -41,62 +40,71 @@ const summary = {
 
 const problemAndSolution = {
   title: "Problem & Solution",
-  paragraph: "Our key challenge was the tight deadline: we had only one week to take Kapp’n’s Catch from concept to completion. As one of the two developers, my role was to manage our codebase and ensure efficient collaboration. Rasmus and I focused on clean, reusable code, utilizing Tailwind CSS to streamline our styling process and speed up interface development with pre-built components. By dynamically fetching product data, we built a website that could adapt to content changes without manual updates, providing a functional shopping experience with dynamic content.",
+  paragraph: "Traditional tabletop RPGs like Dungeons and Dragons are popular for their storytelling and collaborative gameplay. However, they often require a skilled Dungeon Master to craft immersive narratives and manage gameplay, making it challenging for casual players to enjoy the experience without extensive preparation or expertise. Also, we think that the existing digital RPG platforms lack the creativity and adaptability of human DMs, which can turn into a repetitive or predictable experiences. This gap highlights the need for an innovative approach to delivering personalized, AI-driven RPG experiences that are accessible and engaging for players of all skill levels. So to address that shortcoming, we wanted to create a dynamic and accessible role-playing game experience for users without the need for a human Dungeon Master, while maintaining the creativity and unpredictability that make RPGs engaging.",
   isList: false,
 };
 
 const designAndDevelopmentProcess = {
-  title: "Development Process",
+  title: "Design and Development Process",
 
   content: [
     {
-      title: "Collaborative Code Management",
-      description: "Using GitHub, I took responsibility for managing our branches and merging processes. We adopted a cautious, step-by-step approach to merging, ensuring each update was functional and bug-free before moving changes to the main branch.",
+      title: "User-Centered Design Approach",
+      description: "I took responsibility for creating an engaging interface with a smooth, understandable, and usable flow while ensuring it appealed to the gamer community. To achieve this, I conducted user research through interviews with 8 individuals and a survey answered by 29 gamers highly engaged in RPGs. The insights revealed a strong preference for a clearer, less cluttered character info, background, and stats window, greater customizability, and appreciation for AI integration. Additionally, new players to Dungeons and Dragons-like games struggled with understanding the mechanics and how to get started. These findings heavily informed our design choices."
     },
     {
-      title: "Dynamic Content",
-      description: "We created a dataset of fictional fish products and used it to populate the site dynamically, which allowed for an evolving product selection. ",
+      title: "Wireframing and Prototyping",
+      description: "In the initial wireframing phase, I focused on addressing user pain points by creating a clear starting point and flow. The prototype began with an introduction to the Dungeon Master, followed by character creation. Users could choose from three options: creating a character manually, generating one using an integrated AI model, or selecting an existing character. If the AI option was chosen, users could specify character preferences and optionally provide a backstory prompt. Once character creation was completed, the game transitioned to text-based gameplay through an AI-powered chatbot. The AI Dungeon Master narrated the story, guided actions, and presented choices, while the chatbot stored the story for saving and resuming the game later."
     },
     {
-      title: "Time Optimization",
-      description: "Tailwind's utility-first framework helped us quickly style the interface. By leveraging pre-built components, we saved time without compromising on design quality. This resulted in a visually engaging and cohesive experience.",
+      title: "AI Integration and Testing",
+      description: "In collaboration with .NET developers, DevOps, and full-stack developers, we successfully integrated AI into our system. The AI powered the Dungeon Master's storytelling and gameplay mechanics, offering a dynamic and immersive experience. Following integration, we conducted extensive testing to ensure functionality and user satisfaction."
     },
     {
       title: "Tools & Frameworks",
-      description: "We used React for building the dynamic elements of the web shop, Tailwind CSS for styling, and Figma for initial design and collaboration with our UX/UI designers. This combination allowed us to work efficiently and achieve a polished product in a short timeframe.",
+      description: "We used a combination of Figma for wireframing, React.js for the frontend, Node.js for backend development, and Agile methodology to coordinate our large team of 12. GitHub was essential for code management, while Notion and Discord facilitated project organization and communication."
     },
+    {
+      title: "Outcome",
+      description: "This project was part of an innovation competition at Chas Academy, where we secured third place out of 16 participating teams. The accomplishment highlighted the team's creativity, collaboration, and ability to deliver a functional, user-focused product."
+    }
   ],
+
   isList: true,
 };
+
 
 const futureImprovements = {
   title: "What Could We Improve?",
 
   content: [
     {
-      title: "Layout First",
-      description: "Start with the layout, work later on logic and debugging to use the tight deadline even more efficiently.",
+      title: "Enhanced User Research",
+      description: "While our user research provided valuable insights, conducting additional rounds of testing with a broader audience could help refine the game mechanics and ensure they cater to diverse player needs."
     },
     {
-      title: "Code Structure",
-      description: "Improve the organization and clarity of the project's code by ensuring a logical structure for component mapping, minimizing code redundancy, and establishing a clean, well-organized file structure.",
+      title: "Streamlined Onboarding",
+      description: "Though we addressed the onboarding challenges for first-time players, a more robust tutorial or guided walkthrough could further reduce confusion and enhance the player experience."
     },
     {
-      title: "UX & UI",
-      description: "Due to the one-week timeframe, we had limited opportunity to focus on the UX/UI aspects of the project. As a result, we relied on pre-existing styles from the Tailwind library rather than developing a custom user journey map or dedicating time to refining the visual interface. Therefore, the project remains rather simple in terms of design. With more time, we could have placed greater emphasis on enhancing the user experience and visual aesthetics.",
+      title: "Expanded AI Features",
+      description: "The AI integration was well-received, but expanding its capabilities to include more dynamic responses and branching storylines could make the gameplay even more immersive and replayable."
     },
+    {
+      title: "Visual Enhancements",
+      description: "Given more time, we could invest in improving the visual design and UI elements to align better with modern RPG aesthetics and gamer expectations."
+    }
   ],
+
   isList: true,
 };
 
 const conclusion = {
   title: "Conclusion",
-  paragraph: "Kapp'n's Catch was a valuable exercise in time management, teamwork, and technical efficiency. Despite the short timeline, our team's commitment to clean code, dynamic functionality, and effective collaboration enabled us to create a functional and delightful product. This experience reinforced the importance of structure and code organization in collaborative projects, and ensured that each member's contributions fit suently into the whole.",
-  content:null,
-  isList:false,
-
+  paragraph: "This text-based RPG project was an incredible opportunity to explore the intersection of design, development, and AI innovation. Our team's collaborative efforts and commitment to user-centered design resulted in a functional and engaging game. Placing third in Chas Academy's innovation competition validated our approach and highlighted areas for growth. Moving forward, this project serves as a foundation for further exploration into dynamic AI-driven narratives and enhanced user experiences.",
+  content: null,
+  isList: false,
 };
-
 
 
   
@@ -108,25 +116,18 @@ const conclusion = {
         <div className="flex flex-col lg:flex-row justify-center mx-auto mt-5">
 
         <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-40  lg:max-w-[40vw] max-w-full object-scale-down mx-auto">
-          <img src={KappnsCatchDT} className=" rounded-lg md:block max-w-[50vw] lg:max-w-[70%] data-twe-lazy-load-init"  />
-          <img src={KappnsCatchMob} className="rounded-lg block lg:block max-w-[30vw] lg:max-w-[40%] data-twe-lazy-load-init" />
+          <img src={fantasyChass} className=" rounded-lg md:block max-w-[50vw] lg:max-w-[70%] data-twe-lazy-load-init"  />
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
           <div className=" font-titan text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 4: </div>
           <div className=" font-titan text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Fantasy Chass</div>
             <div className="flex flex-col md:flex-row gap-4 mt-8">
-              <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button text-black text-sm py-2 md:mt-10 mr-4 scale-90 md:scale-100 whitespace-nowrap ">See the Website 
+{/*               <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button text-black text-sm py-2 md:mt-10 mr-4 scale-90 md:scale-100 whitespace-nowrap ">See the Website 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
-              </a>
-
-              <a href="https://kappns-catch.netlify.app/" target="_blank"className="secondary-button text-black text-sm py-2 md:mt-10 mr-4 flex gap-2 scale-90 md:scale-100 whitespace-nowrap">See on Github 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-              </svg>
-              </a>
+              </a> */}
             </div>
         </div>
         </div>
@@ -184,7 +185,7 @@ const conclusion = {
 
     {/* Design and Development Process Section */}
     <div className="flex flex-col justify-center items-center">
-      <img src={KappnsCatchDev} className="rounded-md md:block max-w-50vw lg:max-w-[50%] data-twe-lazy-load-init"/>
+      <img src={fantasyChassFlow} className="rounded-md md:block max-w-50vw lg:max-w-[50%] data-twe-lazy-load-init"/>
       <Section title={designAndDevelopmentProcess.title} paragraph={designAndDevelopmentProcess.paragraph} content={designAndDevelopmentProcess.content} isList={designAndDevelopmentProcess.isList} />
 
     </div>

@@ -45,57 +45,66 @@ const problemAndSolution = {
 };
 
 const designAndDevelopmentProcess = {
-  title: "Development Process",
+  title: "Design and Development Process",
 
   content: [
     {
-      title: "Collaborative Code Management",
-      description: "Using GitHub, I took responsibility for managing our branches and merging processes. We adopted a cautious, step-by-step approach to merging, ensuring each update was functional and bug-free before moving changes to the main branch.",
+      title: "User-Centered Design Approach",
+      description: "I took responsibility for creating an engaging interface with a smooth, understandable, and usable flow while ensuring it appealed to the gamer community. To achieve this, I conducted user research through interviews with 8 individuals and a survey answered by 29 gamers highly engaged in RPGs. The insights revealed a strong preference for a clearer, less cluttered character info, background, and stats window, greater customizability, and appreciation for AI integration. Additionally, new players to Dungeons and Dragons-like games struggled with understanding the mechanics and how to get started. These findings heavily informed our design choices."
     },
     {
-      title: "Dynamic Content",
-      description: "We created a dataset of fictional fish products and used it to populate the site dynamically, which allowed for an evolving product selection. ",
+      title: "Wireframing and Prototyping",
+      description: "In the initial wireframing phase, I focused on addressing user pain points by creating a clear starting point and flow. The prototype began with an introduction to the Dungeon Master, followed by character creation. Users could choose from three options: creating a character manually, generating one using an integrated AI model, or selecting an existing character. If the AI option was chosen, users could specify character preferences and optionally provide a backstory prompt. Once character creation was completed, the game transitioned to text-based gameplay through an AI-powered chatbot. The AI Dungeon Master narrated the story, guided actions, and presented choices, while the chatbot stored the story for saving and resuming the game later."
     },
     {
-      title: "Time Optimization",
-      description: "Tailwind's utility-first framework helped us quickly style the interface. By leveraging pre-built components, we saved time without compromising on design quality. This resulted in a visually engaging and cohesive experience.",
+      title: "AI Integration and Testing",
+      description: "In collaboration with .NET developers, DevOps, and full-stack developers, we successfully integrated AI into our system. The AI powered the Dungeon Master's storytelling and gameplay mechanics, offering a dynamic and immersive experience. Following integration, we conducted extensive testing to ensure functionality and user satisfaction."
     },
     {
       title: "Tools & Frameworks",
-      description: "We used React for building the dynamic elements of the web shop, Tailwind CSS for styling, and Figma for initial design and collaboration with our UX/UI designers. This combination allowed us to work efficiently and achieve a polished product in a short timeframe.",
+      description: "We used a combination of Figma for wireframing, React.js for the frontend, Node.js for backend development, and Agile methodology to coordinate our large team of 12. GitHub was essential for code management, while Notion and Discord facilitated project organization and communication."
     },
+    {
+      title: "Outcome",
+      description: "This project was part of an innovation competition at Chas Academy, where we secured third place out of 16 participating teams. The accomplishment highlighted the team's creativity, collaboration, and ability to deliver a functional, user-focused product."
+    }
   ],
+
   isList: true,
 };
+
 
 const futureImprovements = {
   title: "What Could We Improve?",
 
   content: [
     {
-      title: "Layout First",
-      description: "Start with the layout, work later on logic and debugging to use the tight deadline even more efficiently.",
+      title: "Enhanced User Research",
+      description: "While our user research provided valuable insights, conducting additional rounds of testing with a broader audience could help refine the game mechanics and ensure they cater to diverse player needs."
     },
     {
-      title: "Code Structure",
-      description: "Improve the organization and clarity of the project's code by ensuring a logical structure for component mapping, minimizing code redundancy, and establishing a clean, well-organized file structure.",
+      title: "Streamlined Onboarding",
+      description: "Though we addressed the onboarding challenges for first-time players, a more robust tutorial or guided walkthrough could further reduce confusion and enhance the player experience."
     },
     {
-      title: "UX & UI",
-      description: "Due to the one-week timeframe, we had limited opportunity to focus on the UX/UI aspects of the project. As a result, we relied on pre-existing styles from the Tailwind library rather than developing a custom user journey map or dedicating time to refining the visual interface. Therefore, the project remains rather simple in terms of design. With more time, we could have placed greater emphasis on enhancing the user experience and visual aesthetics.",
+      title: "Expanded AI Features",
+      description: "The AI integration was well-received, but expanding its capabilities to include more dynamic responses and branching storylines could make the gameplay even more immersive and replayable."
     },
+    {
+      title: "Visual Enhancements",
+      description: "Given more time, we could invest in improving the visual design and UI elements to align better with modern RPG aesthetics and gamer expectations."
+    }
   ],
+
   isList: true,
 };
 
 const conclusion = {
   title: "Conclusion",
-  paragraph: "Kapp'n's Catch was a valuable exercise in time management, teamwork, and technical efficiency. Despite the short timeline, our team's commitment to clean code, dynamic functionality, and effective collaboration enabled us to create a functional and delightful product. This experience reinforced the importance of structure and code organization in collaborative projects, and ensured that each member's contributions fit suently into the whole.",
-  content:null,
-  isList:false,
-
+  paragraph: "This text-based RPG project was an incredible opportunity to explore the intersection of design, development, and AI innovation. Our team's collaborative efforts and commitment to user-centered design resulted in a functional and engaging game. Placing third in Chas Academy's innovation competition validated our approach and highlighted areas for growth. Moving forward, this project serves as a foundation for further exploration into dynamic AI-driven narratives and enhanced user experiences.",
+  content: null,
+  isList: false,
 };
-
 
 
   

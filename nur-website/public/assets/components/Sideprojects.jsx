@@ -15,7 +15,6 @@ const projectData = [
     date: 'May 2022',
     tags: ['Python', 'NLTK', 'Topic modelling', 'API calls', 'Data analysis', 'Orange'],
     link: "https://www.academia.edu/104149506/Sentiment_Analysis_and_Topic_Modelling_on_Twitter_Activity_of_Elon_Musk",
-    
   },
   {
     image: masterWorkflowImage,

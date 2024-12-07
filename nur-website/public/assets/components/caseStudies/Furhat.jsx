@@ -141,12 +141,11 @@ const designAndDevelopmentProcess = {
 
       
 
-      <div className="flex justify-between items-baseline pr-4">
+      <div className="flex justify-between items-end pr-4 mb-24">
         <div className="flex gap-0">
             <div className="p-8">
             <div className="flex flex-col">
               <p className="font-roboto text-white text-[14px] m-0">  </p>
-              <p className="font-roboto text-white text-[18px] m-0">Go Back</p>
             </div>
               <a href="#" onClick={(e) => {
                           e.preventDefault();
@@ -164,20 +163,30 @@ const designAndDevelopmentProcess = {
             </div>
         </div>
 
-      <div className="flex flex-col items-left gap-2 p-8">
-        <div>
-          <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
-          <p className="font-titan text-white text-[18px] m-0">Kapp&rsquo;n&rsquo;s Catch</p>
+        <div className="flex flex-col gap-2 p-8 ">
+          <Link to="/KappnsCatch" className="flex flex-col items-end gap-2">
+            <div className="flex flex-col items-end">
+              <p className="font-titan text-white text-[14px] m-0">Next:</p>
+              <p className="font-titan text-white text-[18px] m-0">Kapp&rsquo;n&rsquo;s Catch</p>
+            </div>
+            <div className="flex justify-end w-full">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                strokeWidth={1.5} 
+                stroke="white" 
+                className="size-12"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" 
+                />
+              </svg>
+            </div>
+          </Link>
         </div>
-  
-  
-        <Link to="/KappnsCatch" className="ml-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">
-            <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
-        </Link>
-      </div>
-
 
 
       </div>  

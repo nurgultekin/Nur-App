@@ -199,7 +199,7 @@ const conclusion = {
     <Section title={conclusion.title} paragraph={conclusion.paragraph}/>
       
 
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between items-end mb-24">
         <div className="flex items-baseline lg:gap-4">
             <div className="p-8">
               <a href="#" onClick={(e) => {
@@ -227,10 +227,10 @@ const conclusion = {
 
         </div>
 
-        <div className="flex flex-col px-8 pb-12">
+        <div className="flex flex-col p-8">
           <Link to="/LuxebiteCaseStudy" className="flex flex-col items-end">
             <div className="flex flex-col items-end">
-              <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
+              <p className="font-titan text-white text-[14px] m-0">Next:</p>
               <p className="font-titan text-white text-[18px] m-0">LuxeBite</p>
             </div>
 

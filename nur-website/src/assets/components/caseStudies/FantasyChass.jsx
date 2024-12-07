@@ -228,7 +228,7 @@ const conclusion = {
 
         </div>
 
-        <div className="flex flex-col items-center gap-2 p-8">
+        <div className="flex flex-col items-center gap-2 p-8 mb-24">
           <Link 
             to="https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek" 
             target="_blank" 
@@ -236,7 +236,7 @@ const conclusion = {
             className="flex flex-col gap-2 w-full items-end"
           >
             <div className="flex flex-col items-end">
-              <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
+              <p className="font-titan text-white text-[14px] m-0">Next:</p>
               <p className="font-titan text-white text-[18px] m-0">Kalmar City Library</p>
             </div>
 

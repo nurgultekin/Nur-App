@@ -42,7 +42,7 @@ const AboutSection = () => {
       <img
         src={GalataTower}
         alt="About Image"
-        className=" w-full max-h-[30vh] lg:max-w-[40vw] lg:max-h-[80vh] object-contain mt-4 lg:mt-8 data-twe-lazy-load-init"
+        className=" w-full max-h-[50vh] lg:max-w-[40vw] lg:max-h-[80vh] object-contain mt-4 lg:mt-8 data-twe-lazy-load-init"
         loading="lazy"
       />
     </section>

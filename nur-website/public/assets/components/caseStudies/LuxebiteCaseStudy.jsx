@@ -284,9 +284,9 @@ const LuxeBite = () => {
 
       <Section title={empathy.title} paragraph={empathy.paragraph} content={empathy.content} isList={empathy.isList} />
 
-        <div className="text-white flex flex-col items-center justify-center mx-auto mt-24 mb-24 lg-mb-48">
+        <div className="text-white flex flex-col items-center justify-center mx-auto mr-mt-24 mb-24 lg-mb-48">
           <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%] "> 1.1. User Research</div>
-          <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto text-whitesmoke text-left max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
+          <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto text-whitesmoke text-left max-w-[90%] md:max-w-[70%] lg:max-w-[50%] px-12">
             <p>Our methodology comprised qualitaive research through structured and semi-structured interviews with 18 participants living in Stockholm, between the ages 19-35.
             In this phase, we identified our user group, the recurring user types, their motivation and needs in online home delivery services that offer fine dining. We identified:</p>
             <ul>
@@ -319,19 +319,17 @@ const LuxeBite = () => {
 
         <Section title={define.title} paragraph={define.paragraph} content={define.content} isList={define.isList} />
 
-        <div className="flex flex-col lg:flex-row justify-center gap-5 mt-24 mb-24 lg:mb-24 ">
-        <div className="md:max-w-4xl mx-auto justify-center lg:mt-48 lg:ml-4 ">
-            <img src={UserJourneyMap} alt="What, How and Why Road-map" className="max-h-[50vh] max-w-[100vw] "></img>
-            <p>Figure: User journey map</p>
-          </div>
+        <div className="flex flex-col justify-center gap-5 mt-24 mb-24 lg:mb-24 ">
           <div className="text-white flex flex-col justify-center items-center mb-12 ">
             <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >2.1. User Journey Map</div>
-            <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[80%] px-12 pt-8">
+            <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%] px-12 pt-8">
             <p>Throughout the previous phases of the design process, which included market research and user research, and the definition of “what,” our user journey evolved organically. Initially, we had a more general target group, but the empathy,  phase with user research and market research refined our user roadmap, helped us identify our target group as middle and upper-middle-class young adults and middle-aged adults living in Stockholm. </p>
             <p>We concluded that they want to access food delivery services in an exclusive, smooth, and unique way. They should prefer our services because we aim to make every day a little more special by offering a “golden edge to everyday life” and providing an exclusive experience even in a quick food ordering setting online.</p>
            </div>
-
-          
+           <div className="md:max-w-4xl mx-auto justify-center lg:mt-8 ">
+            <img src={UserJourneyMap} alt="What, How and Why Road-map" className="max-h-[50vh] max-w-[100vw] "></img>
+            <p>Figure: User journey map</p>
+          </div>
         </div>
 
 
@@ -341,7 +339,7 @@ const LuxeBite = () => {
         <div className="flex flex-col lg:flex-row justify-center gap-5 my-10 mb-24 lg:mb-24 ">
           <div className="text-white flex flex-col justify-center items-center mb-12 ">
             <div className="text-[1.875rem] md:text-[2.25rem] lg:text-5xl font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >3. Ideate</div>
-            <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[80%] px-12 pt-8">
+            <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%] px-12 pt-8">
               <p>To deepen our insights gathered from market and user research, our design team held a series of engaging workshops and brainstorming sessions.</p>
               <p>Throughout these workshops, we utilized various creative exercises, including mindset activities, Crazy 8, and behavior stations, while collectively voting on strategies to enhance our offerings. I was responsible for the mindset activities and helping my team members think outside the box. </p>
               <p>Our aim with these ideation sessions was to make informed decisions based on our user and market research, generating ideas that would help us create a more unique, flexible, and exclusive dining experience for the personas identified in the “empathy” phase of our design process: the conscious one, the pleasure seeker, and the flashy one.</p>
@@ -360,7 +358,7 @@ const LuxeBite = () => {
           </div>
           <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
           <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >3.1. Minimum Viable Product</div>
-          <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
+          <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%] px-12">
             <p>To deepen our insights gathered from market and user research, our design team held a series of engaging workshops and brainstorming sessions.</p>
             <p>Throughout these workshops, we utilized various creative exercises, including mindset activities, Crazy 8, and behavior stations, while collectively voting on strategies to enhance our offerings. I was responsible for the mindset activities and helping my team members think outside the box. </p>
             <p>Our aim with these ideation sessions was to make informed decisions based on our user and market research, generating ideas that would help us create a more unique, flexible, and exclusive dining experience for the personas identified in the “empathy” phase of our design process: the conscious one, the pleasure seeker, and the flashy one.</p>
@@ -376,41 +374,41 @@ const LuxeBite = () => {
               <div className="text-[1.875rem] md:text-[2.25rem] lg:text-5xl font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >4. Prototype</div>
            </div>
 
-           <div className="flex flex-col-reverse lg:flex-row justify-center gap-5 ">
+           <div className="flex flex-col justify-center gap-5 ">
               <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
                   <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >4.1 Wireframing: Lo-Fi Design</div>
-                       <div className="ttext-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mb-12 mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
+                       <div className="ttext-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mb-12 mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%] px-12">
                           <p>When we created our wireframe, we drew up a requirement specification from our previous work regarding market research, user research, workshops and mvp. Where we prioritized &#34;must haves&#34; and &#34;should haves&#34;, which laid the foundation for our result.</p>
                         </div>
            </div>
 
-                <div className="max-w-xl mt-8 lg:mt-24 justify-center flex mx-auto lg:justify-end">
-                  <img src={Wireframe} alt="Desktop and mobile wireframea which showcase our low fidelity design." className=" max-h-[40vh]"></img>
+                <div className="max-w-xl mt-8 justify-center flex mx-auto lg:justify-end">
+                  <img src={Wireframe} alt="Desktop and mobile wireframea which showcase our low fidelity design." className="max-h-[50vh] lg:max-h-[80vh]"></img>
                 </div>
            </div>
 
            <div className="flex flex-col justify-center gap-5 mt-24 ">
               <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
                   <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >4.2. Design System</div>
-                       <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12 ">
+                       <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%] px-12 ">
                           <p>Based on our visual identity, semantic identity, and SEO and WCAG principles, we developed our design system. This system includes typography and scale, a color system and scale, and buttons and other UI elements as components.</p>
                         </div>
               </div>
               <div className="max-w-xl mt-8 lg:mt-8 justify-center flex flex-col lg:flex-row mx-auto lg:justify-center gap-4">
-                      <img src={ColorScheme} alt="Color scheme within the design system" className=" max-h-md"></img>
-                      <img src={Typescale} alt="Typescale within the design system" className=" max-h-md"></img>
+                      <img src={ColorScheme} alt="Color scheme within the design system" className=" max-h-[50vh]"></img>
+                      <img src={Typescale} alt="Typescale within the design system" className=" max-h-[50vh]"></img>
                   </div>
 
 
            </div>
 
-           <div className="flex flex-col lg:flex-row justify-center gap-5 mt-24">
-                  <div className="max-w-xl mt-8 lg:mt-24 justify-center flex mx-auto lg:justify-end">
-                      <img src={MockUp} alt="Desktop and mobile mock-up which showcase our high fidelity design." className=" max-h-sm"></img>
+           <div className="flex flex-col-reverse justify-center gap-5 mt-24">
+                  <div className="max-w-xl mt-8 justify-center flex mx-auto lg:justify-end">
+                      <img src={MockUp} alt="Desktop and mobile mock-up which showcase our high fidelity design." className=" max-h-[50vh] lg:max-h-[100vh]"></img>
                   </div>
               <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
                   <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >4.3. Mock-up: High-Fi Design</div>
-                       <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mb-12 mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
+                       <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%] px-12">
                           <p>When it was time to create a mockup, we followed our wireframes and adhered to the WCAG standards for elements such as size and contrast.</p>
                           <p>We aimed to design with an airy, luxurious, and modern feel, using color choices that convey this aesthetic. At this stage, we established our visual identity and selected our brand color, gold, to represent the premium quality we deliver.</p>
                         </div>
@@ -421,17 +419,17 @@ const LuxeBite = () => {
 
 
 
-           <div className="flex flex-col-reverse lg:flex-row justify-center gap-5 mt-24">
+           <div className="flex flex-col justify-center gap-5 mt-24">
               <div className="text-white flex flex-col items-center justify-center w-11/12 mx-auto ">
                   <div className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.8rem] font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]" >4.4. Prototyping - Interactivity </div>
-                       <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[60%] px-12">
+                       <div className="text-[1rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto justify-center lg:justify-end mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%] px-12">
                           <p>In the final stage of prototyping phase, which is to implement the flow and connect the elements and pages with each other in a clickable format. Our prototype was designed to allow users to make a purchase as a guest (without logging in).</p>
                           <p>We implemented the prototype to evaluate whether our website was clear, flexible, and easy for users to navigate and complete a purchase/order throughout the entire flow.</p>
                         </div>
            </div>
 
-           <div className="max-w-xl mt-8 lg:mt-24 justify-center flex mx-auto lg:justify-end">
-            <img src={Prototyping} alt="Prototyped mockup of the Desktop and mobile design." className=" max-h-[40vh]"></img>
+           <div className="max-w-xl mt-8 justify-center flex mx-auto lg:justify-end">
+            <img src={Prototyping} alt="Prototyped mockup of the Desktop and mobile design." className="max-h-[50vh] lg:max-h-[80vh]"></img>
            </div>
            </div>
 
@@ -448,12 +446,11 @@ const LuxeBite = () => {
 
 
 
-      <div className="flex justify-between items-baseline pr-4">
+      <div className="flex justify-between items-end pr-4 mb-24">
         <div className="flex gap-0">
             <div className="p-8">
             <div className="flex flex-col">
               <p className="font-roboto text-white text-[14px] m-0">  </p>
-              <p className="font-roboto text-white text-[18px] m-0">Go Back</p>
             </div>
               <a href="#" onClick={(e) => {
                           e.preventDefault();
@@ -472,23 +469,33 @@ const LuxeBite = () => {
         </div>
 
         <div className="flex flex-col items-center gap-2 p-8">
-          <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
-            <Link to="/FantasyChass" className="ml-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">
-              <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          <Link to="/FantasyChass" className="flex flex-col items-end gap-1 w-full">
+            <div className="flex flex-col items-end">
+              <p className="font-titan text-white text-[14px] m-0">Next:</p>
+              <p className="font-titan text-white text-[18px] m-0">Fantasy Chass</p>
+            </div>
+
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              strokeWidth={1.5} 
+              stroke="white" 
+              className="size-12"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" 
+              />
             </svg>
-            </Link>
+          </Link>
         </div>
 
-
-
-
-
-
-
+        </div>
       </div>  
         
-    </div>
+
   );
 };
 

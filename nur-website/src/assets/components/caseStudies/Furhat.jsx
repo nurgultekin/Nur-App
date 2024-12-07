@@ -163,10 +163,10 @@ const designAndDevelopmentProcess = {
             </div>
         </div>
 
-        <div className="flex flex-col gap-2 p-8">
+        <div className="flex flex-col gap-2 p-8 ">
           <Link to="/KappnsCatch" className="flex flex-col items-end gap-2">
             <div className="flex flex-col items-end">
-              <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
+              <p className="font-titan text-white text-[14px] m-0">Next:</p>
               <p className="font-titan text-white text-[18px] m-0">Kapp&rsquo;n&rsquo;s Catch</p>
             </div>
             <div className="flex justify-end w-full">

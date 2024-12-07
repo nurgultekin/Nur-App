@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 
 const Section = ({ title, paragraph, content, isList, leftImage, rightImage, leftVideo, rightVideo }) => {
   return (
-    <div className="text-white flex flex-col items-center justify-center">
+    <div className="text-white flex flex-col items-center justify-center py-12 lg:py-24">
       <div className="text-[1.875rem] md:text-[2.25rem] lg:text-5xl font-titan text-whitesmoke mb-12 mt-5 p-8 border-b border-lime-300 max-w-[70%] md:max-w-auto leading-[130%]">
         {title}
       </div>
       
-      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between w-full max-w-[90%] lg:max-w-[70%] px-12 gap-8">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between w-full max-w-[90%] lg:max-w-[50%] px-12 gap-8">
         {/* Render media on the left */}
         {(leftImage || leftVideo) && (
           <div className="lg:w-1/2 mb-8 lg:mb-0">

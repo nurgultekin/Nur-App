@@ -103,6 +103,7 @@ const NavigationBar = () => {
                                     { name: "Furhat Robotics", link: "/Furhat", type: "internal" },
                                     { name: "Kapp'n's Catch", link: "/KappnsCatch", type: "internal" },
                                     { name: "LuxeBite", link: "/LuxebiteCaseStudy", type: "internal" },
+                                    { name: "FantasyChass", link: "/FantasyChass", type: "internal" },
                                     { name: "Museum App", link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype", type: "external" },
                                     { name: "Kalmar City Library", link: "https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek", type: "external" },
                                 ].map((item) => (

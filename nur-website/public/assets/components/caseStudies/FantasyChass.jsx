@@ -116,8 +116,8 @@ const conclusion = {
 
         <div className="flex flex-col lg:flex-row justify-center mx-auto mt-5">
 
-        <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-40  lg:max-w-[40vw] max-w-full object-scale-down mx-auto">
-          <img src={fantasyChass} className=" rounded-lg md:block max-w-[50vw] lg:max-w-[70%] data-twe-lazy-load-init"  />
+        <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-40  max-w-[90vw] lg:max-w-[50vw] object-scale-down mx-auto">
+          <img src={fantasyChass} className=" rounded-lg md:block max-w-[90vw] lg:max-w-[50vw]"/>
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">

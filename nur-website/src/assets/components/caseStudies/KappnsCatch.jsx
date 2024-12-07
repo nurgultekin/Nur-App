@@ -107,22 +107,22 @@ const conclusion = {
 
         <div className="flex flex-col lg:flex-row justify-center mx-auto mt-5">
 
-        <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-40  lg:max-w-[40vw] max-w-full object-scale-down mx-auto">
-          <img src={KappnsCatchDT} className=" rounded-lg md:block max-w-[50vw] lg:max-w-[70%] data-twe-lazy-load-init"  />
-          <img src={KappnsCatchMob} className="rounded-lg block lg:block max-w-[30vw] lg:max-w-[40%] data-twe-lazy-load-init" />
+        <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-40 lg:w-[40vw] w-full object-scale-down mx-auto">
+          <img src={KappnsCatchDT} className=" rounded-lg md:block max-w-[60%]"  />
+          <img src={KappnsCatchMob} className="rounded-lg block lg:block max-w-[30%] lg:max-w-[40%]" />
         </div>
 
-        <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
-          <div className=" font-titan text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 2: </div>
-          <div className=" font-titan text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Kapp&rsquo;n&rsquo;s Catch</div>
-            <div className="flex flex-col md:flex-row gap-4 mt-8">
-              <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button text-black text-sm py-2 md:mt-10 mr-4 scale-90 md:scale-100 whitespace-nowrap ">See the Website 
+        <div className="text-white flex flex-col justify-center lg:items-left mt-10 md:mt-10 lg:mt-48 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
+          <div className=" font-titan text-[18px] sm:text-[18px]  md:text-[24px]  lg:text-[32px] leading-[130%]">Case Study 2: </div>
+          <div className=" font-titan text-[42px] sm:text-[42px]  md:text-[60px]  lg:text-[78px] leading-[130%] ">Kapp&rsquo;n&rsquo;s Catch</div>
+            <div className="flex flex-col md:flex-row gap-8 lg:gap-4 mt-8 justify-center">
+              <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button w-48 text-black flex justify-center items-center text-sm py-2 md:mt-10 scale-90 md:scale-100 whitespace-nowrap mx-auto ">See the Website 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
               </a>
 
-              <a href="https://kappns-catch.netlify.app/" target="_blank"className="secondary-button text-black text-sm py-2 md:mt-10 mr-4 flex gap-2 scale-90 md:scale-100 whitespace-nowrap">See on Github 
+              <a href="https://kappns-catch.netlify.app/" target="_blank"className="secondary-button w-48 text-black text-sm py-2 md:mt-10 flex gap-2  justify-center items-center scale-90 md:scale-100 whitespace-nowrap mx-auto">See on Github 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>

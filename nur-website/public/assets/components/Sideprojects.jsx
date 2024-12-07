@@ -44,7 +44,7 @@ const SideProjects = () => {
   };
 
   return (
-    <section className="bg-bgLight mt-16 pb-12 flex flex-col justify-center items-center max-h-full">
+    <section className="bg-bgLight mt-16 pb-12 flex flex-col justify-center max-h-full">
       <h2 className="text-black text-2xl md:text-3xl max-w-[80%] text-center mx-auto pt-14 mb-8">Featured projects outside of work</h2>
       <Slider {...settings} className="relative">
         {projectData.map((project, index) => (
@@ -55,7 +55,6 @@ const SideProjects = () => {
                   src={project.image}
                   alt={project.title}
                   className="max-h-[30dvh] object-cover rounded-lg max-w-[90%]"
-                  loading="lazy"
                 />
               </div>
               <div className="flex flex-2 flex-col justify-center px-8 py-8 max-w-3/4 ">

@@ -91,13 +91,13 @@ const designAndDevelopmentProcess = {
 
         <div className="flex flex-col lg:flex-row justify-center mx-auto w-4/5 mt-5">
 
-        <div className="flex gap-[15px] items-baseline mt-40 mr-auto lg:mr-10 max-w-fit object-scale-down mx-auto">
-          <img src={FurhatMockUp} className=" rounded-lg md:block max-w-sm md:max-w-lg sm:max-w-sm  data-twe-lazy-load-init"  />
+        <div className="flex gap-[15px] items-baseline mt-40 mr-auto lg:mr-10 max-w-[70vw] lg:max-w-[40vw] object-scale-down mx-auto">
+          <img src={FurhatMockUp} className=" rounded-lg md:block max-w-[70vw] lg:max-w-[40vw]"  />
         </div>
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 mr-auto lg:mr-10 mx-auto max-w-fit gap-4">
-          <div className=" font-titan text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 1: </div>
-          <div className=" font-titan text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">Furhat Robotics</div>
+          <div className=" font-titan text-[18px] sm:text-[18px]  md:text-[24px]  lg:text-[32px] leading-[130%]">Case Study 1: </div>
+          <div className=" font-titan text-[42px] sm:text-[42px] md:text-[60px]  lg:text-[78px] leading-[130%] ">Furhat Robotics</div>
             {/* <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button max-w-60 text-black py-2 mt-10 mr-4 ">See the Website 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />

@@ -177,8 +177,8 @@ const LuxeBite = () => {
         </div>
 
         <div className="text-white flex flex-col justify-center items-center mt-10 md:mt-10 md:ml-8">
-          <div className=" font-titan text-[18px] sm:text-[18px] sm:leading-[22px] md:text-[24px] md:leading-[28px] lg:text-[32px] lg:leading-[36px]">Case Study 3: </div>
-          <div className=" font-titan text-[42px] sm:text-[42px] sm:leading-[48px] md:text-[60px] md:leading-[64px] lg:text-[78px] lg:leading-[80px] ">LuxeBite</div>
+          <div className=" font-titan text-[18px] sm:text-[18px]  md:text-[24px] lg:text-[32px] leading-[130%]">Case Study 3: </div>
+          <div className=" font-titan text-[42px] sm:text-[42px] md:text-[60px]  lg:text-[78px] leading-[130%] ">LuxeBite</div>
         </div>
       </div>
 

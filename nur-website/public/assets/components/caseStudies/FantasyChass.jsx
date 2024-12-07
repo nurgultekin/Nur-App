@@ -114,13 +114,13 @@ const conclusion = {
       <AnimationDark/>
       
 
-        <div className="flex flex-col lg:flex-row justify-center mx-auto mt-5">
+        <div className="flex flex-col lg:flex-row justify-center mx-auto mt-5 gap-12">
 
-        <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-40  max-w-[90vw] lg:max-w-[50vw] object-scale-down mx-auto">
-          <img src={fantasyChass} className=" rounded-lg md:block max-w-[90vw] lg:max-w-[50vw]"/>
+        <div className="flex gap-[0.5rem] items-center lg:items-baseline justify-center mt-24 max-w-[90vw] lg:max-w-[40vw] object-scale-down mx-auto">
+          <img src={fantasyChass} className=" rounded-lg md:block max-w-[90vw] lg:max-w-[40vw]"  />
         </div>
 
-        <div className="text-white flex flex-col justify-center items-left lg:items-left mt-10 md:mt-10 lg:mt-48 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
+        <div className="text-white flex flex-col justify-center items-left lg:items-left lg:mt-24 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
           <div className=" font-titan text-[18px] sm:text-[18px] leading-[150%] md:text-[24px] lg:text-[32px] lg:leading-[36px]">Case Study 4: </div>
           <div className=" font-titan text-[42px] sm:text-[42px] leading-[150%] md:text-[60px]  lg:text-[78px] lg:leading-[80px] ">Fantasy Chass</div>
             <div className="flex flex-col md:flex-row gap-4 mt-8">
@@ -203,7 +203,7 @@ const conclusion = {
     <Section title={conclusion.title} paragraph={conclusion.paragraph}/>
       
 
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between items-end mb-24">
         <div className="flex items-baseline lg:gap-4">
             <div className="p-8">
               <a href="#" onClick={(e) => {
@@ -231,7 +231,7 @@ const conclusion = {
 
         </div>
 
-        <div className="flex flex-col items-center gap-2 p-8 mb-24">
+        <div className="flex flex-col items-center gap-2 p-8">
           <Link 
             to="https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek" 
             target="_blank" 

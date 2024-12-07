@@ -73,7 +73,7 @@ const NavigationBar = () => {
                 </button>
 
                 {/* Desktop Navigation Links */}
-                <div className={` hidden md:flex md:items-center md:space-x-4 lg:pr-[2vw] `}>
+                <div className={` hidden md:flex md:items-center md:space-x-8 lg:pr-[2vw] `}>
                     <Link to="/AboutPage" className="text-white">
                         About
                     </Link>

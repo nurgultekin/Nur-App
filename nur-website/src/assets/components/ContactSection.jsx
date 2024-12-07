@@ -11,7 +11,8 @@ const ContactSection = () => {
   return (
     <section className="contact-section">
       <div className="contact-container">
-        <img src={nurImage} className="max-w-screen" loading="lazy" alt="Image where Nur appears to bend the tree with her one foot" />
+        <div className="w-full"><img src={nurImage} className="max-w-screen object-fill" loading="lazy" alt="Image where Nur appears to bend the tree with her one foot" /></div>
+        
         <p>Eager to connect and collaborate. Let&rsquo;s make things happen!</p>
         <div className=" gap-12 flex justify-center items-baseline">
         {/* Email SVG */}

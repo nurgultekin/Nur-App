@@ -1,5 +1,5 @@
 
-import fantasyChass from '../../media/fantasyChass.png';
+import fantasyChass from '../../media/fantasyChass.svg';
 import fantasyChassFlow from '../../media/fantasyChass-flow.png';
 import fantasyChassFlowLG from '../../media/fantasyChass-flow-desktop.png';
 import '../../../App.css';

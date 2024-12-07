@@ -1,6 +1,7 @@
 
 import fantasyChass from '../../media/fantasyChass.png';
 import fantasyChassFlow from '../../media/fantasyChass-flow.png';
+import fantasyChassFlowLG from '../../media/fantasyChass-flow-desktop.png';
 import '../../../App.css';
 import Section from "../SectionsLayout";
 import AnimationDark from "../AnimationDark";
@@ -184,8 +185,10 @@ const conclusion = {
     <Section title={problemAndSolution.title} paragraph={problemAndSolution.paragraph} content={problemAndSolution.content} isList={problemAndSolution.isList} />
 
     {/* Design and Development Process Section */}
-    <div className="flex flex-col justify-center items-center">
-      <img src={fantasyChassFlow} className="rounded-md md:block max-w-50vw lg:max-w-[50%] data-twe-lazy-load-init"/>
+    <div className="flex flex-col justify-center items-center text-white">
+      <img src={fantasyChassFlow} loading="lazy" alt="Visual sequence depicting the start menu and gameplay process of the Stayin Alive game." className="rounded-md lg:hidden max-h-[70vh]"/>
+      <img src={fantasyChassFlowLG} loading="lazy" className="rounded-md hidden lg:block max-h-[60vh]"/>
+      <p>Figure: Stayin Alive game start and play flow</p>
       <Section title={designAndDevelopmentProcess.title} paragraph={designAndDevelopmentProcess.paragraph} content={designAndDevelopmentProcess.content} isList={designAndDevelopmentProcess.isList} />
 
     </div>
@@ -200,7 +203,7 @@ const conclusion = {
     <Section title={conclusion.title} paragraph={conclusion.paragraph}/>
       
 
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between items-end mb-24">
         <div className="flex items-baseline lg:gap-4">
             <div className="p-8">
               <a href="#" onClick={(e) => {
@@ -228,7 +231,7 @@ const conclusion = {
 
         </div>
 
-        <div className="flex flex-col items-center gap-2 p-8 mb-24">
+        <div className="flex flex-col items-center gap-2 p-8">
           <Link 
             to="https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek" 
             target="_blank" 

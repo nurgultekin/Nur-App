@@ -1,6 +1,7 @@
 
 import fantasyChass from '../../media/fantasyChass.png';
 import fantasyChassFlow from '../../media/fantasyChass-flow.png';
+import fantasyChassFlowLG from '../../media/fantasyChass-flow-desktop.png';
 import '../../../App.css';
 import Section from "../SectionsLayout";
 import AnimationDark from "../AnimationDark";
@@ -184,8 +185,10 @@ const conclusion = {
     <Section title={problemAndSolution.title} paragraph={problemAndSolution.paragraph} content={problemAndSolution.content} isList={problemAndSolution.isList} />
 
     {/* Design and Development Process Section */}
-    <div className="flex flex-col justify-center items-center">
-      <img src={fantasyChassFlow} className="rounded-md md:block max-w-50vw lg:max-w-[50%] data-twe-lazy-load-init"/>
+    <div className="flex flex-col justify-center items-center text-white">
+      <img src={fantasyChassFlow} loading="lazy" alt="Visual sequence depicting the start menu and gameplay process of the Stayin Alive game." className="rounded-md lg:hidden max-h-[70vh]"/>
+      <img src={fantasyChassFlowLG} loading="lazy" className="rounded-md hidden lg:block max-h-[60vh]"/>
+      <p>Figure: Stayin Alive game start and play flow</p>
       <Section title={designAndDevelopmentProcess.title} paragraph={designAndDevelopmentProcess.paragraph} content={designAndDevelopmentProcess.content} isList={designAndDevelopmentProcess.isList} />
 
     </div>

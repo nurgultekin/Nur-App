@@ -21,16 +21,16 @@ const NavigationBar = () => {
 
     const scrollToContact = () => {
         if (location.pathname === "/") {
-            // If on the home page, scroll to the contact section
             const contactSection = document.getElementById("contact-section");
             if (contactSection) {
                 contactSection.scrollIntoView({ behavior: "smooth" });
             }
         } else {
-            // If not on the home page, navigate there and scroll after navigation
-            navigate("/", { state: { scrollToContact: true } });
+            // Pass a signal for direct navigation
+            navigate("/", { state: { scrollToContact: true, directNavigation: true } });
         }
     };
+    
 
     useEffect(() => {
         const handleScroll = () => {
@@ -182,6 +182,7 @@ const NavigationBar = () => {
                                 { name: "Furhat Robotics", link: "/Furhat", type: "internal" },
                                 { name: "Kapp'n's Catch", link: "/KappnsCatch", type: "internal" },
                                 { name: "LuxeBite", link: "/LuxebiteCaseStudy", type: "internal" },
+                                { name: "FantasyChass", link: "/FantasyChass", type: "internal" },
                                 { name: "Museum App", link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype", type: "external" },
                                 { name: "Kalmar City Library", link: "https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek", type: "external" },
                             ].map((item) => (

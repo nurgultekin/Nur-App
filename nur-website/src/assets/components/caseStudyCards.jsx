@@ -79,7 +79,7 @@ const CaseStudyCards = () => {
             >
               {/* Image */}
               <div
-                className="w-[90%] h-[50%]"
+                className="lg:w-[90%] sm:max-h-[30vh] lg:h-[50%]"
                 style={{
                   backgroundImage: `url(${study.image})`,
                   backgroundSize: "contain",

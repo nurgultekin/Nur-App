@@ -408,8 +408,13 @@ footer {
   padding: 30px;
   position:relative;
   bottom:16px;
+}
 
- 
- 
+@media screen and (max-width: 760px) {
+  .arrow {
+    padding: 15px;
+    position: relative;
+    bottom: 16px;
+  }
 }
 

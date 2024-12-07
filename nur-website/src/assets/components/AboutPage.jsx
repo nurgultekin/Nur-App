@@ -25,6 +25,7 @@ const AboutPage = () => {
             src={NurImage} 
             className="object-cover" 
             alt="About Image" 
+
           />
         </div>
           
@@ -45,19 +46,19 @@ const AboutPage = () => {
       </section>
 
       <section className="Chas-pics hidden justify-center mt-12 lg:mt-48 gap-4">
-        <img src={chasHalloween} className="rounded max-h-[80vh] w-auto" alt="Halloween Image" />
+        <img src={chasHalloween} className="rounded max-h-[80vh] w-auto" alt="Halloween Image" loading="lazy"/>
         <div className="flex flex-col gap-4">
-          <img src={chasHalloween2} className="rounded max-h-[45vh] w-auto" alt="Chas Halloween Fest 2" />
-          <img src={chasElevator} className="rounded max-h-[45vh] w-auto" alt="Chas Academy Elevator" />
+          <img src={chasHalloween2} className="rounded max-h-[45vh] w-auto" alt="Chas Halloween Fest 2" loading="lazy" />
+          <img src={chasElevator} className="rounded max-h-[45vh] w-auto" alt="Chas Academy Elevator" loading="lazy" />
         </div>
-        <img src={diceEvent} className="rounded max-h-[70vh] w-auto" alt="Dice Event" />
+        <img src={diceEvent} className="rounded max-h-[70vh] w-auto" alt="Dice Event" loading="lazy" />
       </section>
 
       { /* ABOUT MUSIC INTEREST */ }
       <section className=" text-white pt-24 pb-24 px-8 lg:px-12 flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-24 mt-48 ">
         <div className="flex gap-4 justify-center lg:ml-48">
-          <img src={metalMusicMeme} className="rounded h-auto w-96" alt="Metal meme" />
-          <img src={metalMusicGif} className="rounded h-auto w-96 mt-4 lg:mt-12" alt="Metal GIF" />
+          <img src={metalMusicMeme} className="rounded h-auto w-96" alt="Metal meme" loading="lazy" />
+          <img src={metalMusicGif} className="rounded h-auto w-96 mt-4 lg:mt-12" alt="Metal GIF" loading="lazy" />
         </div>
         <div className="flex flex-col justify-between items-left mt-6 lg:mt-24 lg:mr-48 text-left gap-8">
           <h3 className="text-3xl lg:text-5xl font-normal font-['Titan_One']">Music Enthusiast</h3>
@@ -70,12 +71,12 @@ const AboutPage = () => {
           <h3 className="text-3xl lg:text-5xl font-bold font-['Titan_One'] lg:max-w-lg text-left max-w-md">A metalhead & rock&rsquo;n&rsquo; roller who never wants to miss a gig</h3>
           <p className="text-lg lg:text-xl text-left font-['Roboto'] max-w-md">My heart beats for heavy metal, classical & blues rock, and classical jazz. Metallica, Black Sabbath, Rory Gallagher, Blue Öyster Cult, Led Zeppelin, Pink Floyd, and Queen are just a few of my favorites.</p>
         </div>
-        <img src={Concerts} className="rounded max-h-[70vh] w-auto lg:mr-48" alt="Concerts" />
+        <img src={Concerts} className="rounded max-h-[70vh] w-auto lg:mr-48" alt="Concerts" loading="lazy"/>
       </section>
 
       { /* Additional sections for Jazz Lover, Personal Life, and Photography */ }
       <section className="text-white pt-24 pb-24 px-8 lg:px-12 flex flex-col lg:flex-row lg:justify-between justify-center items-center gap-12 lg:gap-24 mt-48">
-        <img src={JazzVisuals} className="rounded max-h-[70vh] w-auto ml-0 lg:ml-48" alt="Jazz Visuals" />
+        <img src={JazzVisuals} className="rounded max-h-[70vh] w-auto ml-0 lg:ml-48" alt="Jazz Visuals" loading="lazy" />
         <div className="flex flex-col justify-center items-left lg:max-w-md gap-6 lg:text-left mx:auto lg:mr-48">
           <h3 className="text-3xl lg:text-5xl font-bold font-['Titan_One']">Jazz Nerd</h3>
           <p className="text-lg lg:text-xl font-['Roboto']">I groove to classical jazz, particularly bebop, and take joy in getting out that energy through the moves of Lindy hop and Charleston.</p>
@@ -91,7 +92,7 @@ const AboutPage = () => {
             Animals hold a special place in my heart, and I try to dedicate part of my life to animal welfare.
           </p>
         </div>
-        <img src={personalLife} className="rounded max-h-[70vh] w-auto" alt="Personal Life" />
+        <img src={personalLife} className="rounded max-h-[70vh] w-auto" alt="Personal Life" loading="lazy"/>
       </section>
 
       <section className="bg-dark text-light p-6 rounded-lg flex flex-col gap-6 items-center mt-48 mb-48">
@@ -102,7 +103,7 @@ const AboutPage = () => {
 
         </div>
         
-        <img src={nurPhotography} className="rounded max-h-[70vh] w-auto" alt="Photography" />
+        <img src={nurPhotography} className="rounded max-h-[70vh] w-auto" alt="Photography" loading="lazy" />
       </section>
     </div>  
   );

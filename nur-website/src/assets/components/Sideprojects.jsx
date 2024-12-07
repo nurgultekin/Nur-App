@@ -55,6 +55,7 @@ const SideProjects = () => {
                   src={project.image}
                   alt={project.title}
                   className="max-h-[30dvh] object-cover rounded-lg max-w-[90%]"
+                  loading="lazy"
                 />
               </div>
               <div className="flex flex-2 flex-col justify-center px-8 py-8 max-w-3/4 ">

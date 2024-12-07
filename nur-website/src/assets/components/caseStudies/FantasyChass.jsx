@@ -200,7 +200,7 @@ const conclusion = {
     <Section title={conclusion.title} paragraph={conclusion.paragraph}/>
       
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-end">
         <div className="flex items-baseline lg:gap-4">
             <div className="p-8">
               <a href="#" onClick={(e) => {
@@ -218,26 +218,47 @@ const conclusion = {
 
             </div>
 
-            <div className="p-8">
+{/*             <div className="p-8">
               <a href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-12">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                 </svg>
               </a>
-        </div>
+            </div> */}
 
         </div>
 
         <div className="flex flex-col items-center gap-2 p-8">
-          <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
-          <Link to="https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-            <p className="font-titan text-white text-[18px] m-0">Kalmar City Library</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="m13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
+          <Link 
+            to="https://www.academia.edu/125364534/Digital_Transformation_och_Delaktighet_En_granskande_fallstudie_av_Kalmar_Bibliotek" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex flex-col gap-2 w-full items-end"
+          >
+            <div className="flex flex-col items-end">
+              <p className="font-titan text-white text-[14px] m-0">Next Case Study:</p>
+              <p className="font-titan text-white text-[18px] m-0">Kalmar City Library</p>
+            </div>
+
+            <div className="flex justify-end w-full">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                strokeWidth={1.5} 
+
+                stroke="white" 
+                className="size-8"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  d="m13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" 
+                />
+              </svg>
+            </div>
           </Link>
         </div>
-
 
 
 

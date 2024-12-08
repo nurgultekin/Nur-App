@@ -39,6 +39,17 @@ const summary = {
 
 };
 
+const gameSummary = {
+  title: "2. Define",
+  paragraph:  ["Fantasy Chass is a text-based role-playing game inspired by the popular role-playing game Dungeons and Dragons. In Fantasy Chass, our AI takes over the role of game director, or 'Dungeon Master', and guides you through an adventure where only your own creativity sets the limits of what can happen.You can create your very own character, so it's exactly what you want, or you can have the AI ​​generate a character for you, complete with a backstory based on your own specifications and with an AI-generated profile picture based on the character's characteristics.",
+    "One of the more exciting features of Fantasy Chass is the ability to play prepared scenarios that have real societal benefit. The first scenario is called 'Stayin Alive' and is based on the brochure 'If the crisis or the war comes'. In 'Stayin Alive' you get to practice handling a crisis scenario and have the opportunity to test different choices and learn from the consequences. Our AI Dungeon Master weaves in important elements of crisis preparedness and crisis management. Practice makes perfect - and by combining entertainment with education in Fantasy Chass, you can double the likelihood of making the right choice when a real crisis situation arises!",
+    "Do you recognize yourself in conversations with family and friends about how you should act in a given situation? Now you can find out the best solutions in a simple and entertaining way - play Fantasy Chass!",
+  ],
+  content:null,
+  isList:false,
+
+};
+
 const problemAndSolution = {
   title: "Problem & Solution",
   paragraph: "Traditional tabletop RPGs like Dungeons and Dragons are popular for their storytelling and collaborative gameplay. However, they often require a skilled Dungeon Master to craft immersive narratives and manage gameplay, making it challenging for casual players to enjoy the experience without extensive preparation or expertise. Also, we think that the existing digital RPG platforms lack the creativity and adaptability of human DMs, which can turn into a repetitive or predictable experiences. This gap highlights the need for an innovative approach to delivering personalized, AI-driven RPG experiences that are accessible and engaging for players of all skill levels. So to address that shortcoming, we wanted to create a dynamic and accessible role-playing game experience for users without the need for a human Dungeon Master, while maintaining the creativity and unpredictability that make RPGs engaging.",
@@ -122,7 +133,7 @@ const conclusion = {
 
         <div className="text-white flex flex-col justify-center items-left lg:items-left lg:mt-24 max-w-[70vw] lg:max-w-[40vw] gap-4 mx-auto">
           <div className=" font-titan text-[18px] sm:text-[18px] leading-[150%] md:text-[24px] lg:text-[32px] lg:leading-[36px]">Case Study 4: </div>
-          <div className=" font-titan text-[42px] sm:text-[42px] leading-[150%] md:text-[60px]  lg:text-[78px] lg:leading-[80px] ">Fantasy Chass</div>
+          <div className=" font-titan text-[42px] sm:text-[42px] leading-[150%] md:text-[60px]  lg:text-[78px] lg:leading-[80px] "> Fantasy Chass</div>
             <div className="flex flex-col md:flex-row gap-4 mt-8">
 {/*               <a href="https://kappns-catch.netlify.app/" target="_blank"className="primary-button text-black text-sm py-2 md:mt-10 mr-4 scale-90 md:scale-100 whitespace-nowrap ">See the Website 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -141,7 +152,7 @@ const conclusion = {
                 <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">My role</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            Lead Frontend Developer
+             Lead UX/UI Designer & Frontend Developer
             </div>
             </div>
 
@@ -161,7 +172,7 @@ const conclusion = {
                 <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">Team</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            Nur Gültekin, Rasmus Mattsson, Matilda Danielsson, Rebecca Reimers, Kenny Gustafsson
+            Backend: Pontus Ahlbäck, Magdalena Kubien, Emil Ejderklev, Filip Nilsson and Dennis Briffa | Frontend: Nur Gültekin, Robin Rudén, Julia Paulin, and Alex Hansen | DevOps: DevOps: Ahin K. and Traitep Nammala.
             </div>
             </div>
 
@@ -184,11 +195,17 @@ const conclusion = {
     {/* Problem and Solution Section */}
     <Section title={problemAndSolution.title} paragraph={problemAndSolution.paragraph} content={problemAndSolution.content} isList={problemAndSolution.isList} />
 
+    {/* Game Summary  */}
+    <Section title={gameSummary.title} paragraph={summary.paragraph}/>
+
+
+
+
     {/* Design and Development Process Section */}
     <div className="flex flex-col justify-center items-center text-white">
-      <img src={fantasyChassFlow} loading="lazy" alt="Visual sequence depicting the start menu and gameplay process of the Stayin Alive game." className="rounded-md lg:hidden max-h-[70vh]"/>
+      <img src={fantasyChassFlow} loading="lazy" alt="Visual sequence depicting the start menu and gameplay process of the Fantasy Chass game." className="rounded-md lg:hidden max-h-[70vh]"/>
       <img src={fantasyChassFlowLG} loading="lazy" className="rounded-md hidden lg:block max-h-[60vh]"/>
-      <p>Figure: Stayin Alive game start and play flow</p>
+      <p>Figure: Fantasy Chass start and gameplay flow</p>
       <Section title={designAndDevelopmentProcess.title} paragraph={designAndDevelopmentProcess.paragraph} content={designAndDevelopmentProcess.content} isList={designAndDevelopmentProcess.isList} />
 
     </div>

@@ -172,7 +172,7 @@ const conclusion = {
                 <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">Team</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            Backend: Pontus Ahlbäck, Magdalena Kubien, Emil Ejderklev, Filip Nilsson and Dennis Briffa | Frontend: Nur Gültekin, Robin Rudén, Julia Paulin, and Alex Hansen | DevOps: DevOps: Ahin K. and Traitep Nammala.
+            Backend: Pontus Ahlbäck, Magdalena Kubien, Emil Ejderklev, Filip Nilsson and Dennis Briffa | Frontend: Nur Gültekin, Robin Rudén, Julia Paulin, and Alex Hansen | DevOps: Ahin K. and Traitep Nammala.
             </div>
             </div>
 
@@ -182,7 +182,7 @@ const conclusion = {
                 <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">Frameworks</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            React.js, Figma, Tailwind CSS, Scrum
+            React.js, Figma, JavaScript, CSS
             </div>
             </div>
         </div>

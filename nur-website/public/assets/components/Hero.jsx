@@ -30,7 +30,7 @@ const HeroSection = () => {
 
             <div className="w-full max-w-lg sm:max-w-lg lg:max-w-3xl">
                 <p className="text-white mx-auto md:ml-12 text-shadow font-roboto font-semibold text-[1rem] md:text-lg lg:text-xl leading-[130%]  text-left">
-                    I am <span className=" text-[1.2rem] lg:text-[1.6rem] text-[#b4b459] font-titan leading-normal">Nur</span>, (a.k.a. Nora), a front-end software developer from Istanbul, now based in Stockholm. I draw great inspiration from arts, games, and nature. I enjoy applying my creativity and logical thinking to design and develop interactive technologies that are appealing, expressive and functional.  
+                    I am <span className=" text-[1.2rem] lg:text-[1.6rem] text-[#b4b459] font-titan leading-normal">Nur</span>, (a.k.a. Nora), a front-end software developer from Istanbul, now based in Stockholm. I draw great inspiration from arts, games, and nature. I enjoy applying my creativity and logical thinking to design and develop interactive technologies that are appealing, expressive, functional and impactful.  
                 </p>
             </div>
 

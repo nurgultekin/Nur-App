@@ -61,7 +61,7 @@ const CaseStudyCards = () => {
       tags: ["UX & UI Design", "Accessibility Analysis"],
       type: "Work Project",
       description:
-        "Designed an app to enhance library accessibility through comprehensive UX research and analysis.",
+        "Conducted comprehensive UX research and accessibility analysis to enhance the library's digital services to be more inclusive and accessible.",
       link: "https://www.academia.edu/84093473/Smart_Museum_App_Prototype",
     },
   ];

@@ -40,7 +40,7 @@ const summary = {
 };
 
 const gameSummary = {
-  title: "2. Define",
+  title: "About the Game",
   paragraph:  ["Fantasy Chass is a text-based role-playing game inspired by the popular role-playing game Dungeons and Dragons. In Fantasy Chass, our AI takes over the role of game director, or 'Dungeon Master', and guides you through an adventure where only your own creativity sets the limits of what can happen.You can create your very own character, so it's exactly what you want, or you can have the AI ​​generate a character for you, complete with a backstory based on your own specifications and with an AI-generated profile picture based on the character's characteristics.",
     "One of the more exciting features of Fantasy Chass is the ability to play prepared scenarios that have real societal benefit. The first scenario is called 'Stayin Alive' and is based on the brochure 'If the crisis or the war comes'. In 'Stayin Alive' you get to practice handling a crisis scenario and have the opportunity to test different choices and learn from the consequences. Our AI Dungeon Master weaves in important elements of crisis preparedness and crisis management. Practice makes perfect - and by combining entertainment with education in Fantasy Chass, you can double the likelihood of making the right choice when a real crisis situation arises!",
     "Do you recognize yourself in conversations with family and friends about how you should act in a given situation? Now you can find out the best solutions in a simple and entertaining way - play Fantasy Chass!",
@@ -152,7 +152,7 @@ const conclusion = {
                 <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">My role</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-             Lead UX/UI Designer & Frontend Developer
+             Frontend Developer & Lead UX Designer
             </div>
             </div>
 
@@ -162,7 +162,7 @@ const conclusion = {
                 <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke ">Scope</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-                June 2024 (One week) - School project
+                March-June, 2024 - School project
             </div>
             </div>
 
@@ -172,7 +172,7 @@ const conclusion = {
                 <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">Team</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            Backend: Pontus Ahlbäck, Magdalena Kubien, Emil Ejderklev, Filip Nilsson and Dennis Briffa | Frontend: Nur Gültekin, Robin Rudén, Julia Paulin, and Alex Hansen | DevOps: Ahin K. and Traitep Nammala.
+            <span className="bold">Backend:</span> Pontus Ahlbäck, Magdalena Kubien, Emil Ejderklev, Filip Nilsson and Dennis Briffa | Frontend: Nur Gültekin, Robin Rudén, Julia Paulin, and Alex Hansen | DevOps: Ahin K. and Traitep Nammala.
             </div>
             </div>
 
@@ -196,7 +196,7 @@ const conclusion = {
     <Section title={problemAndSolution.title} paragraph={problemAndSolution.paragraph} content={problemAndSolution.content} isList={problemAndSolution.isList} />
 
     {/* Game Summary  */}
-    <Section title={gameSummary.title} paragraph={summary.paragraph}/>
+    <Section title={gameSummary.title} paragraph={gameSummary.paragraph}/>
 
 
 

@@ -23,7 +23,7 @@ const Furhat = () => {
     },
     {
       title: "Frameworks",
-      description: "React.js, Webflow, Figma, Vanilla js, HTML & CSS, Freemarker, Kotlin and Java.",
+      description: "React.js, Webflow, Figma, Vanilla js, SEO, Google Analytics, Zapier, HTML & CSS, Freemarker, Kotlin and Java.",
     },
   ];
 

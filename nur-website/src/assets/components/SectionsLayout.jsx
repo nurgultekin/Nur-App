@@ -23,7 +23,7 @@ const Section = ({ title, paragraph, content, isList, leftImage, rightImage, lef
 
         {/* Render text content */}
         <div className={`text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] font-roboto text-whitesmoke ${leftImage || leftVideo || rightImage || rightVideo ? 'lg:w-1/2' : 'w-full'} text-left`}>
-          {paragraph && <p className="mb-4">{paragraph}</p>}
+          {paragraph && <p className="mb-4">{paragraph}<br></br></p>}
           {isList ? (
             <ul className="flex flex-col gap-8">
               {content.map((item, index) => (

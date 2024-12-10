@@ -169,7 +169,7 @@ const conclusion = {
                 <div className="text-[20px] md:text-[24px] md:leading-[31.2px] font-titan text-whitesmoke">Frameworks</div>
             </div>
             <div className="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-roboto text-whitesmoke leading-[30px] max-w-[400px] mt-[4px] text-left">
-            React.js, Figma, Tailwind CSS, Scrum
+            React.js, Figma, Tailwind CSS, Firebase, Scrum
             </div>
             </div>
         </div>
